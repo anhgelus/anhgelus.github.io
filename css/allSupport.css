@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1844px) {
+    .content .who {
+        margin-left: 35vw;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    section img {
+        margin-left: 5vw;
+        border-radius: 25px;
+    }
+}
+@media only screen and (max-width: 1506px) {
+    header {
+        width: 15vw;
+    }
+    section img {
+        margin-left: 3vw;
+        border-radius: 25px;
+    }
+}
+@media only screen and (max-width: 1180px) {
+    .content .who {
+        display: none;
+    }
+    header {
+        position: fixed;
+        display: inline;
+        width: 100vw;
+        height: 15vh;
+    }
+    header img {
+        display: none;
+    }
+    header nav {
+        margin-top: 5vh;
+    }
+    header nav a {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 0;
+        margin-left: 3vw;
+        font-size: 1.4em;
+        width: auto;
+    }
+    .content {
+        margin-left: 10vw;
+        width: 75vw;
+    }
+    .content h1 {
+        font-size: 1.8em;
+    }
+    .content section {
+        display: block;
+        width: 24vw;
+        margin-top: 5vh;
+        margin-bottom: 15vh;
+        width: 100%;
+    }
+    section img {
+        margin-left: 27vw;
+        border-radius: 25px;
+    }
+}
+@media only screen and (max-width: 990px) {
+    section img {
+        margin-left: 25vw;
+        border-radius: 25px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    section img {
+        margin-left: 20vw;
+        border-radius: 25px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    header nav a {
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 0;
+        margin-left: 3vw;
+        font-size: 1.2em;
+        width: auto;
+    }
+    .content {
+        margin-left: 5vw;
+    }
+    .content h1 {
+        font-size: 1.4em;
+    }
+    section img {
+        margin-left: 17vw;
+        border-radius: 25px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    header {
+        display: none;
+    }
+    footer {
+        display: inline;
+    }
+    .content {
+        margin-left: 5vw;
+        width: 90vw;
+    }
+    .content h1 {
+        text-align: center;
+    }
+    a.button {
+        margin-left: 20vw;
+    }
+}

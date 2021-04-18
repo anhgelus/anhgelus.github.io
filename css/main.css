@@ -84,6 +84,7 @@ header nav a {
 }
 .content .who {
     margin-left: 50vw;
+    width: 500px;
 }
 .content .who h2 {
     margin: 0;
@@ -111,6 +112,33 @@ section img {
     margin-left: 6vw;
     border-radius: 25px;
 }
+
+footer {
+    display: none;
+}
+footer {
+    position: fixed;
+    top: 95vh;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+    background-color: var(--color-header);
+}
+footer nav {
+    margin-top: 0.5vh;
+}
+footer nav a {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: 3vw;
+    font-size: 1em;
+    width: auto;
+    color: var(--color-text);
+    font-family: SegoeUI;
+    text-decoration: none;
+}
+
 
 @keyframes button {
     0% {
