@@ -28,6 +28,15 @@ body {
     border: 4px solid var(--color-link);
     font-size: 1.4em;
     margin-top: 1em;
+    background-color: none;
+    transition: 0.5s;
+}
+.button:hover {
+    /*animation-name: button;
+    animation-duration: 1s;*/
+    background-color: var(--color-link);
+    color: var(--color-background);
+    transition: 0.5s;
 }
 .intro {
     margin-top: 17vh;
@@ -76,4 +85,15 @@ header nav a {
     font-size: 50px;
     text-align: center;
     font-weight: normal;
+}
+
+@keyframes button {
+    0% {
+        background-color: none;
+        color: var(--color-text);
+    }
+    100% {
+        background-color: var(--color-link);
+        color: var(--color-background);
+    }
 }
