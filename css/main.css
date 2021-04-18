@@ -47,6 +47,10 @@ body {
     font-size: 25px;
     text-align: center;
 }
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
 
 header {
     position: fixed;
@@ -71,6 +75,7 @@ header nav a {
     display: inline-block;
     margin-left: 20vw;
     font-family: OpenSans;
+    width: 75vw;
 }
 .content h1 {
     font-weight: normal;
@@ -85,6 +90,26 @@ header nav a {
     font-size: 50px;
     text-align: center;
     font-weight: normal;
+}
+
+.content section {
+    display: inline-block;
+    width: 24vw;
+    margin-top: 5vh;
+}
+section h3 {
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+section p {
+    text-align: center;
+    margin: 5px 0;
+}
+section img {
+    margin-left: 6vw;
+    border-radius: 25px;
 }
 
 @keyframes button {
