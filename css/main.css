@@ -32,6 +32,12 @@ body {
     background-color: none;
     transition: 0.5s;
 }
+.button.little {
+    font-size: 1.2em;
+    padding: 0.4ex 1.5ex;
+    border: 3px solid var(--color-link);
+    border-radius: 25px;
+}
 .button:hover {
     /*animation-name: button;
     animation-duration: 1s;*/
@@ -68,7 +74,10 @@ a:hover {
 }
 
 .separator {
-    margin: 5vw;
+    margin: 5vh;
+}
+.separator.little {
+    margin: 4vh;
 }
 
 .no-deco {
