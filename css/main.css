@@ -77,6 +77,9 @@ header nav a {
     margin-bottom: 40px;
     font-family: SegoeUI;
 }
+header nav a:hover {
+    color: var(--color-text);
+}
 .content {
     display: inline-block;
     margin-left: 20vw;
