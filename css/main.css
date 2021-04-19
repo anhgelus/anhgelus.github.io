@@ -39,15 +39,24 @@ body {
     color: var(--color-background);
     transition: 0.5s;
 }
+
 .intro {
     margin-top: 17vh;
 }
-.subtitles {
+.intro h1 {
     margin: 0;
+}
+
+.subtitles {
+    margin: 0 0 0 15px;
     color: var(--color-subtitles);
     font-size: 25px;
+}
+.who .subtitles {
+    margin: 0;
     text-align: center;
 }
+
 a {
     color: var(--color-link);
     text-decoration: none;
@@ -56,6 +65,19 @@ a {
 a:hover {
     transition: 0.3s;
     color: var(--color-link-hover);
+}
+
+.separator {
+    margin: 5vw;
+}
+
+.no-deco {
+    list-style: none;
+}
+
+.id {
+    font-size: 0.5em;
+    font-style: italic;
 }
 
 header {
