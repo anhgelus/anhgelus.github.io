@@ -11,6 +11,7 @@
     --color-text: #fff;
     --color-header: #191C1D;
     --color-link: #3ABED9;
+    --color-link-hover: #269fb8;
     --color-subtitles: #BDD1D5;
 }
 body {
@@ -50,6 +51,11 @@ body {
 a {
     color: var(--color-link);
     text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    transition: 0.3s;
+    color: var(--color-link-hover);
 }
 
 header {
