@@ -46,7 +46,7 @@ footer { background: var(--color-background-2); color: var(--color-background); 
 }
 .navbar-item:hover { color: var(--color-link-hover-2); }
 .navbar-item--first { margin-left: 4em; }
-.content { width: 80%; margin: 0 auto; }
+.content { width: 80%; margin: 0 auto 5vh auto; }
 .content-text { text-align: justify; line-height: 1.25em; }
 .footer-title { font-size: 1.5em; font-weight: 300; margin-bottom: 0.5em; }
 .footer-link { color: var(--color-background); display: block; }
@@ -74,7 +74,7 @@ footer { background: var(--color-background-2); color: var(--color-background); 
 .btn-secondary {
     display: block;
     height: 2em;
-    margin: 0 auto;
+    margin: 0 auto 5px auto;
     width: 80%;
     padding: 0;
     line-height: 2em;
@@ -88,6 +88,6 @@ footer { background: var(--color-background-2); color: var(--color-background); 
 }
 .list-item { width: 30%; margin: 0 5px; }
 .list-text { font-size: 0.75em; text-align: center; }
-.list-image { height: 250px; margin: 0 auto; display: block; }
+.list-image { height: 250px; margin: 0 auto; display: block; border-radius: 15px; }
 
 .is-selected { color: var(--color-link-hover-2); }
