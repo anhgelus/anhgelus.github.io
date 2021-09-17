@@ -10,8 +10,9 @@
 :root {
     --color-background: #fff;
     --color-text: #000;
-    --color-link: #130730;
-    --color-link-hover: #250b64;
+    --color-background-2: #130730;
+    --color-link: #260c64;
+    --color-link-hover: #3d1894;
     --color-link-hover-2: #acdde2;
 }
 body {
@@ -24,7 +25,8 @@ body {
 h1 { font-size: 2.5em; text-align: center; }
 a { color: var(--color-link); text-decoration: none; font-weight: normal; transition: 0.5s; }
 a:hover { color: var(--color-link-hover); transition: 0.3s; }
-footer { background: var(--color-link); color: var(--color-background); padding: 2vh 0 4vh 0; }
+li { margin-left: 5%; list-style: circle; }
+footer { background: var(--color-background-2); color: var(--color-background); padding: 2vh 0 4vh 0; }
 
 .l-top { height: 50vh; padding-top: 5vh; }
 .l-center { margin: 0 auto; }
@@ -32,9 +34,10 @@ footer { background: var(--color-link); color: var(--color-background); padding:
 .l-right { margin: 0 0 0 auto }
 .l-alt { width: 60% }
 .l-space { margin-top: 2em; margin-bottom: 2em; }
+.l-little-space { margin-top: 1em; }
 
 .little-title { font-size: 1.5em; margin-bottom: 0.5em; }
-.navbar { background: var(--color-link); padding: 4vh 0;}
+.navbar { background: var(--color-background-2); padding: 4vh 0;}
 .navbar-item {
     color: var(--color-background);
     font-size: 1.5em;
@@ -57,5 +60,34 @@ footer { background: var(--color-link); color: var(--color-background); padding:
 .col1 { width: 20% }
 .col2 { width: 50% }
 .col3 { width: 20% }
+.btn {
+    display: inline;
+    background: var(--color-link);
+    color: var(--color-background);
+    border-radius: 25px;
+    padding: 0.5em 1em;
+    text-align: center;
+    line-height: 3em;
+    margin: 0 0 0 10%;
+}
+.btn:hover { color: var(--color-background); background: var(--color-link-hover); }
+.btn-secondary {
+    display: block;
+    height: 2em;
+    margin: 0 auto;
+    width: 80%;
+    padding: 0;
+    line-height: 2em;
+    font-size: 1em;
+    border-radius: 10px;
+}
+.list-item--no-puce { list-style: none; }
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list-item { width: 30%; margin: 0 5px; }
+.list-text { font-size: 0.75em; text-align: center; }
+.list-image { height: 250px; margin: 0 auto; display: block; }
 
 .is-selected { color: var(--color-link-hover-2); }

@@ -4,63 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project - Anhgelus Website</title>
+    <title>Accueil - Anhgelus Website</title>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/allSupport.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="logo">
-        <nav>
-            <a href="/">Accueil</a>
-            <a href="/projects.html">Project</a>
-            <a href="/cv.html">Informations</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
-    </header>
-    <div class="content">
-        <h1 class="intro">
-            My Projects and <br>
-            My Works
+<header>
+    <nav class="navbar">
+        <a href="/" class="navbar-item navbar-item--first">Accueil</a>
+        <a href="/skills.html" class="navbar-item">Skills</a>
+        <a href="/projects.html" class="navbar-item is-selected">Projects</a>
+        <a href="/cv.html" class="navbar-item">CV</a>
+        <a href="/contact.html" class="navbar-item">Contact</a>
+    </nav>
+    <div class="l-top">
+        <h1>
+            Anhgelus Morhtuuzh's Projects
         </h1>
-        <section>
-            <h3>
-                CMFr
-            </h3>
-            <img src="/img/logo_cmfr.png" alt="CMFr's logo" width="250px">
-            <p>
-                CMFr is a French Discord. This goal is to regroup the french Minecraft Community. <br>
-                The link : <a href="https://discord.gg/TrGfCVp" target="_blank">CMFr</a>
-            </p>
-        </section>
-        <section>
-            <h3>
-                Horror Series Production
-            </h3>
-            <img src="/img/hsp-logo.png" alt="HSP's logo" width="250px">
-            <p>
-                Horror Series Production create horror series / map / videos in Minecraft. <br>
-                The website : <a href="http://horrorseriesprod.org" target="_blank">HorrorSeriesProd.org</a> 
-            </p>
-        </section>
-        <section>
-            <h3>
-                My YouTube Channel
-            </h3>
-            <img src="https://yt3.ggpht.com/ytc/AAUvwngsnfCwbZpHR5LQFXTQpk6OBNWd2moKSKBmNxxJ_A=s250-c-k-c0x00ffffff-no-rj" alt="My Youtube Channel's logo">
-            <p>
-                I've a YouTube channel. I make video when I've time. My videos' thema is Minecraft. <br>
-                The link : <a href="https://www.youtube.com/channel/UCj7kYuq-zUufNxmdB3FqjAg" target="_blank">YouTube</a>
-            </p>
-        </section>
+        <div class="background-img"></div>
     </div>
-    <footer>
-        <nav>
-            <a href="/">Accueil</a>
-            <a href="/projects.html">Project</a>
-            <a href="/cv.html">Informations</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
-    </footer>
+</header>
+<div class="content">
+    <div class="l-alt l-center l-space list">
+        <div class="list-item">
+            <img src="/img/projects/jaimeecouter.jpg" alt="J'aime Ecouter website image">
+            <p class="content-text list-text">
+                J'aime Ecouter - 2021
+            </p>
+            <a href="http://www.jaimeecouter.com" target="_blank" class="btn btn-secondary list-link">Website</a>
+        </div>
+        <div class="list-item">
+            <img src="/img/projects/php-public-class.png" alt="PHP Public Class image" class="list-image">
+            <p class="content-text list-text">
+                PHP Public Class - 2021
+            </p>
+            <a href="https://github.com/anhgelus/php-public-class" target="_blank" class="btn btn-secondary list-link">Github</a>
+        </div>
+        <div class="list-item">
+            <img src="/img/projects/cmfr.png" alt="CMFr image" class="list-image">
+            <p class="content-text list-text">
+                CMFr website and Minecraft server - 2021
+            </p>
+            <a href="https://discord.gg/cmfr" target="_blank" class="btn btn-secondary list-link">Discord</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="col">
+        <div class="col1 l-left col-content">
+            <h3 class="footer-title">
+                Anhgelus Morhtuuzh
+            </h3>
+            <p class="footer-text footer--license">
+                © 2021 - <a href="LICENSE" class="footer--link">GNU License</a>
+            </p>
+            <nav class="nav-footer">
+                <a href="/legal-mentions.html" class="footer-link">Legal Mentions</a>
+                <a href="/cgu.html" class="footer-link">CGU</a>
+                <a href="/cv.html" class="footer-link">About me</a>
+            </nav>
+        </div>
+        <div class="col2 l-center col-content">
+            <h3 class="footer-title">
+                Sitemap
+            </h3>
+            <nav class="nav-footer">
+                <a href="/" class="footer-link">Accueil</a>
+                <a href="/skills.html" class="footer-link">Skills</a>
+                <a href="/projects.html" class="footer-link">Projects</a>
+                <a href="/cv.html" class="footer-link">CV</a>
+                <a href="/contact.html" class="footer-link">Contact</a>
+            </nav>
+        </div>
+        <div class="col3 l-right col-content">
+            <h3 class="footer-title">
+                Follow me!
+            </h3>
+            <nav class="nav-footer">
+                <a href="" class="footer-link" target="_blank">Discord</a>
+                <a href="" class="footer-link" target="_blank">Instagram</a>
+                <a href="https://github.com/anhgelus" class="footer-link" target="_blank">Github</a>
+                <a href="/projects.html" class="footer-link" target="_blank">My Projects</a>
+                <a href="" class="footer-link" target="_blank">And more!</a>
+            </nav>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
