@@ -1,0 +1,30 @@
+.m {
+  &t- {
+    @for $i from 0 through 6 {
+      &#{$i} {
+        margin-top: (calc($i*0.5rem)!important);
+      }
+    }
+  }
+  &b- {
+    @for $i from 0 through 6 {
+      &#{$i} {
+        margin-top: (calc($i*0.5rem)!important);
+      }
+    }
+  }
+  &l- {
+    @for $i from 0 through 6 {
+      &#{$i} {
+        margin-top: (calc($i*0.5rem)!important);
+      }
+    }
+  }
+  &r- {
+    @for $i from 0 through 6 {
+      &#{$i} {
+        margin-top: (calc($i*0.5rem)!important);
+      }
+    }
+  }
+}

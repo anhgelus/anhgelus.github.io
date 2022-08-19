@@ -1,0 +1,21 @@
+@import "../colors";
+@import "../mixins";
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  &.is-1 {
+    @include center;
+    &.is-not-centered {
+      @include left;
+    }
+  }
+}
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  position: relative;
+  top: -2rem;
+}

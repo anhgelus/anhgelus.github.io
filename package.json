@@ -1,0 +1,29 @@
+{
+  "name": "anhgelus.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "sass sass/main.scss assets/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "build": "npm run css-build && npm run ts-build && npm run test",
+    "ts-build": "tsc --outDir assets",
+    "ts-watch": "tsc --outDir assets --watch",
+    "start": "npm run css-watch && npm run ts-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhgelus/anhgelus.github.io.git"
+  },
+  "author": "Anhgelus Morhtuuzh",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/anhgelus/anhgelus.github.io/issues"
+  },
+  "homepage": "https://github.com/anhgelus/anhgelus.github.io#readme",
+  "dependencies": {
+    "sass": "^1.54.4",
+    "typescript": "^4.7.4"
+  }
+}
