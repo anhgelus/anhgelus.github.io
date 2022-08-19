@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     background-color: $default-bg;
     color: $default-text;
@@ -13,4 +13,8 @@ body {
 a {
     color: $link;
     text-decoration: none;
+}
+
+.section {
+    margin: 5rem 0;
 }
