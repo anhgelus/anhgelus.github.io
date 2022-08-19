@@ -9,21 +9,21 @@
   &b- {
     @for $i from 0 through 6 {
       &#{$i} {
-        margin-top: (calc($i*0.5rem)!important);
+        margin-bottom: (calc($i*0.5rem)!important);
       }
     }
   }
   &l- {
     @for $i from 0 through 6 {
       &#{$i} {
-        margin-top: (calc($i*0.5rem)!important);
+        margin-left: (calc($i*0.5rem)!important);
       }
     }
   }
   &r- {
     @for $i from 0 through 6 {
       &#{$i} {
-        margin-top: (calc($i*0.5rem)!important);
+        margin-right: (calc($i*0.5rem)!important);
       }
     }
   }
