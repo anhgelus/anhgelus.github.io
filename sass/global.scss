@@ -13,8 +13,15 @@ body {
 a {
     color: $link;
     text-decoration: none;
+    &:hover {
+        color: transparent($link, .75);
+    }
 }
 
-.section {
+p {
+    margin: 2rem 0;
+}
+
+.section, section {
     margin: 5rem 0;
 }

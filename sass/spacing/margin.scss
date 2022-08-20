@@ -1,30 +1,28 @@
 .m {
-  &t- {
-    @for $i from 0 through 6 {
+  @for $i from 0 through 6 {
+    $m: calc($i*0.5rem)!important;
+    &t- {
       &#{$i} {
-        margin-top: (calc($i*0.5rem)!important);
+        margin-top: $m;
       }
     }
-  }
-  &b- {
-    @for $i from 0 through 6 {
+    &b- {
       &#{$i} {
-        margin-bottom: (calc($i*0.5rem)!important);
+        margin-bottom: $m;
       }
     }
-  }
-  &l- {
-    @for $i from 0 through 6 {
+    &l- {
       &#{$i} {
-        margin-left: (calc($i*0.5rem)!important);
+        margin-left: $m;
       }
     }
-  }
-  &r- {
-    @for $i from 0 through 6 {
+    &r- {
       &#{$i} {
-        margin-right: (calc($i*0.5rem)!important);
+        margin-right: $m;
       }
+    }
+    &-#{$i} {
+      margin: $m;
     }
   }
 }

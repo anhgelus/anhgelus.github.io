@@ -9,19 +9,19 @@
 <header>
     <nav role="navigation" class="navbar">
         <div class="p-6">
-            <a href="/" class="navbar-item navbar-link">Home</a>
-            <a href="/skills" class="navbar-item navbar-link">Skills</a>
-            <a href="/about" class="navbar-item navbar-link">About</a>
-            <a href="/contact" class="navbar-item navbar-link">Contact</a>
+            <a href="#" class="navbar-item navbar-link">Home</a>
+            <a href="#skills" class="navbar-item navbar-link">Skills</a>
+            <a href="#about" class="navbar-item navbar-link">About</a>
+            <a href="#contact" class="navbar-item navbar-link">Contact</a>
         </div>
     </nav>
-    <div class="titles p-1">
+    <div class="titles p-1 mt-6">
         <h1 class="title is-1 is-not-centered">Anhgelus Morhtuuzh</h1>
         <h2 class="subtitle is-3">Dynamic Programming Developer</h2>
     </div>
 </header>
 <div class="p-2 p-max-2">
-    <div class="section">
+    <div id="skills" class="section">
         <h2 class="title is-3">Skills</h2>
         <div class="grid">
             <div class="row">
@@ -33,7 +33,7 @@
                 <level-bar level="3" max="5"></level-bar>
             </div>
             <div class="row">
-                <h4 class="is-5">PHP 7 & 8</h4>
+                <h4 class="is-5">PHP</h4>
                 <level-bar level="4" max="5"></level-bar>
             </div>
             <div class="row">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div id="projects" class="section">
         <h2 class="title is-3 mt-5">Projects</h2>
         <div class="grid">
             <div class="card">
@@ -66,13 +66,18 @@
                     <img class="card-image" src="https://via.placeholder.com/600x400" alt="Representation of a website">
                 </div>
                 <div class="card-content">
-                    <h4 class="is-5 card-title">anhgelus.me</h4>
+                    <h4 class="is-5 card-title"><a href="https://la-fabrick.eu/" class="is-green">La Fabrick</a></h4>
                     <div class="card-description">
                         <p>
-                            anhgelus.me my personnal website. It's hosted with the GitHub pages and under the GPLv3.0 license.
+                            This is a website for a group of Minecraft creator. They made very ambitious Minecraft event.
+                            They already worked with many french youtubers ands streams like
+                            <a href="https://www.twitch.tv/martinponk">MartinPonk</a>, <a href="https://www.youtube.com/user/RoiLouisMC">Roi_Louis</a>,
+                            <a href="https://www.youtube.com/user/NemsWorld">Nems</a>, <a href="https://www.twitch.tv/vartac">Vartac</a>,
+                            <a href="https://www.youtube.com/channel/UCF1r2mjZaIuAQaP0da2Zsjg">Golwdawn</a> and many more.
                         </p>
                         <p>
-                            It was built with Vanilla TS and SASS.
+                            It was built with Vanilla JS and PHP. I have just to maintain this website without modifying
+                            it. I had to add the responsiveness and update the text.
                         </p>
                     </div>
                 </div>
@@ -82,15 +87,14 @@
                     <img class="card-image" src="https://via.placeholder.com/600x400" alt="Representation of a website">
                 </div>
                 <div class="card-content">
-                    <h4 class="is-5 card-title">arnaudvalentin.com</h4>
+                    <h4 class="is-5 card-title"><a href="https://arnaudvalentin.com" class="is-green">Arnaud Valentin</a></h4>
                     <div class="card-description">
                         <p>
                             arnaudvalentin.com is a showcase vitrine for a voice-over actor. This website was made in 6
                             hours with Vanilla TS, SASS and Bulma.
                         </p>
                         <p>
-                            This website has just one page and contains audios and downloadable
-                            things.
+                            This website has just one page. This page contains audios and downloadable things.
                         </p>
                     </div>
                 </div>
@@ -100,7 +104,7 @@
                     <img class="card-image" src="https://via.placeholder.com/600x400" alt="Representation of a website">
                 </div>
                 <div class="card-content">
-                    <h4 class="is-5 card-title">mcchampion.net</h4>
+                    <h4 class="is-5 card-title"><a href="https://mcchampion.net" class="is-green">Minecraft Champion</a></h4>
                     <div class="card-description">
                         <p>
                             mcchampion.net is the website of a Minecraft server. It contains dynamics element like teams,
@@ -115,7 +119,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div id="about" class="section">
         <h2 class="title is-3">About</h2>
         <p>
             I'm a developer and a web designer since 2017. I firstly learned plugin development with Bukkit and Java to
@@ -150,18 +154,19 @@
             parser with this technique.
         </p>
     </div>
-    <div class="section">
+    <div id="contact" class="section">
         <h2 class="title is-3">Contact</h2>
         <p class="subtitle is-5">How to reach me?</p>
-        <p>
+        <p class="m-0">
             The easiest way to reach me is by email. You can find my email <a href="mailto:anhgelus.morhtuuzh@proton.me"
                                                                               class="is-green">anhgelus.morhtuuzh@proton.me</a>.
         </p>
-        <p>
+        <p class="m-0">
             If you're using Discord and you want to communicate on this plateforme, join my <a
                     href="https://discord.gg/n99A5gBWx4" class="is-green" target="_blank">Discord server</a>.
         </p>
     </div>
 </div>
+<script defer src="/assets/index.js" type="module"></script>
 </body>
 </html>

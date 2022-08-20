@@ -16,8 +16,8 @@
   width: 0.625em;
 }
 
-@function vw($px-vw, $base-vw: 1292px) {
-  @return ($px-vw * 100vw) / $base-vw
+@function transparent($color, $alpha: 1){
+  @return transparentize($color, calc(1 - $alpha));
 }
 
 @mixin center {

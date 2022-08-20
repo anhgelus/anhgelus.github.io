@@ -3,5 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
 }
 .row {
-  margin: 0 auto;
+  margin: 0 auto 4rem auto;
+  width: 90%;
+  text-align: center;
 }
