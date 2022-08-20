@@ -8,6 +8,9 @@ body {
     line-height: 1.5;
     background-color: $default-bg;
     color: $default-text;
+    @include until($small-phone) {
+        font-size: 16px;
+    }
 }
 
 a {

@@ -1,5 +1,6 @@
 @import "colors";
 @import "mixins";
+@import "responsiveness/breakpoints";
 .navbar {
   display: flex;
   flex-direction: row;
@@ -10,6 +11,9 @@
   background: $dark-black;
   & * {
     height: 64px;
+    @include until($desktop) {
+      margin: 0!important;
+    }
   }
   &-link {
     display: inline-block;
@@ -24,6 +28,12 @@
     &:hover {
       color: $link;
       transition: .2s;
+    }
+    @include until($phone) {
+      width: 7rem;
+    }
+    @include until($small-phone) {
+      width: 5rem;
     }
   }
 }

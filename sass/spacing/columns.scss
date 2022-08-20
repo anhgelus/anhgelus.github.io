@@ -1,9 +1,25 @@
+@import "../responsiveness/breakpoints";
+@import "../mixins";
+
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+  gap: 1rem;
+  @include until($desktop) {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 1rem;
+  }
+  @include until($phone) {
+    display: flex;
+    flex-direction: column;
+    @include center;
+    gap: 2rem;
+  }
 }
 .row {
-  margin: 0 auto 4rem auto;
   width: 90%;
   text-align: center;
+  @include until($desktop) {
+    height: 50px;
+  }
 }
