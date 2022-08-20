@@ -8,11 +8,15 @@
     @include until($desktop) {
       margin: 0 2rem;
     }
+    @include until($phone) {
+      margin-left: 1rem!important;
+      margin-right: 1rem!important;
+    }
   }
   .p-max-#{$i} {
     margin-right: $dist;
     @include until($desktop) {
-      margin-right: initial;
+      margin-right: 0;
     }
   }
 }
