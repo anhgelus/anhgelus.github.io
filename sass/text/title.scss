@@ -19,3 +19,6 @@
   position: relative;
   top: -2rem;
 }
+.center {
+  @include center;
+}
