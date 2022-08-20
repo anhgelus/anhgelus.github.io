@@ -59,6 +59,8 @@ table {
 /* Defaults */
 /* Creator: Bulma Team */
 .navbar {
+  top: 0;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -90,15 +92,19 @@ table {
   color: #E9A5C1;
   transition: 0.2s;
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 970px) {
   .navbar-link {
     width: 7rem;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 670px) {
   .navbar-link {
     width: 5rem;
   }
+}
+
+.titles {
+  margin-top: 6rem;
 }
 
 /* Basics */
@@ -456,10 +462,9 @@ table {
 @media only screen and (max-width: 1320px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    gap: 1rem;
   }
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 970px) {
   .grid {
     display: flex;
     flex-direction: column;
@@ -474,6 +479,7 @@ table {
 .row {
   width: 90%;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 @media only screen and (max-width: 1320px) {
   .row {
@@ -488,7 +494,7 @@ body {
   background-color: #211F20;
   color: #fff;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 670px) {
   body {
     font-size: 16px;
   }
@@ -865,10 +871,9 @@ p {
 @media only screen and (max-width: 1320px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    gap: 1rem;
   }
 }
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 970px) {
   .grid {
     display: flex;
     flex-direction: column;
@@ -883,6 +888,7 @@ p {
 .row {
   width: 90%;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 @media only screen and (max-width: 1320px) {
   .row {

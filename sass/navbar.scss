@@ -2,6 +2,8 @@
 @import "mixins";
 @import "responsiveness/breakpoints";
 .navbar {
+  top: 0;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -36,4 +38,8 @@
       width: 5rem;
     }
   }
+}
+
+.titles {
+  margin-top: 6rem;
 }
