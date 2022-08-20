@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "sass sass/main.scss assets/main.css",
     "css-watch": "npm run css-build -- --watch",
-    "build": "npm run css-build && npm run ts-build && npm run test",
+    "build": "npm run css-build && npm run ts-build",
     "ts-build": "tsc --outDir assets",
     "ts-watch": "tsc --outDir assets --watch",
     "start": "npm run css-watch && npm run ts-watch"
