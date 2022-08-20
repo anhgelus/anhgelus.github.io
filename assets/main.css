@@ -1,0 +1,1017 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+/* Creator: Bulma Team */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  background: #151414;
+}
+.navbar * {
+  height: 64px;
+}
+@media only screen and (max-width: 1320px) {
+  .navbar * {
+    margin: 0 !important;
+  }
+}
+.navbar-link {
+  display: inline-block;
+  color: #fff;
+  width: 10rem;
+  text-transform: uppercase;
+  height: 64px;
+  vertical-align: middle;
+  line-height: 64px;
+  text-align: center;
+  transition: 0.2s;
+}
+.navbar-link:hover {
+  color: #E9A5C1;
+  transition: 0.2s;
+}
+@media only screen and (max-width: 670px) {
+  .navbar-link {
+    width: 7rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .navbar-link {
+    width: 5rem;
+  }
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+.mt-0 {
+  margin-top: 0rem !important;
+}
+.mb-0 {
+  margin-bottom: 0rem !important;
+}
+.ml-0 {
+  margin-left: 0rem !important;
+}
+.mr-0 {
+  margin-right: 0rem !important;
+}
+.m-0 {
+  margin: 0rem !important;
+}
+.mt-1 {
+  margin-top: 0.5rem !important;
+}
+.mb-1 {
+  margin-bottom: 0.5rem !important;
+}
+.ml-1 {
+  margin-left: 0.5rem !important;
+}
+.mr-1 {
+  margin-right: 0.5rem !important;
+}
+.m-1 {
+  margin: 0.5rem !important;
+}
+.mt-2 {
+  margin-top: 1rem !important;
+}
+.mb-2 {
+  margin-bottom: 1rem !important;
+}
+.ml-2 {
+  margin-left: 1rem !important;
+}
+.mr-2 {
+  margin-right: 1rem !important;
+}
+.m-2 {
+  margin: 1rem !important;
+}
+.mt-3 {
+  margin-top: 1.5rem !important;
+}
+.mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+.ml-3 {
+  margin-left: 1.5rem !important;
+}
+.mr-3 {
+  margin-right: 1.5rem !important;
+}
+.m-3 {
+  margin: 1.5rem !important;
+}
+.mt-4 {
+  margin-top: 2rem !important;
+}
+.mb-4 {
+  margin-bottom: 2rem !important;
+}
+.ml-4 {
+  margin-left: 2rem !important;
+}
+.mr-4 {
+  margin-right: 2rem !important;
+}
+.m-4 {
+  margin: 2rem !important;
+}
+.mt-5 {
+  margin-top: 2.5rem !important;
+}
+.mb-5 {
+  margin-bottom: 2.5rem !important;
+}
+.ml-5 {
+  margin-left: 2.5rem !important;
+}
+.mr-5 {
+  margin-right: 2.5rem !important;
+}
+.m-5 {
+  margin: 2.5rem !important;
+}
+.mt-6 {
+  margin-top: 3rem !important;
+}
+.mb-6 {
+  margin-bottom: 3rem !important;
+}
+.ml-6 {
+  margin-left: 3rem !important;
+}
+.mr-6 {
+  margin-right: 3rem !important;
+}
+.m-6 {
+  margin: 3rem !important;
+}
+
+/* Creator: Bulma Team */
+.p-0 {
+  margin-left: 0vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-0 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-0 {
+  margin-right: 0vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-0 {
+    margin-right: initial;
+  }
+}
+
+.p-1 {
+  margin-left: 8.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-1 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-1 {
+  margin-right: 8.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-1 {
+    margin-right: initial;
+  }
+}
+
+.p-2 {
+  margin-left: 16.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-2 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-2 {
+  margin-right: 16.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-2 {
+    margin-right: initial;
+  }
+}
+
+.p-3 {
+  margin-left: 25vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-3 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-3 {
+  margin-right: 25vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-3 {
+    margin-right: initial;
+  }
+}
+
+.p-4 {
+  margin-left: 33.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-4 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-4 {
+  margin-right: 33.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-4 {
+    margin-right: initial;
+  }
+}
+
+.p-5 {
+  margin-left: 41.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-5 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-5 {
+  margin-right: 41.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-5 {
+    margin-right: initial;
+  }
+}
+
+.p-6 {
+  margin-left: 50vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-6 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-6 {
+  margin-right: 50vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-6 {
+    margin-right: initial;
+  }
+}
+
+.p-7 {
+  margin-left: 58.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-7 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-7 {
+  margin-right: 58.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-7 {
+    margin-right: initial;
+  }
+}
+
+.p-8 {
+  margin-left: 66.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-8 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-8 {
+  margin-right: 66.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-8 {
+    margin-right: initial;
+  }
+}
+
+.p-9 {
+  margin-left: 75vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-9 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-9 {
+  margin-right: 75vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-9 {
+    margin-right: initial;
+  }
+}
+
+.p-10 {
+  margin-left: 83.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-10 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-10 {
+  margin-right: 83.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-10 {
+    margin-right: initial;
+  }
+}
+
+.p-11 {
+  margin-left: 91.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-11 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-11 {
+  margin-right: 91.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-11 {
+    margin-right: initial;
+  }
+}
+
+.p-12 {
+  margin-left: 100vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-12 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-12 {
+  margin-right: 100vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-12 {
+    margin-right: initial;
+  }
+}
+
+/* Creator: Bulma Team */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+  gap: 1rem;
+}
+@media only screen and (max-width: 1320px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+.row {
+  width: 90%;
+  text-align: center;
+}
+@media only screen and (max-width: 1320px) {
+  .row {
+    height: 50px;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #211F20;
+  color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+a {
+  color: #E9A5C1;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(233, 165, 193, 0.75);
+}
+
+p {
+  margin: 2rem 0;
+}
+
+.section, section {
+  margin: 5rem 0;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+.mt-0 {
+  margin-top: 0rem !important;
+}
+.mb-0 {
+  margin-bottom: 0rem !important;
+}
+.ml-0 {
+  margin-left: 0rem !important;
+}
+.mr-0 {
+  margin-right: 0rem !important;
+}
+.m-0 {
+  margin: 0rem !important;
+}
+.mt-1 {
+  margin-top: 0.5rem !important;
+}
+.mb-1 {
+  margin-bottom: 0.5rem !important;
+}
+.ml-1 {
+  margin-left: 0.5rem !important;
+}
+.mr-1 {
+  margin-right: 0.5rem !important;
+}
+.m-1 {
+  margin: 0.5rem !important;
+}
+.mt-2 {
+  margin-top: 1rem !important;
+}
+.mb-2 {
+  margin-bottom: 1rem !important;
+}
+.ml-2 {
+  margin-left: 1rem !important;
+}
+.mr-2 {
+  margin-right: 1rem !important;
+}
+.m-2 {
+  margin: 1rem !important;
+}
+.mt-3 {
+  margin-top: 1.5rem !important;
+}
+.mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+.ml-3 {
+  margin-left: 1.5rem !important;
+}
+.mr-3 {
+  margin-right: 1.5rem !important;
+}
+.m-3 {
+  margin: 1.5rem !important;
+}
+.mt-4 {
+  margin-top: 2rem !important;
+}
+.mb-4 {
+  margin-bottom: 2rem !important;
+}
+.ml-4 {
+  margin-left: 2rem !important;
+}
+.mr-4 {
+  margin-right: 2rem !important;
+}
+.m-4 {
+  margin: 2rem !important;
+}
+.mt-5 {
+  margin-top: 2.5rem !important;
+}
+.mb-5 {
+  margin-bottom: 2.5rem !important;
+}
+.ml-5 {
+  margin-left: 2.5rem !important;
+}
+.mr-5 {
+  margin-right: 2.5rem !important;
+}
+.m-5 {
+  margin: 2.5rem !important;
+}
+.mt-6 {
+  margin-top: 3rem !important;
+}
+.mb-6 {
+  margin-bottom: 3rem !important;
+}
+.ml-6 {
+  margin-left: 3rem !important;
+}
+.mr-6 {
+  margin-right: 3rem !important;
+}
+.m-6 {
+  margin: 3rem !important;
+}
+
+/* Creator: Bulma Team */
+.p-0 {
+  margin-left: 0vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-0 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-0 {
+  margin-right: 0vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-0 {
+    margin-right: initial;
+  }
+}
+
+.p-1 {
+  margin-left: 8.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-1 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-1 {
+  margin-right: 8.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-1 {
+    margin-right: initial;
+  }
+}
+
+.p-2 {
+  margin-left: 16.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-2 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-2 {
+  margin-right: 16.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-2 {
+    margin-right: initial;
+  }
+}
+
+.p-3 {
+  margin-left: 25vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-3 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-3 {
+  margin-right: 25vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-3 {
+    margin-right: initial;
+  }
+}
+
+.p-4 {
+  margin-left: 33.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-4 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-4 {
+  margin-right: 33.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-4 {
+    margin-right: initial;
+  }
+}
+
+.p-5 {
+  margin-left: 41.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-5 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-5 {
+  margin-right: 41.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-5 {
+    margin-right: initial;
+  }
+}
+
+.p-6 {
+  margin-left: 50vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-6 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-6 {
+  margin-right: 50vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-6 {
+    margin-right: initial;
+  }
+}
+
+.p-7 {
+  margin-left: 58.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-7 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-7 {
+  margin-right: 58.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-7 {
+    margin-right: initial;
+  }
+}
+
+.p-8 {
+  margin-left: 66.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-8 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-8 {
+  margin-right: 66.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-8 {
+    margin-right: initial;
+  }
+}
+
+.p-9 {
+  margin-left: 75vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-9 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-9 {
+  margin-right: 75vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-9 {
+    margin-right: initial;
+  }
+}
+
+.p-10 {
+  margin-left: 83.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-10 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-10 {
+  margin-right: 83.3333333333vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-10 {
+    margin-right: initial;
+  }
+}
+
+.p-11 {
+  margin-left: 91.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-11 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-11 {
+  margin-right: 91.6666666667vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-11 {
+    margin-right: initial;
+  }
+}
+
+.p-12 {
+  margin-left: 100vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-12 {
+    margin: 0 2rem;
+  }
+}
+
+.p-max-12 {
+  margin-right: 100vw;
+}
+@media only screen and (max-width: 1320px) {
+  .p-max-12 {
+    margin-right: initial;
+  }
+}
+
+/* Creator: Bulma Team */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
+  gap: 1rem;
+}
+@media only screen and (max-width: 1320px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+.row {
+  width: 90%;
+  text-align: center;
+}
+@media only screen and (max-width: 1320px) {
+  .row {
+    height: 50px;
+  }
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+/* Creator: Bulma Team */
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.title.is-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title.is-1.is-not-centered {
+  display: block;
+  text-align: left;
+  justify-content: left;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  position: relative;
+  top: -2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.is-1 {
+  font-size: 3.5rem;
+}
+
+.is-2 {
+  font-size: 3rem;
+}
+
+.is-3 {
+  font-size: 2.5rem;
+}
+
+.is-4 {
+  font-size: 2rem;
+}
+
+.is-5 {
+  font-size: 1.5rem;
+}
+
+.is-6 {
+  font-size: 1rem;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+.is-green {
+  color: #0CE8B1;
+}
+.is-green:hover {
+  color: #6EF7D5;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+.card {
+  display: block;
+  background: rgba(60, 57, 59, 0.85);
+  width: 90%;
+  border-radius: 5px;
+}
+.card-image {
+  width: 100%;
+  aspect-ratio: 3/2;
+  border-radius: 5px 5px 0 0;
+}
+.card-content {
+  padding: 1rem;
+}
+.card-description {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+.card-description p {
+  margin: 1.2rem 0;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+/* Creator: Bulma Team */
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #151414;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+.footer-item {
+  margin: 0;
+  padding: 0 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
