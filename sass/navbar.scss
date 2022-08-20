@@ -1,0 +1,39 @@
+@import "colors";
+@import "mixins";
+@import "responsiveness/breakpoints";
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  background: $dark-black;
+  & * {
+    height: 64px;
+    @include until($desktop) {
+      margin: 0!important;
+    }
+  }
+  &-link {
+    display: inline-block;
+    color: $default-text;
+    width: 10rem;
+    text-transform: uppercase;
+    height: 64px;
+    vertical-align: middle;
+    line-height: 64px;
+    text-align: center;
+    transition: .2s;
+    &:hover {
+      color: $link;
+      transition: .2s;
+    }
+    @include until($phone) {
+      width: 7rem;
+    }
+    @include until($small-phone) {
+      width: 5rem;
+    }
+  }
+}

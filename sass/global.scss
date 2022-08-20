@@ -1,0 +1,30 @@
+@import "colors";
+@import "spacing/index";
+@import "responsiveness/breakpoints";
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: $default-bg;
+    color: $default-text;
+    @include until($small-phone) {
+        font-size: 16px;
+    }
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+    &:hover {
+        color: transparent($link, .75);
+    }
+}
+
+p {
+    margin: 2rem 0;
+}
+
+.section, section {
+    margin: 5rem 0;
+}

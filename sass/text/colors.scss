@@ -1,0 +1,9 @@
+@import "../colors";
+.is- {
+  &green {
+    color: $green;
+    &:hover {
+      color: $green-light;
+    }
+  }
+}

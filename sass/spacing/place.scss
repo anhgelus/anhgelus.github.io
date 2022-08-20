@@ -1,0 +1,18 @@
+@import "../mixins";
+@import "../responsiveness/breakpoints";
+
+@for $i from 0 through 12 {
+  $dist : calc((100vw/12)*$i);
+  .p-#{$i} {
+    margin-left: $dist;
+    @include until($desktop) {
+      margin: 0 2rem;
+    }
+  }
+  .p-max-#{$i} {
+    margin-right: $dist;
+    @include until($desktop) {
+      margin-right: initial;
+    }
+  }
+}

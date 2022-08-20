@@ -2,46 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Anhgelus Website</title>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/allSupport.css">
+    <title>Anhgelus Morhtuuzh</title>
+    <link rel="stylesheet" type="text/css" href="/assets/main.css">
 </head>
 <body>
-    <header>
-        <img src="" alt="logo">
-        <nav>
-            <a href="/">Accueil</a>
-            <a href="/project.html">Project</a>
-            <a href="/informations.html">Informations</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
-    </header>
-    <div class="content">
-        <div class="who">
-            <h2>
-                Anhgelus Morhtuuzh
-            </h2>
-            <p class="subtitles">
-                Web developer (PHP + HTML / CSS)
-            </p>
+<header>
+    <nav role="navigation" class="navbar">
+        <div class="p-6">
+            <a href="#" class="navbar-item navbar-link">Home</a>
+            <a href="#skills" class="navbar-item navbar-link">Skills</a>
+            <a href="#about" class="navbar-item navbar-link">About</a>
+            <a href="#contact" class="navbar-item navbar-link">Contact</a>
         </div>
-        <h1 class="intro">
-            Hey, <br>
-            I'm Anhgelus, <br>
-            Backend and Frontend <br>
-            Developer
-        </h1>
-        <a href="/project.html" class="button">Project</a>
+    </nav>
+    <div class="titles p-1 mt-6">
+        <h1 class="title is-1 is-not-centered">Anhgelus Morhtuuzh</h1>
+        <h2 class="subtitle is-3">Dynamic Programming Developer</h2>
     </div>
-    <footer>
-        <nav>
-            <a href="/">Accueil</a>
-            <a href="/project.html">Project</a>
-            <a href="/informations.html">Informations</a>
-            <a href="/contact.html">Contact</a>
-        </nav>
-    </footer>
+</header>
+<div class="p-2 p-max-2">
+    <div id="skills" class="section">
+        <h2 class="title is-3">Skills</h2>
+        <div class="grid">
+            <div class="row">
+                <h4 class="is-5">HTML/CSS</h4>
+                <level-bar level="5" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">JavaScript/TypeScript</h4>
+                <level-bar level="3" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">PHP</h4>
+                <level-bar level="4" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Git</h4>
+                <level-bar level="4" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Docker</h4>
+                <level-bar level="3" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Laravel</h4>
+                <level-bar level="1" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">SASS</h4>
+                <level-bar level="2" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Go</h4>
+                <level-bar level="2" max="5"></level-bar>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="section">
+        <h2 class="title is-3 mt-5">Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-image" src="/img/la-fabrick.eu.jpg" alt="Representation of a website">
+                </div>
+                <div class="card-content">
+                    <h4 class="is-5 card-title"><a href="https://la-fabrick.eu/" class="is-green">La Fabrick</a></h4>
+                    <div class="card-description">
+                        <p>
+                            This is a website for a group of Minecraft creator. They made very ambitious Minecraft event.
+                            They already worked with many french youtubers ands streams like
+                            <a href="https://www.twitch.tv/martinponk">MartinPonk</a>, <a href="https://www.youtube.com/user/RoiLouisMC">Roi_Louis</a>,
+                            <a href="https://www.youtube.com/user/NemsWorld">Nems</a>, <a href="https://www.twitch.tv/vartac">Vartac</a>,
+                            <a href="https://www.youtube.com/channel/UCF1r2mjZaIuAQaP0da2Zsjg">Golwdawn</a> and many more.
+                        </p>
+                        <p>
+                            It was built with Vanilla JS and PHP. I have just to maintain this website without modifying
+                            it. I had to add the responsiveness and update the text.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-image" src="/img/arnaudvalentin.com.jpg" alt="Representation of a website">
+                </div>
+                <div class="card-content">
+                    <h4 class="is-5 card-title"><a href="https://arnaudvalentin.com" class="is-green">Arnaud Valentin</a></h4>
+                    <div class="card-description">
+                        <p>
+                            arnaudvalentin.com is a showcase vitrine for a voice-over actor. This website was made in 6
+                            hours with Vanilla TS, SASS and Bulma.
+                        </p>
+                        <p>
+                            This website has just one page. This page contains audios and downloadable things.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-image" src="/img/mcchampion.net.jpg" alt="Representation of a website">
+                </div>
+                <div class="card-content">
+                    <h4 class="is-5 card-title"><a href="https://mcchampion.net" class="is-green">Minecraft Champion</a></h4>
+                    <div class="card-description">
+                        <p>
+                            mcchampion.net is the website of a Minecraft server. It contains dynamics element like teams,
+                            players and the infrastructure is using an internal RESTFul API.
+                        </p>
+                        <p>
+                            This website is connected to several databases (SQL, Redis and Influx DB). It was built with
+                            the Slim framework with PHP 8.1, SASS and Bulma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="section">
+        <h2 class="title is-3">About</h2>
+        <p>
+            I'm a developer and a web designer since 2017. I firstly learned plugin development with Bukkit and Java to
+            modify the game Minecraft, it's not mentioned in the skills section because I don't want to participate in this
+            type of project.
+        </p>
+        <p>
+            After, I started the web development with HTML/CSS. My first website was, of course, ugly but now, I have decided
+            to use a new technology, SASS. SASS is a very powerful technology to automate the CSS creation part. I also learned
+            Bulma to create website more efficiently.
+        </p>
+        <p>
+            But the redondant part of creating a website was very annoying, I had to repeat my code so much times. This
+            is why I have decided to learn PHP. PHP is very useful to create powerful websites with many features and database
+            requests, Facebook is powered by PHP for example. I also decided to work more efficiently during the development.
+            So, I learned Laravel to automatise the backend part of the website.
+        </p>
+        <p>
+            Later, I learned TypeScript and JavaScript to create client-side website like YouTube or Trello. I didn't like
+            JavaScript because I didn't like the high-level structure of this language. That's why I decided to try TypeScript.
+            TypeScript is a superset of JavaScript that compiles to plain JavaScript, so it's as useful as JavaScript but
+            the developer is not annoyed by this language.
+        </p>
+        <p>
+            Finally, I learned Go to create very fast and asynchronous websites and Docker to create easily production
+            environment.
+        </p>
+        <p>
+            I'm very interested in the web development and the dynamic programming. I love using the power of the mathematics
+            in my programs to optimize them. The Dynamic Programing is a mix of mathematics and programming, and it's one
+            of the best way to create optimized application like software or website. For example, I can create a Markdown
+            parser with this technique.
+        </p>
+    </div>
+    <div id="contact" class="section">
+        <h2 class="title is-3">Contact</h2>
+        <p class="subtitle is-5">How to reach me?</p>
+        <p class="m-0">
+            The easiest way to reach me is by email. Don't worry to send me a mail here: <a href="mailto:anhgelus.morhtuuzh@proton.me"
+                                                                              class="is-green">anhgelus.morhtuuzh@proton.me</a>.
+        </p>
+        <p class="m-0">
+            If you're using Discord and you want to communicate on this plateforme, join my <a
+                    href="https://discord.gg/n99A5gBWx4" class="is-green" target="_blank">Discord server</a>.
+        </p>
+    </div>
+</div>
+<footer class="footer">
+    <p class="footer-item">
+        &copy; 2022 - William Hergès
+    </p>
+    <p class="footer-item">
+        Website under the <a href="/LICENSE">AGPLv3.0</a> License and its content under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        CC BY-NC-SA 4.0</a> License.
+    </p>
+</footer>
+<script defer src="/assets/index.js" type="module"></script>
 </body>
 </html>

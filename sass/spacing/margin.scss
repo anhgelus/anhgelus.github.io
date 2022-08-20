@@ -1,0 +1,28 @@
+.m {
+  @for $i from 0 through 6 {
+    $m: calc($i*0.5rem)!important;
+    &t- {
+      &#{$i} {
+        margin-top: $m;
+      }
+    }
+    &b- {
+      &#{$i} {
+        margin-bottom: $m;
+      }
+    }
+    &l- {
+      &#{$i} {
+        margin-left: $m;
+      }
+    }
+    &r- {
+      &#{$i} {
+        margin-right: $m;
+      }
+    }
+    &-#{$i} {
+      margin: $m;
+    }
+  }
+}
