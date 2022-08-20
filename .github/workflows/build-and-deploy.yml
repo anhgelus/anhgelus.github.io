@@ -1,0 +1,28 @@
+# This workflow will do a clean installation of node dependencies and deploy the app to the github pages
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️ # Checkout the project
+        uses: actions/checkout@v3
+
+      - name: Install and Build 🔧 # Build the project
+        run: |
+          npm ci
+          npm run build
+
+      - name: Deploy 🚀 # Deploy the project
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: . # The folder the action should deploy.
