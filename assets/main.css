@@ -72,7 +72,7 @@ table {
 .navbar * {
   height: 64px;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .navbar * {
     margin: 0 !important;
   }
@@ -92,19 +92,24 @@ table {
   color: #E9A5C1;
   transition: 0.2s;
 }
-@media only screen and (max-width: 970px) {
+@media (max-width: 970px) {
   .navbar-link {
     width: 7rem;
   }
 }
-@media only screen and (max-width: 670px) {
+@media (max-width: 670px) {
   .navbar-link {
     width: 5rem;
   }
 }
 
 .titles {
-  margin-top: 6rem;
+  margin-top: 6rem !important;
+}
+@media (max-width: 1320px) {
+  .titles {
+    margin-top: 6rem !important;
+  }
 }
 
 /* Basics */
@@ -222,7 +227,7 @@ table {
 .p-0 {
   margin-left: 0vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-0 {
     margin: 0 2rem;
   }
@@ -231,7 +236,7 @@ table {
 .p-max-0 {
   margin-right: 0vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-0 {
     margin-right: initial;
   }
@@ -240,7 +245,7 @@ table {
 .p-1 {
   margin-left: 8.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-1 {
     margin: 0 2rem;
   }
@@ -249,7 +254,7 @@ table {
 .p-max-1 {
   margin-right: 8.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-1 {
     margin-right: initial;
   }
@@ -258,7 +263,7 @@ table {
 .p-2 {
   margin-left: 16.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-2 {
     margin: 0 2rem;
   }
@@ -267,7 +272,7 @@ table {
 .p-max-2 {
   margin-right: 16.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-2 {
     margin-right: initial;
   }
@@ -276,7 +281,7 @@ table {
 .p-3 {
   margin-left: 25vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-3 {
     margin: 0 2rem;
   }
@@ -285,7 +290,7 @@ table {
 .p-max-3 {
   margin-right: 25vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-3 {
     margin-right: initial;
   }
@@ -294,7 +299,7 @@ table {
 .p-4 {
   margin-left: 33.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-4 {
     margin: 0 2rem;
   }
@@ -303,7 +308,7 @@ table {
 .p-max-4 {
   margin-right: 33.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-4 {
     margin-right: initial;
   }
@@ -312,7 +317,7 @@ table {
 .p-5 {
   margin-left: 41.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-5 {
     margin: 0 2rem;
   }
@@ -321,7 +326,7 @@ table {
 .p-max-5 {
   margin-right: 41.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-5 {
     margin-right: initial;
   }
@@ -330,7 +335,7 @@ table {
 .p-6 {
   margin-left: 50vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-6 {
     margin: 0 2rem;
   }
@@ -339,7 +344,7 @@ table {
 .p-max-6 {
   margin-right: 50vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-6 {
     margin-right: initial;
   }
@@ -348,7 +353,7 @@ table {
 .p-7 {
   margin-left: 58.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-7 {
     margin: 0 2rem;
   }
@@ -357,7 +362,7 @@ table {
 .p-max-7 {
   margin-right: 58.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-7 {
     margin-right: initial;
   }
@@ -366,7 +371,7 @@ table {
 .p-8 {
   margin-left: 66.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-8 {
     margin: 0 2rem;
   }
@@ -375,7 +380,7 @@ table {
 .p-max-8 {
   margin-right: 66.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-8 {
     margin-right: initial;
   }
@@ -384,7 +389,7 @@ table {
 .p-9 {
   margin-left: 75vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-9 {
     margin: 0 2rem;
   }
@@ -393,7 +398,7 @@ table {
 .p-max-9 {
   margin-right: 75vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-9 {
     margin-right: initial;
   }
@@ -402,7 +407,7 @@ table {
 .p-10 {
   margin-left: 83.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-10 {
     margin: 0 2rem;
   }
@@ -411,7 +416,7 @@ table {
 .p-max-10 {
   margin-right: 83.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-10 {
     margin-right: initial;
   }
@@ -420,7 +425,7 @@ table {
 .p-11 {
   margin-left: 91.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-11 {
     margin: 0 2rem;
   }
@@ -429,7 +434,7 @@ table {
 .p-max-11 {
   margin-right: 91.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-11 {
     margin-right: initial;
   }
@@ -438,7 +443,7 @@ table {
 .p-12 {
   margin-left: 100vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-12 {
     margin: 0 2rem;
   }
@@ -447,7 +452,7 @@ table {
 .p-max-12 {
   margin-right: 100vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-12 {
     margin-right: initial;
   }
@@ -459,12 +464,12 @@ table {
   grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
   gap: 1rem;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   }
 }
-@media only screen and (max-width: 970px) {
+@media (max-width: 970px) {
   .grid {
     display: flex;
     flex-direction: column;
@@ -481,7 +486,7 @@ table {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .row {
     height: 50px;
   }
@@ -494,7 +499,7 @@ body {
   background-color: #211F20;
   color: #fff;
 }
-@media only screen and (max-width: 670px) {
+@media (max-width: 670px) {
   body {
     font-size: 16px;
   }
@@ -631,7 +636,7 @@ p {
 .p-0 {
   margin-left: 0vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-0 {
     margin: 0 2rem;
   }
@@ -640,7 +645,7 @@ p {
 .p-max-0 {
   margin-right: 0vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-0 {
     margin-right: initial;
   }
@@ -649,7 +654,7 @@ p {
 .p-1 {
   margin-left: 8.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-1 {
     margin: 0 2rem;
   }
@@ -658,7 +663,7 @@ p {
 .p-max-1 {
   margin-right: 8.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-1 {
     margin-right: initial;
   }
@@ -667,7 +672,7 @@ p {
 .p-2 {
   margin-left: 16.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-2 {
     margin: 0 2rem;
   }
@@ -676,7 +681,7 @@ p {
 .p-max-2 {
   margin-right: 16.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-2 {
     margin-right: initial;
   }
@@ -685,7 +690,7 @@ p {
 .p-3 {
   margin-left: 25vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-3 {
     margin: 0 2rem;
   }
@@ -694,7 +699,7 @@ p {
 .p-max-3 {
   margin-right: 25vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-3 {
     margin-right: initial;
   }
@@ -703,7 +708,7 @@ p {
 .p-4 {
   margin-left: 33.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-4 {
     margin: 0 2rem;
   }
@@ -712,7 +717,7 @@ p {
 .p-max-4 {
   margin-right: 33.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-4 {
     margin-right: initial;
   }
@@ -721,7 +726,7 @@ p {
 .p-5 {
   margin-left: 41.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-5 {
     margin: 0 2rem;
   }
@@ -730,7 +735,7 @@ p {
 .p-max-5 {
   margin-right: 41.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-5 {
     margin-right: initial;
   }
@@ -739,7 +744,7 @@ p {
 .p-6 {
   margin-left: 50vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-6 {
     margin: 0 2rem;
   }
@@ -748,7 +753,7 @@ p {
 .p-max-6 {
   margin-right: 50vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-6 {
     margin-right: initial;
   }
@@ -757,7 +762,7 @@ p {
 .p-7 {
   margin-left: 58.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-7 {
     margin: 0 2rem;
   }
@@ -766,7 +771,7 @@ p {
 .p-max-7 {
   margin-right: 58.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-7 {
     margin-right: initial;
   }
@@ -775,7 +780,7 @@ p {
 .p-8 {
   margin-left: 66.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-8 {
     margin: 0 2rem;
   }
@@ -784,7 +789,7 @@ p {
 .p-max-8 {
   margin-right: 66.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-8 {
     margin-right: initial;
   }
@@ -793,7 +798,7 @@ p {
 .p-9 {
   margin-left: 75vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-9 {
     margin: 0 2rem;
   }
@@ -802,7 +807,7 @@ p {
 .p-max-9 {
   margin-right: 75vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-9 {
     margin-right: initial;
   }
@@ -811,7 +816,7 @@ p {
 .p-10 {
   margin-left: 83.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-10 {
     margin: 0 2rem;
   }
@@ -820,7 +825,7 @@ p {
 .p-max-10 {
   margin-right: 83.3333333333vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-10 {
     margin-right: initial;
   }
@@ -829,7 +834,7 @@ p {
 .p-11 {
   margin-left: 91.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-11 {
     margin: 0 2rem;
   }
@@ -838,7 +843,7 @@ p {
 .p-max-11 {
   margin-right: 91.6666666667vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-11 {
     margin-right: initial;
   }
@@ -847,7 +852,7 @@ p {
 .p-12 {
   margin-left: 100vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-12 {
     margin: 0 2rem;
   }
@@ -856,7 +861,7 @@ p {
 .p-max-12 {
   margin-right: 100vw;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .p-max-12 {
     margin-right: initial;
   }
@@ -868,12 +873,12 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
   gap: 1rem;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   }
 }
-@media only screen and (max-width: 970px) {
+@media (max-width: 970px) {
   .grid {
     display: flex;
     flex-direction: column;
@@ -890,7 +895,7 @@ p {
   text-align: center;
   margin-bottom: 1.5rem;
 }
-@media only screen and (max-width: 1320px) {
+@media (max-width: 1320px) {
   .row {
     height: 50px;
   }

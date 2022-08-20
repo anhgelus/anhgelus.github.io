@@ -41,5 +41,8 @@
 }
 
 .titles {
-  margin-top: 6rem;
+  margin-top: 6rem!important;
+  @include until($desktop) {
+    margin-top: 6rem!important;
+  }
 }
