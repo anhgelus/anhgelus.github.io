@@ -16,7 +16,7 @@
   .p-max-#{$i} {
     margin-right: $dist;
     @include until($desktop) {
-      margin-right: 0;
+      margin-right: 2rem;
     }
   }
 }
