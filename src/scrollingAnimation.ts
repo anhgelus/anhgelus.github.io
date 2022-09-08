@@ -1,6 +1,10 @@
-export const navbarItems = document.querySelectorAll<HTMLLinkElement>('a.navbar-link');
+export const navbarItems = document.querySelectorAll<HTMLAnchorElement>('a.navbar-link');
+export const navbar = document.querySelector<HTMLElement>('.navbar');
+let override = false;
 
 export default function scrollingAnimation() {
+
+    let lastScroll = 0;
 
     navbarItems.forEach(item => {
         item.addEventListener('click', (e) => {
@@ -8,9 +12,23 @@ export default function scrollingAnimation() {
             animate(item);
         });
     });
+
+    document.addEventListener('scroll', (e) => {
+        if (navbar === null) {
+            return;
+        }
+        if (!(lastScroll < window.scrollY) && !override) {
+            navbar.classList.remove("is-hidden");
+            lastScroll = window.scrollY;
+            return;
+        }
+        override = false;
+        lastScroll = window.scrollY;
+        navbar.classList.add("is-hidden");
+    });
 }
 
-function animate(links: HTMLLinkElement) {
+function animate(links: HTMLAnchorElement) {
     const search = links.href.split('#')[1];
     let target: HTMLElement | null;
     if (search === "") {
@@ -18,5 +36,12 @@ function animate(links: HTMLLinkElement) {
     } else {
         target = document.getElementById(search);
     }
+
+    override = true;
+
+    if (navbar !== null) {
+        navbar.classList.add("is-hidden");
+    }
+
     target?.scrollIntoView({ behavior: 'smooth' });
 }
