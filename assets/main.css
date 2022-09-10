@@ -1336,6 +1336,7 @@ p {
   background: rgba(60, 57, 59, 0.85);
   width: 90%;
   border-radius: 5px;
+  box-shadow: 20px 15px 5px rgba(0, 0, 0, 0.15);
 }
 .card-image {
   width: 100%;
