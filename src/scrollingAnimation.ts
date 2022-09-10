@@ -51,5 +51,5 @@ function animate(links: HTMLAnchorElement) {
 
     setTimeout(() => {
         override = false;
-    }, 2000);
+    }, 1000);
 }
