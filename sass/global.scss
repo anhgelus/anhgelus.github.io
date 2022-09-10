@@ -11,6 +11,9 @@ body {
     @include until($small-phone) {
         font-size: 16px;
     }
+    @include until($old-phone) {
+        font-size: 15px;
+    }
 }
 
 a {

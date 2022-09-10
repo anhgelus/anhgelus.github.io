@@ -20,10 +20,9 @@ export default function scrollingAnimation() {
             lastScroll = window.scrollY;
             return;
         }
-        override = false;
         lastScroll = window.scrollY;
-        navbar.classList.add("is-hidden");
         navbar.classList.remove("is-appear");
+        navbar.classList.add("is-hidden");
     });
 }
 function animate(links) {
@@ -37,8 +36,12 @@ function animate(links) {
     }
     override = true;
     if (navbar !== null) {
+        navbar.classList.remove("is-appear");
         navbar.classList.add("is-hidden");
     }
     target === null || target === void 0 ? void 0 : target.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+        override = false;
+    }, 2000);
 }
 //# sourceMappingURL=scrollingAnimation.js.map

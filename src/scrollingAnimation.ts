@@ -25,10 +25,9 @@ export default function scrollingAnimation() {
             lastScroll = window.scrollY;
             return;
         }
-        override = false;
         lastScroll = window.scrollY;
-        navbar.classList.add("is-hidden");
         navbar.classList.remove("is-appear");
+        navbar.classList.add("is-hidden");
     });
 }
 
@@ -44,8 +43,13 @@ function animate(links: HTMLAnchorElement) {
     override = true;
 
     if (navbar !== null) {
+        navbar.classList.remove("is-appear");
         navbar.classList.add("is-hidden");
     }
 
     target?.scrollIntoView({ behavior: 'smooth' });
+
+    setTimeout(() => {
+        override = false;
+    }, 2000);
 }

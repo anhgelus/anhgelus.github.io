@@ -12,6 +12,10 @@
       margin-left: 1rem!important;
       margin-right: 1rem!important;
     }
+    @include until($old-phone) {
+      margin-left: 0.25rem!important;
+      margin-right: 0.25rem!important;
+    }
   }
   .p-max-#{$i} {
     margin-right: $dist;
