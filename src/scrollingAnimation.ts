@@ -6,6 +6,8 @@ export default function scrollingAnimation() {
 
     let lastScroll = 0;
 
+    navbar?.classList.add("is-appear");
+
     navbarItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
@@ -19,12 +21,14 @@ export default function scrollingAnimation() {
         }
         if (!(lastScroll < window.scrollY) && !override) {
             navbar.classList.remove("is-hidden");
+            navbar.classList.add("is-appear");
             lastScroll = window.scrollY;
             return;
         }
         override = false;
         lastScroll = window.scrollY;
         navbar.classList.add("is-hidden");
+        navbar.classList.remove("is-appear");
     });
 }
 
