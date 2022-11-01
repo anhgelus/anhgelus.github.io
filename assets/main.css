@@ -654,6 +654,11 @@ table {
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   }
 }
+@media (max-width: 1320px) {
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -1260,6 +1265,11 @@ p {
 @media (min-width: 970px) {
   .project-list {
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+}
+@media (max-width: 1320px) {
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   }
 }
 /* Basics */

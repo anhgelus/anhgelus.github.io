@@ -29,6 +29,9 @@
   @include from($phone) {
     grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   }
+  @include until($desktop) {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  }
   & project-card {
     @extend .mb-4;
   }
