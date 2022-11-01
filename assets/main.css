@@ -181,7 +181,7 @@ table {
 .mt-4 {
   margin-top: 2rem !important;
 }
-.mb-4 {
+.mb-4, .project-list project-card {
   margin-bottom: 2rem !important;
 }
 .ml-4 {
@@ -616,18 +616,18 @@ table {
 }
 
 /* Creator: Bulma Team */
-.grid {
+.grid, .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
   gap: 1rem;
 }
 @media (max-width: 1320px) {
-  .grid {
+  .grid, .project-list {
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   }
 }
 @media (max-width: 970px) {
-  .grid {
+  .grid, .project-list {
     display: flex;
     flex-direction: column;
     display: flex;
@@ -649,6 +649,11 @@ table {
   }
 }
 
+@media (min-width: 970px) {
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+}
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
@@ -784,7 +789,7 @@ p {
 .mt-4 {
   margin-top: 2rem !important;
 }
-.mb-4 {
+.mb-4, .project-list project-card {
   margin-bottom: 2rem !important;
 }
 .ml-4 {
@@ -1219,18 +1224,18 @@ p {
 }
 
 /* Creator: Bulma Team */
-.grid {
+.grid, .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
   gap: 1rem;
 }
 @media (max-width: 1320px) {
-  .grid {
+  .grid, .project-list {
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   }
 }
 @media (max-width: 970px) {
-  .grid {
+  .grid, .project-list {
     display: flex;
     flex-direction: column;
     display: flex;
@@ -1252,6 +1257,11 @@ p {
   }
 }
 
+@media (min-width: 970px) {
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  }
+}
 /* Basics */
 /* Variation */
 /* Alternative */
