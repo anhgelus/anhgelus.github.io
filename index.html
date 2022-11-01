@@ -58,8 +58,8 @@
                 <level-bar level="2" max="5"></level-bar>
             </div>
             <div class="row">
-                <h4 class="is-5">German</h4>
-                <level-bar level="2" max="5"></level-bar>
+                <h4 class="is-5">Python</h4>
+                <level-bar level="3" max="5"></level-bar>
             </div>
             <div class="row">
                 <h4 class="is-5">French</h4>
@@ -77,63 +77,71 @@
     </div>
     <div id="projects" class="section">
         <h2 class="title is-3 mt-5">Projects</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="card-header">
-                    <img class="card-image" src="/img/la-fabrick.eu.jpg" alt="Representation of a website">
-                </div>
-                <div class="card-content">
-                    <h4 class="is-5 card-title"><a href="https://la-fabrick.eu/" class="is-green" target="_blank">La Fabrick</a></h4>
-                    <div class="card-description">
-                        <p>
-                            This is a website for a group of Minecraft creator. They made very ambitious Minecraft event.
-                            They already worked with many french youtubers ands streams like
-                            <a href="https://www.twitch.tv/martinponk" target="_blank">MartinPonk</a>, <a href="https://www.youtube.com/user/RoiLouisMC" target="_blank">Roi_Louis</a>,
-                            <a href="https://www.youtube.com/user/NemsWorld" target="_blank">Nems</a>, <a href="https://www.twitch.tv/vartac" target="_blank">Vartac</a>,
-                            <a href="https://www.youtube.com/channel/UCF1r2mjZaIuAQaP0da2Zsjg" target="_blank">Goldawn</a> and many more.
-                        </p>
-                        <p>
-                            It was built with Vanilla JS and PHP. I have just to maintain this website without modifying
-                            it. I had to add the responsiveness and update the text.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <img class="card-image" src="/img/arnaudvalentin.com.jpg" alt="Representation of a website">
-                </div>
-                <div class="card-content">
-                    <h4 class="is-5 card-title"><a href="https://arnaudvalentin.com" class="is-green" target="_blank">Arnaud Valentin</a></h4>
-                    <div class="card-description">
-                        <p>
-                            arnaudvalentin.com is a showcase vitrine for a voice-over actor. This website was made in 6
-                            hours with Vanilla TS, SASS and Bulma.
-                        </p>
-                        <p>
-                            This website has just one page. This page contains audios and downloadable things.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <img class="card-image" src="/img/mcchampion.net.jpg" alt="Representation of a website">
-                </div>
-                <div class="card-content">
-                    <h4 class="is-5 card-title"><a href="https://mcchampion.net" class="is-green" target="_blank">Minecraft Champion</a></h4>
-                    <div class="card-description">
-                        <p>
-                            mcchampion.net is the website of a Minecraft server. It contains dynamics element like teams,
-                            players and the infrastructure is using an internal RESTFul API.
-                        </p>
-                        <p>
-                            This website is connected to several databases (SQL, Redis and Influx DB). It was built with
-                            the Slim framework with PHP 8.1, SASS and Bulma.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="project-list">
+            <project-card title="La Fabrick" href="https://la-fabrick.eu/" image-src="/img/la-fabrick.eu.jpg" image-alt="Representation of a website">
+                <p>
+                    This is a website for a group of Minecraft creator. They made very ambitious Minecraft event.
+                    They already worked with many french youtubers ands streams like
+                    <a href="https://www.twitch.tv/martinponk" target="_blank">MartinPonk</a>, <a href="https://www.youtube.com/user/RoiLouisMC" target="_blank">Roi_Louis</a>,
+                    <a href="https://www.youtube.com/user/NemsWorld" target="_blank">Nems</a>, <a href="https://www.twitch.tv/vartac" target="_blank">Vartac</a>,
+                    <a href="https://www.youtube.com/channel/UCF1r2mjZaIuAQaP0da2Zsjg" target="_blank">Goldawn</a> and many more.
+                </p>
+                <p>
+                    It was built with Vanilla JS and PHP. I have just to maintain this website without modifying
+                    it. I had to add the responsiveness and update the text.
+                </p>
+            </project-card>
+            <project-card title="Arnaud Valentin" href="https://arnaudvalentin.com" image-src="/img/arnaudvalentin.com.jpg" image-alt="Representation of a website">
+                <p>
+                    arnaudvalentin.com is a showcase vitrine for a voice-over actor. This website was made in 6
+                    hours with Vanilla TS, SASS and Bulma.
+                </p>
+                <p>
+                    This website has just one page. This page contains audios and downloadable things.
+                </p>
+            </project-card>
+            <project-card title="Minecraft Champion" href="https://mcchampion.net" image-src="/img/mcchampion.net.jpg" image-alt="Representation of a website">
+                <p>
+                    mcchampion.net is the website of a Minecraft server. It contains dynamics element like teams,
+                    players and the infrastructure is using an internal RESTFul API.
+                </p>
+                <p>
+                    This website is connected to several databases (SQL, Redis and Influx DB). It was built with
+                    the Slim framework with PHP 8.1, SASS and Bulma.
+                </p>
+            </project-card>
+            <project-card title="My personal blog" href="https://blog.anhgelus.world/" image-src="/img/blog.anhgelus.world.jpg" image-alt="Representation of a website">
+                <p>
+                    My personal blog! It's powered by <a href="https://ghost.org" target="_blank">Ghost</a>, a
+                    powerful open-source blogging platform. I use it to write articles about my projects, my
+                    experiences and my gaming reviews.
+                </p>
+                <p>
+                    Of course, this blog is dockerized and deployed on my server. I use
+                    <a href="https://traefik.io/" target="_blank">Traefik</a> (a reverse proxy) to redirect the
+                    traffic to the right container.
+                </p>
+            </project-card>
+            <project-card title="Teams" href="https://modrinth.com/mod/teams" image-src="/img/teams-modrinth.jpg" image-alt="GitHub source code of GameLibrary">
+                <p>
+                    Teams is a simple mod for Minecraft. It allows you to create teams. This project is a port of
+                    <a href="https://github.com/t2pellet/Teams">Teams</a> for 1.18 to 1.19.
+                </p>
+                <p>
+                    This project was made with Fabric and add no more features than the original mod. It was just a simple
+                    port to train myself with Fabric.
+                </p>
+            </project-card>
+            <project-card title="Game Library" href="https://github.com/anhgelus/gamelibrary" image-src="/img/gamelibrary-github.jpg" image-alt="GitHub source code of GameLibrary">
+                <p>
+                    Game Library is a library to create games in Minecraft. It's based on the Spigot API and have
+                    a lot of helping stuff like: SQL manager, Command manager and more.
+                </p>
+                <p>
+                    This library is very simple to use and have a fully documented API. It's also very permissive
+                    to create some custom games.
+                </p>
+            </project-card>
         </div>
     </div>
     <div id="about" class="section">
