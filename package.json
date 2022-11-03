@@ -10,7 +10,7 @@
     "build": "npm run css-build && npm run ts-build",
     "ts-build": "tsc --outDir assets",
     "ts-watch": "tsc --outDir assets --watch",
-    "start": "nodemon --watch src/index.ts --watch index.html --exec \"npm run build\""
+    "start": "nodemon --exec \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -29,5 +29,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": ["*.test.js", "**/fixtures/**", "package.json", "package-lock.json", "node_modules", "assets"],
+    "execMap": {
+      "rb": "ruby",
+      "pde": "processing --sketch={{pwd}} --run"
+    },
+    "ext": "ts,scss,html"
   }
 }
