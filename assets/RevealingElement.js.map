@@ -1,0 +1,1 @@
+{"version":3,"file":"RevealingElement.js","sourceRoot":"","sources":["../src/RevealingElement.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,OAAO,OAAO,gBAAgB;IAKjC;;;;;OAKG;IACH,YAAY,OAAoB,EAAE,aAAqB,EAAE,YAAoB;QACzE,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;QACvB,IAAI,CAAC,aAAa,GAAG,aAAa,CAAC;QACnC,IAAI,CAAC,YAAY,GAAG,YAAY,CAAC;IACrC,CAAC;CACJ"}

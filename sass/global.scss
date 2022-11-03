@@ -33,18 +33,32 @@ p {
 }
 
 .is-hidden {
-    animation-duration: .2s;
-    animation-name: disappear;
-    transform: translateY(-100px);
+    /*animation-duration: 1s;*/
+    /*animation-name: disappearBottom;*/
+    transform: translateY(200px);
+    @include until($phone) {
+        transform: translateY(-25%);
+    }
+    opacity: 0;
+    &-top {
+        animation-duration: .2s;
+        animation-name: disappearTop;
+        transform: translateY(-100px);
+    }
 }
 
 .is-appear {
-    animation-duration: .2s;
-    animation-name: appear;
+    animation-duration: .75s;
+    animation-name: appearBottom;
     display: inherit;
+    &-top {
+        animation-duration: .2s;
+        animation-name: appearTop;
+        display: inherit;
+    }
 }
 
-@keyframes disappear {
+@keyframes disappearTop {
     from {
         opacity: 1;
         transform: translateY(0);
@@ -56,10 +70,33 @@ p {
     }
 }
 
-@keyframes appear {
+@keyframes appearTop {
     from {
         opacity: 0;
         transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes disappearBottom {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(150px);
+        display: none!important;
+    }
+}
+
+@keyframes appearBottom {
+    from {
+        opacity: 0;
+        transform: translateY(150px);
     }
     to {
         opacity: 1;

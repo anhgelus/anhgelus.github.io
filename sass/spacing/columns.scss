@@ -9,7 +9,6 @@
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
   }
   @include until($phone) {
-    display: flex;
     flex-direction: column;
     @include center;
     gap: 2rem;

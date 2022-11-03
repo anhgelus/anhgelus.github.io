@@ -3,7 +3,7 @@ export const navbar = document.querySelector('.navbar');
 let override = false;
 export default function scrollingAnimation() {
     let lastScroll = 0;
-    navbar === null || navbar === void 0 ? void 0 : navbar.classList.add("is-appear");
+    navbar === null || navbar === void 0 ? void 0 : navbar.classList.add("is-appear-top");
     navbarItems.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
@@ -15,14 +15,14 @@ export default function scrollingAnimation() {
             return;
         }
         if (!(lastScroll < window.scrollY) && !override) {
-            navbar.classList.remove("is-hidden");
-            navbar.classList.add("is-appear");
+            navbar.classList.remove("is-hidden-top");
+            navbar.classList.add("is-appear-top");
             lastScroll = window.scrollY;
             return;
         }
         lastScroll = window.scrollY;
-        navbar.classList.remove("is-appear");
-        navbar.classList.add("is-hidden");
+        navbar.classList.remove("is-appear-top");
+        navbar.classList.add("is-hidden-top");
     });
 }
 function animate(links) {

@@ -628,7 +628,6 @@ table {
 }
 @media (max-width: 970px) {
   .grid, .project-list {
-    display: flex;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -694,18 +693,34 @@ p {
 }
 
 .is-hidden {
+  /*animation-duration: 1s;*/
+  /*animation-name: disappearBottom;*/
+  transform: translateY(200px);
+  opacity: 0;
+}
+@media (max-width: 970px) {
+  .is-hidden {
+    transform: translateY(-25%);
+  }
+}
+.is-hidden-top {
   animation-duration: 0.2s;
-  animation-name: disappear;
+  animation-name: disappearTop;
   transform: translateY(-100px);
 }
 
 .is-appear {
+  animation-duration: 0.75s;
+  animation-name: appearBottom;
+  display: inherit;
+}
+.is-appear-top {
   animation-duration: 0.2s;
-  animation-name: appear;
+  animation-name: appearTop;
   display: inherit;
 }
 
-@keyframes disappear {
+@keyframes disappearTop {
   from {
     opacity: 1;
     transform: translateY(0);
@@ -716,10 +731,31 @@ p {
     display: none !important;
   }
 }
-@keyframes appear {
+@keyframes appearTop {
   from {
     opacity: 0;
     transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes disappearBottom {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(150px);
+    display: none !important;
+  }
+}
+@keyframes appearBottom {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
   }
   to {
     opacity: 1;
@@ -1241,7 +1277,6 @@ p {
 }
 @media (max-width: 970px) {
   .grid, .project-list {
-    display: flex;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -1310,6 +1345,26 @@ p {
   text-align: center;
 }
 
+.is-title-reveal {
+  overflow-inline: clip;
+  animation-duration: 2s;
+  animation-name: appearTitleBottom;
+  opacity: 1;
+}
+@keyframes appearTitleBottom {
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .is-1 {
   font-size: 3.5rem;
 }
@@ -1351,12 +1406,18 @@ p {
 /* Alternative */
 /* Special colors */
 /* Defaults */
+/* Creator: Bulma Team */
 .card {
   display: block;
   background: rgba(60, 57, 59, 0.85);
   width: 90%;
   border-radius: 5px;
   box-shadow: 20px 15px 5px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 1320px) {
+  .card {
+    width: auto;
+  }
 }
 .card-image {
   width: 100%;

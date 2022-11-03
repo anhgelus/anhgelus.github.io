@@ -19,11 +19,25 @@ export default class LevelBar extends HTMLElement {
         height: 50%;
         border: 7px solid #151414;
         background-color: #000;
-        }.percent{
+        overflow: hidden;
+        }
+        .percent {
         height: 100%;
         display: block;
         width: ${this.percent * 100}%;
         background-color: ${this.getColor()};
+        animation-duration: 1.75s;
+        animation-name: reveal;
+        }
+        @keyframes reveal {
+            from{
+            transform: translateX(-100%);
+            opacity: .5;
+            }
+            to{
+            transform: translateX(0);
+            opacity: 1;
+            }
         }`;
         wrapper.append(style);
         (_a = this.shadowRoot) === null || _a === void 0 ? void 0 : _a.append(wrapper);
