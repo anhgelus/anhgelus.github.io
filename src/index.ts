@@ -1,7 +1,7 @@
 import LevelBar from "./LevelBar.js";
 import scrollingAnimation from "./scrollingAnimation.js";
 import ProjectCard from "./ProjectCard.js";
-import revealAnimationForElements from "./revealAnimation";
+import revealAnimationForElements from "./revealAnimation.js";
 
 const projects = document.querySelectorAll<ProjectCard>(".project-card");
 

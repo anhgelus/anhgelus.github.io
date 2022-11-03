@@ -10,7 +10,7 @@
     "build": "npm run css-build && npm run ts-build",
     "ts-build": "tsc --outDir assets",
     "ts-watch": "tsc --outDir assets --watch",
-    "start": "npm run css-watch && npm run ts-watch"
+    "start": "nodemon --watch src/index.ts --watch index.html --exec \"npm run build\""
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "commonjs": "^0.0.1",
     "sass": "^1.54.4",
     "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
