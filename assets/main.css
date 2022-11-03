@@ -1342,6 +1342,26 @@ p {
   text-align: center;
 }
 
+.is-title-reveal {
+  overflow-inline: clip;
+  animation-duration: 2s;
+  animation-name: appearBottom;
+  opacity: 1;
+}
+@keyframes appearBottom {
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .is-1 {
   font-size: 3.5rem;
 }
