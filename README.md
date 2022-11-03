@@ -1,4 +1,4 @@
-# anhgelus.world
+# www.anhgelus.world
 
 My personal portfolio.
 
@@ -11,4 +11,4 @@ My personal portfolio.
 
 ## License
 
-This project is licensed under the GPLv3.0 license.
+This project is licensed under the AGPLv3.0 license.
