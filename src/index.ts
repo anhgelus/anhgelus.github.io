@@ -1,8 +1,14 @@
 import LevelBar from "./LevelBar.js";
 import scrollingAnimation from "./scrollingAnimation.js";
 import ProjectCard from "./ProjectCard.js";
+import revealAnimationForElements from "./revealAnimation";
+
+const projects = document.querySelectorAll<ProjectCard>(".project-card");
 
 customElements.define('level-bar', LevelBar);
 customElements.define('project-card', ProjectCard);
 
 scrollingAnimation();
+if (projects != null && projects.length > 0) {
+    revealAnimationForElements(projects);
+}
