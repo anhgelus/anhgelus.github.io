@@ -3,7 +3,7 @@ import scrollingAnimation from "./scrollingAnimation.js";
 import ProjectCard from "./ProjectCard.js";
 import revealAnimationForElements from "./revealAnimation.js";
 
-const projects = document.querySelectorAll<ProjectCard>(".project-card");
+const projects = document.querySelectorAll<ProjectCard>("project-card");
 
 customElements.define('level-bar', LevelBar);
 customElements.define('project-card', ProjectCard);
