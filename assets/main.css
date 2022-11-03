@@ -628,7 +628,6 @@ table {
 }
 @media (max-width: 970px) {
   .grid, .project-list {
-    display: flex;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -1278,7 +1277,6 @@ p {
 }
 @media (max-width: 970px) {
   .grid, .project-list {
-    display: flex;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -1408,12 +1406,18 @@ p {
 /* Alternative */
 /* Special colors */
 /* Defaults */
+/* Creator: Bulma Team */
 .card {
   display: block;
   background: rgba(60, 57, 59, 0.85);
   width: 90%;
   border-radius: 5px;
   box-shadow: 20px 15px 5px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 1320px) {
+  .card {
+    width: auto;
+  }
 }
 .card-image {
   width: 100%;
