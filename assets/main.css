@@ -699,6 +699,11 @@ p {
   transform: translateY(200px);
   opacity: 0;
 }
+@media (max-width: 970px) {
+  .is-hidden {
+    transform: translateY(-25%);
+  }
+}
 .is-hidden-top {
   animation-duration: 0.2s;
   animation-name: disappearTop;
@@ -1345,10 +1350,10 @@ p {
 .is-title-reveal {
   overflow-inline: clip;
   animation-duration: 2s;
-  animation-name: appearBottom;
+  animation-name: appearTitleBottom;
   opacity: 1;
 }
-@keyframes appearBottom {
+@keyframes appearTitleBottom {
   from {
     opacity: 0;
   }

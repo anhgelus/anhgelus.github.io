@@ -26,9 +26,9 @@
 .is-title-reveal {
   overflow-inline: clip;
   animation-duration: 2s;
-  animation-name: appearBottom;
+  animation-name: appearTitleBottom;
   opacity: 1;
-  @keyframes appearBottom {
+  @keyframes appearTitleBottom {
     from {
       opacity: 0;
     }
