@@ -1,8 +1,8 @@
 export const navbarItems = document.querySelectorAll('a.navbar-link');
 export const navbar = document.querySelector('.navbar');
 let override = false;
+let lastScroll = 0;
 export default function scrollingAnimation() {
-    let lastScroll = 0;
     navbar === null || navbar === void 0 ? void 0 : navbar.classList.add("is-appear-top");
     navbarItems.forEach(item => {
         item.addEventListener('click', (e) => {
@@ -14,15 +14,19 @@ export default function scrollingAnimation() {
         if (navbar === null) {
             return;
         }
-        if (!(lastScroll < window.scrollY) && !override) {
+        if (override) {
+            return;
+        }
+        if (lastScroll > window.scrollY) {
             navbar.classList.remove("is-hidden-top");
             navbar.classList.add("is-appear-top");
             lastScroll = window.scrollY;
-            return;
         }
-        lastScroll = window.scrollY;
-        navbar.classList.remove("is-appear-top");
-        navbar.classList.add("is-hidden-top");
+        else {
+            lastScroll = window.scrollY;
+            navbar.classList.remove("is-appear-top");
+            navbar.classList.add("is-hidden-top");
+        }
     });
 }
 function animate(links) {
@@ -36,12 +40,13 @@ function animate(links) {
     }
     override = true;
     if (navbar !== null) {
-        navbar.classList.remove("is-appear");
-        navbar.classList.add("is-hidden");
+        navbar.classList.toggle("is-hidden-top");
+        navbar.classList.toggle("is-appear-top");
     }
     target === null || target === void 0 ? void 0 : target.scrollIntoView({ behavior: 'smooth' });
     setTimeout(() => {
         override = false;
-    }, 1000);
+        lastScroll = window.scrollY;
+    }, 300);
 }
 //# sourceMappingURL=scrollingAnimation.js.map

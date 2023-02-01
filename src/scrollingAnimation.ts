@@ -1,10 +1,9 @@
 export const navbarItems = document.querySelectorAll<HTMLAnchorElement>('a.navbar-link');
 export const navbar = document.querySelector<HTMLElement>('.navbar');
 let override = false;
+let lastScroll = 0;
 
 export default function scrollingAnimation() {
-
-    let lastScroll = 0;
 
     navbar?.classList.add("is-appear-top");
 
@@ -19,15 +18,18 @@ export default function scrollingAnimation() {
         if (navbar === null) {
             return;
         }
-        if (!(lastScroll < window.scrollY) && !override) {
+        if (override) {
+            return;
+        }
+        if (lastScroll > window.scrollY) {
             navbar.classList.remove("is-hidden-top");
             navbar.classList.add("is-appear-top");
             lastScroll = window.scrollY;
-            return;
+        } else {
+            lastScroll = window.scrollY;
+            navbar.classList.remove("is-appear-top");
+            navbar.classList.add("is-hidden-top");
         }
-        lastScroll = window.scrollY;
-        navbar.classList.remove("is-appear-top");
-        navbar.classList.add("is-hidden-top");
     });
 }
 
@@ -43,13 +45,14 @@ function animate(links: HTMLAnchorElement) {
     override = true;
 
     if (navbar !== null) {
-        navbar.classList.remove("is-appear");
-        navbar.classList.add("is-hidden");
+        navbar.classList.toggle("is-hidden-top");
+        navbar.classList.toggle("is-appear-top");
     }
 
     target?.scrollIntoView({ behavior: 'smooth' });
 
     setTimeout(() => {
         override = false;
-    }, 1000);
+        lastScroll = window.scrollY;
+    }, 300);
 }

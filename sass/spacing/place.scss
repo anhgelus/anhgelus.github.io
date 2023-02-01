@@ -6,21 +6,21 @@
   .p-#{$i} {
     margin-left: $dist;
     @include until($desktop) {
-      margin: 0 2rem;
-    }
-    @include until($phone) {
-      margin-left: 1rem!important;
-      margin-right: 1rem!important;
+      margin-left: 3rem!important;
+      margin-right: 3rem!important;
     }
     @include until($old-phone) {
-      margin-left: 0.25rem!important;
-      margin-right: 0.25rem!important;
+      margin-left: 1rem!important;
+      margin-right: 1rem!important;
     }
   }
   .p-max-#{$i} {
     margin-right: $dist;
     @include until($desktop) {
-      margin-right: 2rem;
+      margin-right: 3rem!important;
+    }
+    @include until($old-phone) {
+      margin-right: 1rem!important;
     }
   }
 }

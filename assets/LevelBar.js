@@ -25,16 +25,20 @@ export default class LevelBar extends HTMLElement {
         height: 100%;
         display: block;
         width: ${this.percent * 100}%;
-        background-color: ${this.getColor()};
-        animation-duration: 1.75s;
+        background-color: ${this.getColor(this.level)};
+        animation-duration: ${0.35 * this.level}s;
         animation-name: reveal;
         }
         @keyframes reveal {
-            from{
+            0%{
             transform: translateX(-100%);
             opacity: .5;
+            background-color: ${this.getColor(this.level / this.max)};
             }
-            to{
+            50%{
+            background-color: ${this.getColor(3 * (this.level) / this.max)};
+            }
+            100%{
             transform: translateX(0);
             opacity: 1;
             }
@@ -51,8 +55,8 @@ export default class LevelBar extends HTMLElement {
         bar.append(span);
         return bar;
     }
-    getColor() {
-        const percent = this.level / this.max;
+    getColor(level) {
+        const percent = level / this.max;
         if (percent < 0.33) {
             return "#A61414";
         }

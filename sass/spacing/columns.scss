@@ -7,11 +7,11 @@
   gap: 1rem;
   @include until($desktop) {
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+    gap: 2rem;
   }
   @include until($phone) {
     flex-direction: column;
     @include center;
-    gap: 2rem;
   }
 }
 .row {
