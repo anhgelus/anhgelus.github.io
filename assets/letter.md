@@ -1,0 +1,1 @@
+{ LYCEE_NOM }
