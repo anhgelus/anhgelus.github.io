@@ -1,15 +1,15 @@
 --- mp2i ---
-Les mathématiques et la physique sont des enseignements qui m'ont toujours passionnés. Comprendre le fonctionnement du monde et résoudre des problématiques toujours plus complexes est passionnant. L'ensemble repose sur un raisonnement logique, une certaine forme d'imagination et une vision particulière que j'affectionne particulièrement.
+Mathematics and physics are subjects that have always fascinated me. Understanding how the world works and solve increasingly complex problems is fascinating. The whole thing is based on a logical reasoning, a certain form of imagination and a particular vision that I particularly like.
 
-J'ai commencé l'informatique en 5e en apprenant de nombreux langages en autodidacte : j'en avais besoin pour m'aider à développer mes projets et j'ai compris par la suite que cet outil était essentiel à la physique et aux mathématiques : l'algorithme d'Euclide en est un parfait exemple, car bien qu'il soit facilement utilisable sur papier, sa transposition en informatique permet de le rendre bien plus efficace.
+I started computer science in 5e grade by learning many languages on my own: I needed it to help me develop my projects and I understood later that this tool was essential to physics and mathematics: Euclid's algorithm is a perfect example, because although it is easily usable on paper, its transposition into computer science makes it much more efficient.
 
-Les MP2I sont des formations d'excellence dans mes domaines de prédilection. En intégrant votre CPGE, cela va me permettre d'avoir enfin un rythme intensif qui corresponde à mon niveau et à mes attentes.
+The MP2I are excellent courses in my preferred fields. By joining your CPGE, I will finally have an intensive rhythm that corresponds to my level and my expectations.
 
-Je veux faire cette prépa dans votre établissement d'excellence puisque je souhaite m'orienter par la suite vers de la recherche mathématique (génération de nombres premiers) et informatiques (création d'algorithmes de recommandation n'enfermant pas les utilisateurs dans une bulle de filtre). Pour cela, j'envisage de devenir normalien, et le meilleur moyen pour y parvenir est d'intégrer votre établissement.
+I want to do this preparatory classes in your excellent school because I want to do mathematical research (generation of prime numbers) and computer science (creation of recommendation algorithms that do not lock users into a filter bubble). For this, I plan to become a normalien, and the best way to do this is to join your school.
 
 --- mpsi ---
-Les mathématiques et la physique sont des enseignements qui m'ont toujours passionnés. Comprendre le fonctionnement du monde et les lois théoriques de l'univers, découvrir de nouveaux concepts et résoudre des problématiques toujours plus complexes est passionnant. L'ensemble repose sur un raisonnement logique, une certaine forme d'imagination et une vision particulière que j'affectionne particulièrement.
+Mathematics and physics are subjects that have always fascinated me. Understanding how the world works and solve increasingly complex problems is fascinating. The whole thing is based on a logical reasoning, a certain form of imagination and a particular vision that I particularly like.
 
-Les MPSI sont des formations d'excellence dans mes domaines de prédilection. En intégrant votre CPGE, cela va me permettre d'avoir enfin un rythme intensif qui corresponde à mon niveau et à mes attentes.
+The MPSI are excellent courses in my preferred fields. By joining your CPGE, I will finally have an intensive rhythm that corresponds to my level and my expectations.
 
-Je veux faire cette prépa dans votre établissement d'excellence puisque je souhaite m'orienter par la suite vers de la recherche mathématique (génération de nombres premiers) et informatiques (création d'algorithmes de recommandation n'enfermant pas les utilisateurs dans une bulle de filtre). Pour cela, j'envisage de devenir normalien, et le meilleur moyen pour y parvenir est d'intégrer votre établissement.
+I want to do this preparatory classes in your excellent school because I want to do mathematical research (generation of prime numbers) and computer science (creation of recommendation algorithms that do not lock users into a filter bubble). For this, I plan to become a normalien, and the best way to do this is to join your school.
