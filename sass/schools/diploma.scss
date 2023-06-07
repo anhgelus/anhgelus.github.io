@@ -7,8 +7,6 @@
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
-  width: 75%;
-  margin: 0 auto;
   & .box {
     &.done {
       background: $green-light;

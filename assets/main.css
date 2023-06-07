@@ -1377,7 +1377,7 @@ p {
   font-size: 2.5rem;
 }
 
-.is-4 {
+.is-4, .schools-info .title {
   font-size: 2rem;
 }
 
@@ -1413,8 +1413,6 @@ p {
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
-  width: 75%;
-  margin: 0 auto;
 }
 .schools-diploma .box {
   background: #3C393B;
@@ -1427,6 +1425,36 @@ p {
 .schools-diploma p {
   margin: 0 5%;
   text-align: center;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+.schools-info {
+  display: block;
+  background: #151414;
+  border-radius: 5px;
+}
+.schools-info .title {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 1em;
+}
+.schools-info .subtitle {
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 0.25em;
+  padding-bottom: 1em;
+}
+.schools-info .content {
+  padding: 1vh 3vw;
+}
+
+.schools {
+  width: 75%;
+  margin: 2vh auto;
 }
 
 /* Basics */
