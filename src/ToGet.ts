@@ -7,6 +7,7 @@ export default class ToGet extends HTMLElement {
         const name = this.getAttribute("name")!;
         const subtitle = this.getAttribute("subtitle");
         this.id = name;
+        this.classList.add("section");
         const url = `${window.location.origin}/content/${name}.md`;
         if (subtitle) {
             this.innerHTML = `
