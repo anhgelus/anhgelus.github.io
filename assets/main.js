@@ -23,4 +23,4 @@ function reveal(e) {
 reveal(document.getElementById("about"));
 reveal(document.getElementById("contact"));
 reveal(document.getElementById("schools"));
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=main.js.map
