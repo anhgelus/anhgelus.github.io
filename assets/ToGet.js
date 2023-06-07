@@ -14,8 +14,17 @@ export default class ToGet extends HTMLElement {
     connectedCallback() {
         return __awaiter(this, void 0, void 0, function* () {
             const name = this.getAttribute("name");
+            const subtitle = this.getAttribute("subtitle");
             this.id = name;
             const url = `${window.location.origin}/content/${name}.md`;
+            if (subtitle) {
+                this.innerHTML = `
+            <h2 class="title is-3">${this.parseName(name)}</h2>
+            <p class="subtitle is-5">${subtitle}</p>
+            ${this.parseMarkdown(yield fetch(url).then(r => r.text()))}
+            `;
+                return;
+            }
             this.innerHTML = `
         <h2 class="title is-3">${this.parseName(name)}</h2>
         ${this.parseMarkdown(yield fetch(url).then(r => r.text()))}
