@@ -15,9 +15,14 @@ export default class ToGet extends HTMLElement {
         return __awaiter(this, void 0, void 0, function* () {
             const name = this.getAttribute("name");
             const subtitle = this.getAttribute("subtitle");
+            const simple = this.getAttribute("simple");
             this.id = name;
-            this.classList.add("section");
             const url = `${window.location.origin}/content/${name}.md`;
+            if (simple) {
+                this.innerHTML = this.parseMarkdown(yield fetch(url).then(r => r.text()));
+                return;
+            }
+            this.classList.add("section");
             if (subtitle) {
                 this.innerHTML = `
             <h2 class="title is-3">${this.parseName(name)}</h2>
@@ -38,6 +43,10 @@ export default class ToGet extends HTMLElement {
         for (let i = 0; i < lines.length; i++) {
             const line = lines[i];
             if (line.length == 0) {
+                continue;
+            }
+            if (i == 0) {
+                html += `<p>${line}`;
                 continue;
             }
             if (i < lines.length - 1 && lines[i + 1].length < 1) {
