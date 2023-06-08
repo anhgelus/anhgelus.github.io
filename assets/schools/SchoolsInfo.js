@@ -10,22 +10,22 @@ export default class SchoolsInfo extends HTMLElement {
         this.registerEvents();
         if (this.innerHTML != "") {
             this.innerHTML = `
+            <div class="anim">&nbsp;</div>
             <h4 class="title">${type} - ${name}</h4>
             <h5 class="subtitle">${city}</h5>
             <div class="content">${this.innerHTML}</div>
             `;
-            return;
         }
-        this.innerHTML = `
-        <h4 class="title">${type} - ${name}</h4>
-        <h5 class="subtitle">${city}</h5>
-        `;
+        else {
+            this.innerHTML = `
+            <div class="anim">&nbsp;</div>
+            <h4 class="title">${type} - ${name}</h4>
+            <h5 class="subtitle">${city}</h5>
+            `;
+        }
     }
     registerEvents() {
-        console.log("called");
-        console.log(this);
         this.addEventListener("click", (e) => {
-            console.log("click");
             for (let i = 0; i < this.children.length; i++) {
                 const child = this.children[i];
                 if (!(child instanceof HTMLDivElement)) {
@@ -37,6 +37,25 @@ export default class SchoolsInfo extends HTMLElement {
                 child.classList.toggle("is-enable");
             }
         });
+        this.addEventListener("mouseenter", (e) => {
+            this.getAnim().classList.add("is-enable");
+        });
+        this.addEventListener("mouseleave", (e) => {
+            this.getAnim().classList.remove("is-enable");
+        });
+    }
+    getAnim() {
+        for (let i = 0; i < this.children.length; i++) {
+            const child = this.children[i];
+            if (!(child instanceof HTMLDivElement)) {
+                continue;
+            }
+            if (!child.classList.contains("anim")) {
+                continue;
+            }
+            return child;
+        }
+        return null;
     }
 }
 //# sourceMappingURL=SchoolsInfo.js.map

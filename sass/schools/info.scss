@@ -2,38 +2,79 @@
 
 .schools-info {
   display: block;
+  position: relative;
   background: $dark-black;
   border-radius: 5px;
   padding: 1em 0;
   box-shadow: 12px 10px 5px rgba($darker-black, 0.15);
   transition: .2s;
   &:hover {
-    background: rgba($green, 0.6);
+    /*background: rgba($green, 0.6);*/
     transition: .2s;
   }
   & .title {
+    position: relative;
     text-align: center;
     font-weight: 600;
     margin-bottom: 0;
     @extend .is-4;
+    z-index: 10;
   }
   & .subtitle {
+    position: relative;
     text-align: center;
     font-size: 1.2em;
     padding-bottom: 0.25em;
     top: 0;
+    z-index: 10;
   }
   & .content {
+    position: relative;
     width: 75%;
     margin: 0 auto;
     text-align: justify;
     text-align-last: center;
     display: none;
+    z-index: 10;
     &.is-enable {
       display: block;
     }
     & p {
       margin: 1rem 0;
     }
+  }
+  & .anim {
+    position: absolute;
+    display: block;
+    inset: 0;
+    width: 0;
+    z-index: 0;
+    box-sizing: content-box;
+    background: rgba($green, 0.6);
+    border-radius: 5px;
+    animation: deAnim 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+    &.is-enable {
+      width: 100%;
+      animation: anim 1.5s ease-in-out;
+    }
+  }
+}
+
+@keyframes anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes deAnim {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
   }
 }
