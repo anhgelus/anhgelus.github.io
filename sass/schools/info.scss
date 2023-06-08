@@ -11,6 +11,7 @@
   &:hover {
     /*background: rgba($green, 0.6);*/
     transition: .2s;
+    cursor: pointer;
   }
   & .title {
     position: relative;
@@ -52,11 +53,11 @@
     box-sizing: content-box;
     background: rgba($green, 0.6);
     border-radius: 5px;
-    animation: deAnim 1.5s ease-in-out;
+    animation: deAnim .4s ease-in-out;
     animation-fill-mode: forwards;
     &.is-enable {
       width: 100%;
-      animation: anim 1.5s ease-in-out;
+      animation: anim .7s ease-in-out;
     }
   }
 }

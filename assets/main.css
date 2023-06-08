@@ -1444,6 +1444,7 @@ p {
 .schools-info:hover {
   /*background: rgba($green, 0.6);*/
   transition: 0.2s;
+  cursor: pointer;
 }
 .schools-info .title {
   position: relative;
@@ -1484,12 +1485,12 @@ p {
   box-sizing: content-box;
   background: rgba(12, 232, 177, 0.6);
   border-radius: 5px;
-  animation: deAnim 1.5s ease-in-out;
+  animation: deAnim 0.4s ease-in-out;
   animation-fill-mode: forwards;
 }
 .schools-info .anim.is-enable {
   width: 100%;
-  animation: anim 1.5s ease-in-out;
+  animation: anim 0.7s ease-in-out;
 }
 
 @keyframes anim {
