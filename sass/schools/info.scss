@@ -19,7 +19,9 @@
     top: 0;
   }
   & .content {
-    padding: 1vh 3vw;
+    display: block;
+    width: 75%;
+    margin: 0 auto;
     & p {
       margin: 1rem 0;
     }

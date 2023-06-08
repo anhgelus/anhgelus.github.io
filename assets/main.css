@@ -1451,7 +1451,9 @@ p {
   top: 0;
 }
 .schools-info .content {
-  padding: 1vh 3vw;
+  display: block;
+  width: 75%;
+  margin: 0 auto;
 }
 .schools-info .content p {
   margin: 1rem 0;
