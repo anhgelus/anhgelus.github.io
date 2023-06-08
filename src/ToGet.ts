@@ -37,8 +37,7 @@ export default class ToGet extends HTMLElement {
                 continue;
             }
             if (i == 0) {
-                html += `<p>${line}`;
-                continue;
+                html += `<p>`;
             }
             if (i < lines.length - 1 && lines[i+1].length < 1) {
                 html += ` ${line}</p>`;
