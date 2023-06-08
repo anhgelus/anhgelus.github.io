@@ -6,6 +6,11 @@
   border-radius: 5px;
   padding: 1em 0;
   box-shadow: 12px 10px 5px rgba($darker-black, 0.15);
+  transition: .2s;
+  &:hover {
+    background: rgba($green, 0.6);
+    transition: .2s;
+  }
   & .title {
     text-align: center;
     font-weight: 600;
@@ -19,11 +24,14 @@
     top: 0;
   }
   & .content {
-    display: block;
     width: 75%;
     margin: 0 auto;
     text-align: justify;
     text-align-last: center;
+    display: none;
+    &.is-enable {
+      display: block;
+    }
     & p {
       margin: 1rem 0;
     }

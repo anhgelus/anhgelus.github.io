@@ -1438,6 +1438,11 @@ p {
   border-radius: 5px;
   padding: 1em 0;
   box-shadow: 12px 10px 5px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+.schools-info:hover {
+  background: rgba(12, 232, 177, 0.6);
+  transition: 0.2s;
 }
 .schools-info .title {
   text-align: center;
@@ -1451,11 +1456,14 @@ p {
   top: 0;
 }
 .schools-info .content {
-  display: block;
   width: 75%;
   margin: 0 auto;
   text-align: justify;
   text-align-last: center;
+  display: none;
+}
+.schools-info .content.is-enable {
+  display: block;
 }
 .schools-info .content p {
   margin: 1rem 0;
