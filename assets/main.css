@@ -1437,6 +1437,7 @@ p {
   background: #151414;
   border-radius: 5px;
   padding: 1em 0;
+  box-shadow: 12px 10px 5px rgba(0, 0, 0, 0.15);
 }
 .schools-info .title {
   text-align: center;
