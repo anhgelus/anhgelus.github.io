@@ -1432,6 +1432,7 @@ p {
 /* Alternative */
 /* Special colors */
 /* Defaults */
+/* Creator: Bulma Team */
 .schools-info {
   display: block;
   position: relative;
@@ -1452,6 +1453,11 @@ p {
   font-weight: 600;
   margin-bottom: 0;
   z-index: 10;
+}
+@media (max-width: 670px) {
+  .schools-info .title {
+    font-size: 1.5em;
+  }
 }
 .schools-info .subtitle {
   position: relative;
@@ -1509,9 +1515,15 @@ p {
     width: 0;
   }
 }
+/* Creator: Bulma Team */
 .schools {
   width: 75%;
   margin: 2vh auto;
+}
+@media (max-width: 1320px) {
+  .schools {
+    width: 100%;
+  }
 }
 
 /* Basics */

@@ -1,7 +1,12 @@
 @import "diploma";
 @import "info";
+@import "../mixins";
+@import "../responsiveness/breakpoints";
 
 .schools {
   width: 75%;
   margin: 2vh auto;
+  @include until($desktop) {
+    width: 100%;
+  }
 }
