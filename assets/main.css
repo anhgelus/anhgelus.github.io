@@ -1377,7 +1377,7 @@ p {
   font-size: 2.5rem;
 }
 
-.is-4 {
+.is-4, .schools-info .title {
   font-size: 2rem;
 }
 
@@ -1399,6 +1399,131 @@ p {
 }
 .is-green:hover {
   color: #6EF7D5;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+.schools-diploma {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-auto-columns: 1fr;
+}
+.schools-diploma .box {
+  background: #3C393B;
+  height: 0.25vh;
+  border-radius: 25px;
+}
+.schools-diploma .box.done {
+  background: #6EF7D5;
+}
+.schools-diploma p {
+  margin: 0 5%;
+  text-align: center;
+}
+
+/* Basics */
+/* Variation */
+/* Alternative */
+/* Special colors */
+/* Defaults */
+/* Creator: Bulma Team */
+.schools-info {
+  display: block;
+  position: relative;
+  background: #151414;
+  border-radius: 5px;
+  padding: 1em 0;
+  box-shadow: 12px 10px 5px rgba(0, 0, 0, 0.15);
+  transition: 0.2s;
+}
+.schools-info:hover {
+  /*background: rgba($green, 0.6);*/
+  transition: 0.2s;
+  cursor: pointer;
+}
+.schools-info .title {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 0;
+  z-index: 10;
+}
+@media (max-width: 670px) {
+  .schools-info .title {
+    font-size: 1.5em;
+  }
+}
+.schools-info .subtitle {
+  position: relative;
+  text-align: center;
+  font-size: 1.2em;
+  padding-bottom: 0.25em;
+  top: 0;
+  z-index: 10;
+}
+.schools-info .content {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  text-align: justify;
+  text-align-last: center;
+  display: none;
+  z-index: 10;
+}
+.schools-info .content.is-enable {
+  display: block;
+}
+.schools-info .content p {
+  margin: 1rem 0;
+}
+.schools-info .anim {
+  position: absolute;
+  display: block;
+  inset: 0;
+  width: 0;
+  z-index: 0;
+  box-sizing: content-box;
+  background: rgba(12, 232, 177, 0.6);
+  border-radius: 5px;
+  animation: deAnim 0.4s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.schools-info .anim.is-enable {
+  width: 100%;
+  animation: anim 0.7s ease-in-out;
+}
+
+@keyframes anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes deAnim {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+/* Creator: Bulma Team */
+.schools {
+  width: 75%;
+  margin: 2vh auto;
+}
+@media (max-width: 1320px) {
+  .schools {
+    width: 100%;
+  }
 }
 
 /* Basics */
