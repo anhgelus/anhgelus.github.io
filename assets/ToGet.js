@@ -41,7 +41,7 @@ export default class ToGet extends HTMLElement {
         const lines = markdown.split("\n");
         let html = "";
         for (let i = 0; i < lines.length; i++) {
-            const line = lines[i];
+            const line = this.parseLine(lines[i]);
             if (line.length == 0) {
                 continue;
             }
@@ -59,6 +59,20 @@ export default class ToGet extends HTMLElement {
             }
         }
         return html;
+    }
+    parseLine(line) {
+        const regex = /\[.*]\(https:\/\/[a-z.]+\.[a-z]+[a-zA-Z0-9?\/]*\)/g;
+        const matches = line.match(regex);
+        if (!matches) {
+            return line;
+        }
+        for (let i = 0; i < matches.length; i++) {
+            const match = matches[i];
+            const name = match.substring(1, match.indexOf("]"));
+            const url = match.substring(match.indexOf("(") + 1, match.indexOf(")"));
+            line = line.replace(match, `<a href="${url}" target="_blank">${name}</a>`);
+        }
+        return line;
     }
     parseName(name) {
         name = name.replace("-", " ");

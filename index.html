@@ -77,100 +77,7 @@
     </div>
     <div id="projects" class="section">
         <h2 class="title is-3 mt-5">Projects</h2>
-        <div class="project-list">
-            <project-card title="La Fabrick" href="https://la-fabrick.eu/" image-src="/img/la-fabrick.eu.jpg" image-alt="Representation of a website">
-                <p>
-                    This is a website for a group of Minecraft creator. They made very ambitious Minecraft event.
-                    They already worked with many french youtubers ands streams like
-                    <a href="https://www.twitch.tv/martinponk" target="_blank">MartinPonk</a>, <a href="https://www.youtube.com/user/RoiLouisMC" target="_blank">Roi_Louis</a>,
-                    <a href="https://www.youtube.com/user/NemsWorld" target="_blank">Nems</a>, <a href="https://www.twitch.tv/vartac" target="_blank">Vartac</a>,
-                    <a href="https://www.youtube.com/channel/UCF1r2mjZaIuAQaP0da2Zsjg" target="_blank">Goldawn</a> and many more.
-                </p>
-                <p>
-                    It was built with Vanilla JS and PHP. I have just to maintain this website without modifying
-                    it. I had to add the responsiveness and update the text.
-                </p>
-            </project-card>
-            <project-card title="Arnaud Valentin" href="https://arnaudvalentin.com" image-src="/img/arnaudvalentin.com.jpg" image-alt="Representation of a website">
-                <p>
-                    arnaudvalentin.com is a showcase vitrine for a voice-over actor. This website was made in 6
-                    hours with Vanilla TS, SASS and Bulma.
-                </p>
-                <p>
-                    This website has just one page. This page contains audios and downloadable things.
-                </p>
-            </project-card>
-            <project-card title="License Generator" href="https://github.com/anhgelus/license-generator" image-src="/img/license-generator.jpg" image-alt="Representation of a website">
-                <p>
-                    License generator is a cli application helping to generate the LICENSE file for any open source project. 
-                </p>
-                <p>
-					Built with Go 1.19, this application generate the LICENSE file for you. You just need to fill in the project name,
-					the year(s) of validity, the author(s) and the license type (GPL, MIT, BSD...)
-                </p>
-            </project-card>
-            <project-card title="My personal blog" href="https://blog.anhgelus.world/" image-src="/img/blog.anhgelus.world.jpg" image-alt="Representation of a website">
-                <p>
-                    My personal blog! It's powered by <a href="https://ghost.org" target="_blank">Ghost</a>, a
-                    powerful open-source blogging platform. I use it to write articles about my projects, my
-                    experiences and my gaming reviews.
-                </p>
-                <p>
-                    Of course, this blog is dockerized and deployed on my server. I use
-                    <a href="https://traefik.io/" target="_blank">Traefik</a> (a reverse proxy) to redirect the
-                    traffic to the right container.
-                </p>
-            </project-card>
-            <project-card title="Teams" href="https://modrinth.com/mod/teams" image-src="/img/teams-modrinth.jpg" image-alt="GitHub source code of GameLibrary">
-                <p>
-                    Teams is a simple mod for Minecraft. It allows you to create teams. This project is a port of
-                    <a href="https://github.com/t2pellet/Teams">Teams</a> for 1.18 to 1.19.
-                </p>
-                <p>
-                    This project was made with Fabric and add no more features than the original mod. It was just a simple
-                    port to train myself with Fabric.
-                </p>
-            </project-card>
-            <project-card title="Game Library" href="https://github.com/anhgelus/gamelibrary" image-src="/img/gamelibrary-github.jpg" image-alt="GitHub source code of GameLibrary">
-                <p>
-                    Game Library is a library to create games in Minecraft. It's based on the Spigot API and have
-                    a lot of helping stuff like: SQL manager, Command manager and more.
-                </p>
-                <p>
-                    This library is very simple to use and have a fully documented API. It's also very permissive
-                    to create some custom games.
-                </p>
-            </project-card>
-            <project-card title="Docker Spigot Buildtools" href="https://github.com/anhgelus/docker-spigot-buildtools" image-src="/img/docker-spigot-buildtools-github.jpg" image-alt="GitHub source code of Docker Spigot Buildtools">
-                <p>
-                    Docker Spigot Buildtools is a docker image with the spigot buildtools inside. The goal of this project
-                    is to help creators of docker images to create Minecraft image with the latest version of spigot.
-                </p>
-                <p>
-                    Currently this project is stopped because I don't have the time to maintain it.
-                </p>
-            </project-card>
-            <project-card title="Math Libs" href="https://github.com/anhgelus/math-libs" image-src="/img/math-libs-github.jpg" image-alt="GitHub source code of Math Libs">
-                <p>
-                    Math Libs is a... library implementing what I've learned in the Maths Experts Option (France) into
-                    many languages like java, python, rust and typescript.
-                </p>
-                <p>
-                    The fractions, the complex numbers and the matrix are implemented in Java. For other languages, I'll
-                    implement this features soon.
-                </p>
-            </project-card>
-            <project-card title="Plein son" href="https://pleinson.com" image-src="/img/pleinson.com.jpg" image-alt="Representation of a website">
-                <p>
-                    pleinson.com is a showcase vitrine for the agency "Plein son" specialized in audio. It was built with
-                    Vite, TS and SASS without any CSS frameworks.
-                </p>
-                <p>
-                    This website was very interesting to build because I must add many animations like parallax or video
-                    in the background to make it more "modern".
-                </p>
-            </project-card>
-        </div>
+        <projects-list href="projects/projects.json"></projects-list>
     </div>
     <div id="schools" class="section">
         <h2 class="title is-3">Schools</h2>
@@ -194,12 +101,12 @@
         <h2 class="title is-3">Contact</h2>
         <p class="subtitle is-5">How to reach me?</p>
         <p class="m-0">
-            The easiest way to reach me is by email. Don't worry to send me a mail here: <a href="mailto:anhgelus.morhtuuzh@proton.me"
-                                                                              class="is-green">anhgelus.morhtuuzh@proton.me</a>.
+            The easiest way to reach me is by email. Don't worry to send me a mail here:
+            <a href="mailto:william.herges@proton.me" class="is-green">william.herges@proton.me</a>.
         </p>
         <p class="m-0">
-            If you're using Discord and you want to communicate on this plateforme, join my <a
-                    href="https://discord.gg/n99A5gBWx4" class="is-green" target="_blank">Discord server</a>.
+            You can also add me on GitHub:
+            <a href="https://github.com/anhgelus" class="is-green" target="_blank">My GitHub's profile</a>.
         </p>
     </div>
 </div>
