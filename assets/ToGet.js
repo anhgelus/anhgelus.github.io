@@ -61,7 +61,7 @@ export default class ToGet extends HTMLElement {
         return html;
     }
     parseLine(line) {
-        const regex = /\[.*]\(https:\/\/[a-z]+\.[a-z]+\/\)/g;
+        const regex = /\[.*]\(https:\/\/[a-z.]+\.[a-z]+[a-zA-Z0-9?\/]*\)/g;
         const matches = line.match(regex);
         if (!matches) {
             return line;
