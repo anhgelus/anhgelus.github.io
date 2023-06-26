@@ -1,11 +1,11 @@
 import LevelBar from "./LevelBar.js";
 import scrollingAnimation from "./scrollingAnimation.js";
-import ProjectCard from "./projects/ProjectCard";
+import ProjectCard from "./projects/ProjectCard.js";
 import revealAnimationForElements, {revealAnimation} from "./revealAnimation.js";
 import ToGet from "./ToGet.js";
 import SchoolsDiploma from "./schools/SchoolsDiploma.js";
 import SchoolsInfo from "./schools/SchoolsInfo.js";
-import {ProjectsList} from "./projects/Projects";
+import {ProjectsList} from "./projects/ProjectsList.js";
 
 const projects = document.querySelectorAll<ProjectCard>("project-card");
 

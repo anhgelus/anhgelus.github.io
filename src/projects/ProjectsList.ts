@@ -7,7 +7,7 @@ export class ProjectsList extends HTMLElement {
 
     async connectedCallback() {
         const href = this.getAttribute('href')!!;
-        const projects: Project[] = await fetch(href).then(r => r.json()).then(r => r.content);
+        const projects: Project[] = await fetch(`${window.location.origin}/content/${href}`).then(r => r.json()).then(r => r.content);
         let content = ""
         for (let i = 0; i < projects.length; i++) {
             const project = projects[i];
