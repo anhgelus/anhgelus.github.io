@@ -1,6 +1,6 @@
 import {Project} from "./parser";
 
-export class Projects extends HTMLElement {
+export class ProjectsList extends HTMLElement {
     constructor() {
         super();
     }

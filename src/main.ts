@@ -5,12 +5,14 @@ import revealAnimationForElements, {revealAnimation} from "./revealAnimation.js"
 import ToGet from "./ToGet.js";
 import SchoolsDiploma from "./schools/SchoolsDiploma.js";
 import SchoolsInfo from "./schools/SchoolsInfo.js";
+import {ProjectsList} from "./projects/Projects";
 
 const projects = document.querySelectorAll<ProjectCard>("project-card");
 
 customElements.define('level-bar', LevelBar);
 customElements.define('project-card', ProjectCard);
 customElements.define('to-get', ToGet);
+customElements.define('projects-list', ProjectsList);
 
 customElements.define('schools-diploma', SchoolsDiploma);
 customElements.define('schools-info', SchoolsInfo);
