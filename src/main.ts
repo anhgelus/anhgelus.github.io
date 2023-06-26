@@ -1,6 +1,6 @@
 import LevelBar from "./LevelBar.js";
 import scrollingAnimation from "./scrollingAnimation.js";
-import ProjectCard from "./ProjectCard.js";
+import ProjectCard from "./projects/ProjectCard";
 import revealAnimationForElements, {revealAnimation} from "./revealAnimation.js";
 import ToGet from "./ToGet.js";
 import SchoolsDiploma from "./schools/SchoolsDiploma.js";
