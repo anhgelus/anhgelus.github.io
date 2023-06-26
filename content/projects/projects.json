@@ -1,0 +1,54 @@
+[
+  {
+    "title": "La FaBrick",
+    "link": "https://la-fabrick.eu/",
+    "image": "/img/la-fabrick.eu.jpg",
+    "alt": "TODO",
+    "content": "projects/la-fabrick.eu"
+  },
+  {
+    "title": "Arnaud Valentin",
+    "link": "https://arnaudvalentin.com/",
+    "image": "/img/arnaudvalentin.com.jpg",
+    "alt": "TODO",
+    "content": "projects/arnaudvalentin.com"
+  },
+  {
+    "title": "License Generator",
+    "link": "https://github.com/anhgelus/license-generator",
+    "image": "/img/license-generator.jpg",
+    "alt": "TODO",
+    "content": "projects/license-generator"
+  },
+  {
+    "title": "My personal blog",
+    "link": "https://blog.anhgelus.world/",
+    "image": "/img/blog.anhgelus.world.jpg",
+    "alt": "TODO",
+    "content": "projects/blog.anhgelus.world"
+  },
+  {
+    "title": "Teams",
+    "link": "https://modrinth.com/mod/teams",
+    "image": "/img/teams-modrinth.com.jpg",
+    "alt": "TODO",
+    "content": "projects/teams"
+  },
+  {
+    "title": "Game Library",
+    "link": "https://github.com/anhgelus/gamelibrary",
+    "image": "/img/gamelibrary-github.jpg",
+    "alt": "TODO",
+    "content": "projects/gamelibrary"
+  },
+  {
+    "title": "Docker Spigot Buildtools",
+    "link": "https://github.com/anhgelus/docker-spigot-buildtools",
+    "image": "/img/docker-spigot-buildtools-github.jpg",
+    "alt": "TODO",
+    "content": "projects/docker-spigot-buildtools"
+  },
+  {
+
+  }
+]
