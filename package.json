@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "css-build": "sass sass/main.scss assets/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "build": "npm run css-build && npm run ts-build",
+    "css-watch": "pnpm css-build --watch",
+    "build": "pnpm run css-build && pnpm run ts-build",
     "ts-build": "tsc --outDir assets",
     "ts-watch": "tsc --outDir assets --watch",
     "start": "nodemon --exec \"npm run build\""
