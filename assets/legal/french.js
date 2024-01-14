@@ -14,7 +14,7 @@ export default class LegalFrench extends HTMLElement {
             Le propriétaire de ces sites est M. WILLIAM HERGÈS.
         </p>
         <p>
-            Le contenu des sites est protégé par la licence CC-BY-SA 4.0, sauf mention contraire. <br>
+            Le contenu des sites est protégé par la licence CC BY-SA-NC 4.0, sauf mention contraire. <br>
             Le code source des sites est protégé par la licence AGPL-3.0-or-later, sauf mention contraire.
         </p>
         <h2 class="title is-4">Hébergement</h2>
@@ -23,7 +23,7 @@ export default class LegalFrench extends HTMLElement {
         </p>
         <ul>
             <li>GitHub, Inc (pour www.anhgelus.world)</li>
-            <li>Contabo GmbH (pour l'ensemble des autres sites)</li>
+            <li>Infomaniak Network SA (pour l'ensemble des autres sites)</li>
         </ul>
         <p>
             Le propriétaire et l'hébergeur du site ne pourront être tenu comme responsable si le site ne s'aurait être 
