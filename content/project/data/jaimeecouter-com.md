@@ -5,7 +5,7 @@ draft = false
 weight = 11
 +++
 
-[jaimeecouter.com](https://jaimeecouter.com) is an old website diffusing podcast. 
+[jaimeecouter.com](https://jaimeecouter.com) is an old website broadcasting podcast. 
 
 It was made with PHP.
 

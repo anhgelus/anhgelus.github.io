@@ -1,0 +1,30 @@
+[[navbar]]
+identifier = "project"
+name = "projet"
+title = "projet"
+url = "/fr/project/"
+weight = 2
+[[navbar]]
+identifier = "about"
+name = "à propos"
+title = "à propos"
+url = "/fr/about/"
+weight = 3
+[[navbar]]
+identifier = "blog"
+name = "blog"
+title = "blog"
+url = "https://blog.anhgelus.world"
+weight = 4
+[[navbar]]
+identifier = "contact"
+name = "contact"
+title = "contact"
+url = "/fr/contact/"
+weight = 5
+[[navbar]]
+identifier = "terms"
+name = "mentions légales"
+title = "mentions légales"
+url = "/fr/terms/"
+weight = 100 
