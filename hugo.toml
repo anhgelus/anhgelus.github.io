@@ -9,6 +9,14 @@ enable_math = true
 enable_toc = false
 author = "anhgelus"
 
+[languages]
+	[languages.en]
+	languageName = "English"
+	weight = 1
+	[languages.fr]
+	languageName = "Français"
+	weight = 2
+
 [[menu.navbar]]
 identifier = "home"
 name = "home"
