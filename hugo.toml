@@ -24,20 +24,32 @@ title = "home"
 url = "/"
 weight = 1
 [[menu.navbar]]
+identifier = "project"
+name = "project"
+title = "project"
+url = "/project/"
+weight = 2
+[[menu.navbar]]
 identifier = "about"
 name = "about"
 title = "about"
 url = "/about/"
-weight = 2
+weight = 3
 [[menu.navbar]]
 identifier = "blog"
 name = "blog"
 title = "blog"
 url = "https://blog.anhgelus.world"
-weight = 3
+weight = 4
 [[menu.navbar]]
 identifier = "contact"
 name = "contact"
 title = "contact"
 url = "/contact/"
-weight = 4
+weight = 5
+[[menu.navbar]]
+identifier = "terms"
+name = "terms of use"
+title = "terms of use"
+url = "/terms/"
+weight = 6
