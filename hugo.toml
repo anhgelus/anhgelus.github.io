@@ -52,4 +52,4 @@ identifier = "terms"
 name = "terms of use"
 title = "terms of use"
 url = "/terms/"
-weight = 6
+weight = 100 
