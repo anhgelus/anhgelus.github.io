@@ -6,4 +6,6 @@ type = 'balloon'
 balloon_resources = "/project/data/"
 +++
 
-Hello
+List of all the project that I worked for.
+
+I also have a [blog](https://blog.anhgelus.world/).
