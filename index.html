@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anhgelus Morhtuuzh</title>
+    <link rel="stylesheet" type="text/css" href="/assets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header id="header">
+    <nav role="navigation" class="navbar">
+        <div class="p-6">
+            <a href="#" class="navbar-item navbar-link">Home</a>
+            <a href="#skills" class="navbar-item navbar-link">Skills</a>
+            <a href="#about" class="navbar-item navbar-link">About</a>
+            <a href="#contact" class="navbar-item navbar-link">Contact</a>
+        </div>
+    </nav>
+    <div class="titles p-1">
+        <h1 class="title is-1 is-not-centered">Anhgelus Morhtuuzh</h1>
+        <h2 class="subtitle is-3 is-title-reveal">Dynamic Programming Developer</h2>
+    </div>
+</header>
+<div class="p-2 p-max-2" id="content">
+    <div id="skills" class="section">
+        <h2 class="title is-3">Skills</h2>
+        <div class="grid">
+            <div class="row">
+                <h4 class="is-5">HTML/CSS</h4>
+                <level-bar level="5" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">JavaScript/TypeScript</h4>
+                <level-bar level="5" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Docker</h4>
+                <level-bar level="4" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Go</h4>
+                <level-bar level="4" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">SQL</h4>
+                <level-bar level="3" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">SASS</h4>
+                <level-bar level="3" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Git</h4>
+                <level-bar level="4" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">PHP</h4>
+                <level-bar level="4" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Python</h4>
+                <level-bar level="2" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Linux</h4>
+                <level-bar level="3" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Vite</h4>
+                <level-bar level="3" max="5"></level-bar>
+            </div>
+            <div class="row">
+                <h4 class="is-5">Java/Kotlin</h4>
+                <level-bar level="4" max="5"></level-bar>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="section">
+        <h2 class="title is-3 mt-5">Projects</h2>
+        <projects-list href="projects/projects.json"></projects-list>
+    </div>
+    <div id="schools" class="section">
+        <h2 class="title is-3">Schools</h2>
+        <p class="subtitle is-5">University career</p>
+        <schools-diploma year="2020" name="Brevet" honors="Très Bien" done="yes"></schools-diploma>
+        <schools-info type="Lycée" name="Louise-Michel" city="Gisors">
+            <to-get name="schools/louise-michel" simple="yes"></to-get>
+        </schools-info>
+        <schools-diploma year="2023" name="Baccalauréat" honors="Très Bien" done="yes"></schools-diploma>
+        <schools-info type="CPES Science" name="Henri IV & PSL" city="Paris Ve">
+            <to-get name="schools/cpes-h4" simple="yes"></to-get>
+        </schools-info>
+	</div>
+    <to-get name="about"></to-get>
+    <div id="contact" class="section">
+        <h2 class="title is-3">Contact</h2>
+        <p class="subtitle is-5">How to reach me?</p>
+        <p class="m-0">
+            The easiest way to reach me is by email. Don't worry to send me a mail here:
+            <a href="mailto:william.herges@proton.me" class="is-green">william.herges@proton.me</a>.
+        </p>
+        <p class="m-0">
+            You can also add me on GitHub:
+            <a href="https://github.com/anhgelus" class="is-green" target="_blank">My GitHub's profile</a>.
+        </p>
+    </div>
+</div>
+<footer class="footer">
+    <p class="footer-item">
+        &copy; 2022 - 2023 William Hergès
+    </p>
+    <p class="footer-item">
+        Website under the <a href="/LICENSE">AGPLv3.0</a> License and its content under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+        CC BY-NC-SA 4.0</a> License.
+    </p>
+    <p class="footer-item">
+        <a href="#legal-en">Terms of Use</a>
+    </p>
+</footer>
+<script defer src="/assets/main.js" type="module"></script>
+</body>
+</html>
