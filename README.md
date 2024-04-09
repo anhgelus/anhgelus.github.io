@@ -4,10 +4,8 @@ My personal portfolio.
 
 ## Technologies
 
-- TS
-- SASS
-- NodeJS
-- HTML (yeah, of course, it's the hardest part of this project)
+- [Hugo](https://gohugo.io/)
+- [Hugo Theme Monochrome](https://github.com/kaiiiz/hugo-theme-monochrome)
 
 ## License
 
