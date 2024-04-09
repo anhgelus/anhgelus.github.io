@@ -2,7 +2,7 @@
 title = '2024- Kordify'
 date = 2024-04-05T09:46:09+02:00
 draft = false 
-weight = 1
+weight = 2 
 +++
 
 [Kordify](https://kordify.github.io/presentation.html) est un bot modulaire Discord propulsé par des plugins.
