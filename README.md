@@ -2,6 +2,8 @@
 
 My personal portfolio.
 
+I am rewriting this website with Hugo but the deployment is not working.
+
 ## Technologies
 
 - TS
