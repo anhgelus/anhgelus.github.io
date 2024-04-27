@@ -35,9 +35,7 @@ export default class LegalEnglish extends HTMLElement {
         </p>
         <p>
             We are only collecting your IP address and we are storing it for one year for legal reasons. <br>
-            We are using the analytics tools provided by CloudFlare, Inc (<a
-            href="https://www.cloudflare.com/en-en/privacypolicy/" target="_blank">privacy policy</a>) which cannot be
-            disabled, since it does not identify the user.
+            We are using the analytics tools Matomo which cannot be disabled, since it does not identify the user.
         </p>
         `
     }
