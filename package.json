@@ -6,13 +6,23 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json|jsx|tsx)\""
   },
   "dependencies": {
-    "solid-js": "^1.8.15"
+    "@eslint/js": "^9.2.0",
+    "autoprefixer": "^10.4.19",
+    "eslint": "^9.2.0",
+    "postcss": "^8.4.38",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "solid-js": "^1.8.15",
+    "tailwindcss": "^3.4.3",
+    "typescript-eslint": "^7.8.0"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
+    "typescript": "^5.4.5",
     "vite": "^5.2.0",
     "vite-plugin-solid": "^2.10.2"
   }
