@@ -9,10 +9,18 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bg-glass {
+  background: rgba(2, 6, 23, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(49, 46, 129, 0.06);
+}
+
+.bg-hardened-glass {
+  background: rgba(2, 6, 23, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(49, 46, 129, 0.06);
 }
