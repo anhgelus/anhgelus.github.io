@@ -12,7 +12,7 @@
 }
 
 .bg-glass {
-  background: rgba(2, 6, 23, 0.4);
+  background: rgba(2, 6, 23, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(16px);
   border: 1px solid rgba(49, 46, 129, 0.06);
@@ -23,4 +23,8 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(24px);
   border: 1px solid rgba(49, 46, 129, 0.06);
+}
+
+.h-screen-half {
+  height: 50vh;
 }
