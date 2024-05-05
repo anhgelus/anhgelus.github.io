@@ -1,5 +1,0 @@
-@for $i from 1 through 6 {
-  .is-#{$i} {
-    font-size: calc(4rem + ($i * -0.5rem));
-  }
-}
