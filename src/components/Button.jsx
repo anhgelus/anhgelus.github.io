@@ -5,12 +5,10 @@ function Button(props) {
   }
   return (
     <>
-      <div
-        class={
-          "my-2 block rounded px-4 py-2 text-center text-xl duration-200 " + bg
-        }
-      >
-        <a href={props.href}>{props.content}</a>
+      <div class={"my-2 block rounded text-center text-xl duration-200 " + bg}>
+        <a href={props.href} class={"block px-4 py-2"}>
+          {props.content}
+        </a>
       </div>
     </>
   );
