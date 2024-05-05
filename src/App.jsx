@@ -1,6 +1,7 @@
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
 import UniversityCareer from "./components/University.jsx";
+import Projects from "./components/Projects.jsx";
 
 function App() {
   return (
@@ -24,7 +25,11 @@ function App() {
       <div className="block w-full bg-gradient-to-r from-indigo-900 to-slate-800 py-24">
         <UniversityCareer />
       </div>
-      <div className="block h-screen w-full"></div>
+      <div className="divider"></div>
+      <div className="block w-full bg-slate-800 py-24">
+        <Projects />
+      </div>
+      <div className="divider"></div>
     </>
   );
 }

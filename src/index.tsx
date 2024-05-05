@@ -61,7 +61,7 @@ render(() => <App />, root!);
 //   top: 0,
 // });
 
-let schools = document.querySelectorAll<HTMLElement>(".school")!!;
+let schools = document.querySelectorAll<HTMLElement>(".glass-anim")!!;
 
 schools.forEach((s) => {
   s.addEventListener("mousemove", (e) => {

@@ -1,12 +1,13 @@
 import { For } from "solid-js";
 import Title from "./Title.jsx";
+import { GlassCard } from "./Card.jsx";
 
 function UniversityCareer() {
   return (
     <>
       <Title title={"University Career"} />
       <div class="mx-16 grid grid-cols-2 content-center items-center justify-center gap-16">
-        <School
+        <GlassCard
           title={"Lycée Louise-Michel"}
           years={"2020-2023"}
           content={
@@ -17,7 +18,7 @@ function UniversityCareer() {
             "I passed my BAC with honors."
           }
         />
-        <School
+        <GlassCard
           title={"CPES Sciences Henri-IV / PSL"}
           years={"2023-Now"}
           content={
@@ -28,21 +29,6 @@ function UniversityCareer() {
             "The formation is dispensed in Lycée Henri-IV, MINES-PSL, Dauphine-PSL and ENS-PSL."
           }
         />
-      </div>
-    </>
-  );
-}
-
-function School(props) {
-  let lines = props.content.split("\n");
-  return (
-    <>
-      <div class="bg-light-glass school mx-auto block h-full w-full p-4">
-        <h3 class="text-center text-3xl">{props.title}</h3>
-        <h5 class="text-center text-sm">{props.years}</h5>
-        <div class="my-4 flex flex-col gap-2">
-          <For each={lines}>{(l) => <p>{l}</p>}</For>
-        </div>
       </div>
     </>
   );

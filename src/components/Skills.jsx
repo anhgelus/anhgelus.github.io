@@ -22,8 +22,8 @@ function Skills(props) {
         <Skill name="Java/Kotlin" level="4" />
         <Skill name="PHP" level="3" />
       </div>
-      <div class="mx-auto my-20 h-1 w-3/5 bg-slate-900"></div>
-      <div class="mx-auto w-2/3 pb-16">
+      <div class="mx-auto my-16 h-1 w-3/5 bg-slate-900"></div>
+      <div class="mx-auto w-2/3">
         <Console content={content.join("|")} title={"Console"} />
       </div>
     </>
