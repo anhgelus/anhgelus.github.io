@@ -1,4 +1,5 @@
 import Console from "./Console.jsx";
+import Title from "./Title.jsx";
 
 function Skills(props) {
   let content = [
@@ -9,7 +10,7 @@ function Skills(props) {
   ];
   return (
     <>
-      <h2 class="mb-16 text-center text-4xl font-bold">Skills</h2>
+      <Title title={"Skills"} />
       <div class="grid grid-cols-3 content-center items-center justify-center gap-16 text-center">
         <Skill name="HTML/CSS" level="5" />
         <Skill name="Go" level="4" />

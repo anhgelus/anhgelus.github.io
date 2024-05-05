@@ -57,6 +57,37 @@ window.addEventListener("scroll", scrollAnimation);
 
 render(() => <App />, root!);
 
-window.scrollTo({
-  top: 0,
+// window.scrollTo({
+//   top: 0,
+// });
+
+let schools = document.querySelectorAll<HTMLElement>(".school")!!;
+
+schools.forEach((s) => {
+  s.addEventListener("mousemove", (e) => {
+    let offset = s.getBoundingClientRect();
+    const x = e.clientX - offset.x;
+    const y = e.clientY - offset.y;
+    const ratioX = x / offset.width;
+    const ratioY = y / offset.height;
+    const rotate = Math.sqrt(
+      Math.pow(ratioX - 0.5, 2) + Math.pow(ratioY - 0.5, 2),
+    );
+    let rX = 2 * (ratioX - 0.5);
+    let rZ = 2 * (ratioY - 0.5);
+    if (ratioX - 0.5 < 0) {
+      rZ = Math.abs(rZ);
+      if (ratioY - 0.5 > 0) {
+        rZ = -rZ;
+      }
+    }
+    s.style.transition = ".2s transform";
+    s.style.transform = `rotate3d(${rX},1,${rZ},${10 * rotate}deg)`;
+    console.log(s.style.transform);
+  });
+  s.addEventListener("mouseleave", (e) => {
+    e = e as MouseEvent;
+    s.style.transform = "";
+    s.style.transition = ".3s transform";
+  });
 });

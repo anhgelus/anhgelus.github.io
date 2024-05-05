@@ -1,6 +1,6 @@
-import "./App.css";
 import Hero from "./components/Hero.jsx";
 import Skills from "./components/Skills.jsx";
+import UniversityCareer from "./components/University.jsx";
 
 function App() {
   return (
@@ -20,7 +20,10 @@ function App() {
           <Skills />
         </div>
       </div>
-      <div className="block h-screen w-full"></div>
+      <div class="divider"></div>
+      <div className="block w-full bg-gradient-to-r from-indigo-900 to-slate-800 py-24">
+        <UniversityCareer />
+      </div>
       <div className="block h-screen w-full"></div>
     </>
   );
