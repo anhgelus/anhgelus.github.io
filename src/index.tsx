@@ -2,6 +2,7 @@
 import { render } from "solid-js/web";
 
 import "./index.css";
+// @ts-ignore
 import App from "./App.jsx";
 
 const root = document.getElementById("root")!!;
@@ -61,9 +62,7 @@ render(() => <App />, root!);
 //   top: 0,
 // });
 
-let schools = document.querySelectorAll<HTMLElement>(".glass-anim")!!;
-
-schools.forEach((s) => {
+document.querySelectorAll<HTMLElement>(".glass-anim")!!.forEach((s) => {
   s.addEventListener("mousemove", (e) => {
     let offset = s.getBoundingClientRect();
     const x = e.clientX - offset.x;
@@ -90,4 +89,15 @@ schools.forEach((s) => {
     s.style.transform = "";
     s.style.transition = ".3s transform";
   });
+});
+
+document.querySelectorAll("a")!!.forEach((a) => {
+  const href = a.href;
+  // if anchor is external and not linked with the website
+  if (
+    href.startsWith("https://") &&
+    !href.startsWith("https://www.anhgelus.world")
+  ) {
+    a.target = "_blank";
+  }
 });
