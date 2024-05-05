@@ -28,21 +28,15 @@ function scrollAnimation() {
   if (window.scrollY < window.innerHeight * 0.5) {
     let d = window.scrollY % window.innerHeight;
     animationP1.style.transform = `scale(${1 + d / window.innerHeight})`;
-    if (window.scrollY > window.innerHeight * 0.3) {
-      animationP1.classList.add("fixed");
-      animationP1.classList.remove("relative");
-      animationP1.style.top = "";
-    }
+    animationP1.classList.add("fixed");
+    animationP1.classList.remove("relative");
+    animationP1.style.top = "";
   } else if (window.scrollY < window.innerHeight) {
     animationP1.classList.remove("fixed");
     animationP1.classList.add("relative");
     animationP1.style.top = "50vh";
   } else if (
-    intInRange(
-      window.scrollY,
-      window.innerHeight * 1.3,
-      window.innerHeight * 1.5,
-    )
+    intInRange(window.scrollY, window.innerHeight, window.innerHeight * 1.5)
   ) {
     navbar.classList.remove("fixed");
     navbar.classList.add("relative");
