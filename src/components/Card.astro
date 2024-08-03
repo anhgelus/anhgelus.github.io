@@ -20,7 +20,7 @@ const colorStyle = getColor(primary, secondary, false);
 	import {scrollTo} from "../scroll";
 	document.querySelectorAll("[data-target]").forEach((el) => {
 		el.addEventListener("click", () => {
-			const target = el.getAttribute("data-card-target");
+			const target = el.getAttribute("data-target");
 			if (target.startsWith("http")) {
 				window.open(target, '_blank').focus();
 				return;
