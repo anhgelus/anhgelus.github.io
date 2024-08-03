@@ -1,29 +1,39 @@
 ---
+import { getColor } from "../color";
 interface Props {
 	title: string;
 	target: string;
+	primary: boolean;
+	secondary: boolean;
 }
 
-const { target, title} = Astro.props;
+const { target, title, primary, secondary} = Astro.props;
+const colorStyle = getColor(primary, secondary, false);
 ---
 
-<div class="flex bg-amber-400 w-56 xl:w-96 h-24 xl:h-48 rounded-md p-4 justify-center content-center items-center gap-2 hover:gap-8 transition-all cursor-pointer" data-card-target={target}>
+<div class=`flex ${colorStyle} w-56 xl:w-96 h-24 xl:h-48 rounded-md p-4 justify-center content-center items-center gap-2 hover:gap-8 transition-all cursor-pointer` data-target={target}>
 	<h2 class="text-2xl text-center w-2/3">{title}</h2>
 	<img src="/arrow.svg" alt="arrow" class="w-6"/>
 </div>
 
 <script>
 	import {scrollTo} from "../scroll";
-	document.querySelectorAll("[data-card-target]").forEach((el) => {
+	document.querySelectorAll("[data-target]").forEach((el) => {
 		el.addEventListener("click", () => {
 			const target = el.getAttribute("data-card-target");
-			const query = document.querySelector(target) as HTMLElement;
-			if (query) {
-				scrollTo(query);
-				return;
-			}
 			if (target.startsWith("http")) {
 				window.open(target, '_blank').focus();
+				return;
+			}
+			let query: HTMLElement;
+			try {
+				query = document.querySelector(target) as HTMLElement;
+			} catch (_) {
+				window.location.href = window.location.origin + target
+				return;
+			}
+			if (query) {
+				scrollTo(query);
 				return;
 			}
 			window.location.href = window.location.origin + target

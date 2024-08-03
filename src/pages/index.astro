@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Button from "../components/Button.astro";
 ---
 
 <Layout title="Anhgelus Morhtuuzh">
@@ -11,18 +12,19 @@ import Card from '../components/Card.astro';
             <!--<h4 class="text-4xl mt-4">créateur de contenu unique</h4>-->
         </div>
         <div class="absolute bottom-4 right-0 flex gap-4" data-scroll>
-            <Card target="a" title="Bonsoir"/>
-            <Card target="a" title="Bonjour"/>
+            <Card target="a" title="Projets" secondary/>
+            <Card target="https://blog.anhgelus.world" title="Blog" primary/>
         </div>
     </header>
     <main class="" data-scroll-section>
-        <div class="w-screen h-screen bg-black text-gray-300 flex justify-center flex-col" data-scroll>
-            <h3 data-scroll data-scroll-speed="2" class="text-gray-200 text-center text-2xl xl:text-3xl">Créateur</h3>
-            <div class="text-center text-lg xl:text-xl flex flex-col justify-center gap-2" data-scroll data-scroll-speed="2">
+        <div class="w-screen h-screen bg-slate-900 text-stone-200 flex justify-center flex-col" data-scroll>
+            <h3 data-scroll data-scroll-speed="2" class="text-stone-100 text-center text-2xl xl:text-3xl">Créateur</h3>
+            <div class="text-center text-lg xl:text-xl flex flex-col justify-center gap-4" data-scroll data-scroll-speed="2">
                 <p>
                     je m'efforce d'imaginer, de concevoir et de créer <br>
                     de nouveaux concepts novateurs.
                 </p>
+                <Button href="" content="Projets" />
             </div>
         </div>
     </main>
