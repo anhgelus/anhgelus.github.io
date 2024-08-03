@@ -7,9 +7,9 @@ interface Props {
 const { target, title} = Astro.props;
 ---
 
-<div class="flex bg-amber-400 w-96 h-48 rounded-md p-4 content-center items-center" data-card-target={target}>
+<div class="flex bg-amber-400 w-56 xl:w-96 h-24 xl:h-48 rounded-md p-4 justify-center content-center items-center gap-2 hover:gap-8 transition-all cursor-pointer" data-card-target={target}>
 	<h2 class="text-2xl text-center w-2/3">{title}</h2>
-	<img src="/arrow.svg" alt="arrow" class="mx-auto w-6"/>
+	<img src="/arrow.svg" alt="arrow" class="w-6"/>
 </div>
 
 <script>
@@ -20,9 +20,13 @@ const { target, title} = Astro.props;
 			const query = document.querySelector(target) as HTMLElement;
 			if (query) {
 				scrollTo(query);
-				return
+				return;
 			}
-			window.open(target, '_blank').focus();
+			if (target.startsWith("http")) {
+				window.open(target, '_blank').focus();
+				return;
+			}
+			window.location.href = window.location.origin + target
 		})
 	})
 </script>
