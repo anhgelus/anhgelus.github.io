@@ -1,12 +1,9 @@
 ---
-import LocomotiveScroll from 'locomotive-scroll';
-
 interface Props {
 	title: string;
 }
 
 const { title } = Astro.props;
-
 ---
 
 <!doctype html>
@@ -27,8 +24,5 @@ const { title } = Astro.props;
 
 </style>
 <script>
-	const scroll = new LocomotiveScroll({
-		el: document.querySelector('body'),
-		smooth: true,
-	});
+	import '../scroll';
 </script>
