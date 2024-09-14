@@ -9,6 +9,10 @@ $border-radius--hover : 0.5rem;
 body {
   color: $text;
   font-size: 24px;
+  background: $base;
+}
+
+main, header {
   padding: 0 4rem;
 }
 
@@ -46,8 +50,14 @@ a {
   }
 }
 
-.bg-base {
-  background: $base;
+footer {
+  background-color: $crust;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .header__title {
