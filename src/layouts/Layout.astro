@@ -26,12 +26,4 @@ const { title } = Astro.props;
 
 </style>
 <script>
-	import {scrollTo} from "../scroll";
-	document.querySelectorAll("a").forEach(el => {
-		if (!el.href.startsWith("#")) return;
-		el.addEventListener("click", e => {
-			e.preventDefault();
-			scrollTo(document.querySelector(el.href)!!);
-		})
-	})
 </script>
