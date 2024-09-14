@@ -41,9 +41,16 @@ h3 {
     height: 50vh;
     border-radius: 2rem;
     background: $red center no-repeat;
+    background-size: 200%;
+    transition: .5s ease-in-out;
+    cursor: pointer;
     &:hover {
+      background-size: 150%;
+      transition: .2s ease-in-out;
+      border-radius: 0.5rem;
       & .project__title {
-        display: block;
+        opacity: 1;
+        transition-delay: .15s;
       }
     }
   }
@@ -57,7 +64,8 @@ h3 {
     justify-items: center;
   }
   &__title {
-    display: none;
+    opacity: 0;
+    transition-duration: .2s;
     color: $crust;
     padding: $default-padding;
     text-align: center;
