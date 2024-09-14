@@ -11,12 +11,120 @@ import Project from "../components/Project.astro";
     </header>
     <main class="" data-scroll-section>
         <div class="project">
-            <Project image="https://architects-land.anhgelus.world/static/terre-des-civilisations/background.webp" title="Architects Land">
-                <h2>Bonsoir</h2>
+            <Project image="/img/license-generator.jpg" title="License Generator" white>
+                <h2>Application CLI</h2>
+                <p>
+                    <a href="https://github.com/anhgelus/license-generator" target="_blank">License Generator</a> est une
+                    application CLI s'occupant de créer les fichiers licences pour des projets open source. Cette
+                    application a été développée en Go 1.21.
+                </p>
+                <h3>Configuration</h3>
+                <p>
+                    Cette application est configurable à l'aide de fichier TOML spécifié dynamiquement ou dans un dossier
+                    spécifique. Le TOML est un format facilement lisible pour les humains et facilement utilisable en Go
+                    à l'aide des nombreuses library déjà présentes.
+                </p>
             </Project>
-            <Project image="https://loremflickr.com/1280/720" title="Projet 2" />
-            <Project image="https://loremflickr.com/1920/1080" title="Projet 3" />
-            <Project image="https://loremflickr.com/900/800" title="Projet 4" />
+            <Project image="/img/architects-land.webp" title="Architects Land" white>
+                <h2>Serveur Minecraft</h2>
+                <p>
+                    <a href="https://architects-land.anhgelus.world/" target="_blank">Architects Land</a> est un serveur
+                    Minecraft privé réunissant plus d'une dizaine de joueurs. Ce serveur a pour particularité d'utiliser
+                    des mods uniques créés pour l'occasion comme
+                    <a href="https://modrinth.com/mod/difficulty-death-scaler" target="_blank">Difficulty Death Scaler</a>
+                    ou <a href="https://modrinth.com/mod/sneaky-player-names" target="_blank">Sneaky Player Names</a>.
+                </p>
+                <h3>Mods</h3>
+                <p>
+                    Les mods créés pour Architects Land sont tous open-source et disponible sur Modrinth, une plateforme
+                    respectueuse et open-source dédiée à Minecraft. Ils ont tous été développés en Java 21 avec Gradle
+                    pour Fabric, un mod loader.
+                </p>
+                <h3>Site web</h3>
+                <p>
+                    Le site web d'Architects Land sert de vitrine au serveur pour recruter des nouveaux joueurs ainsi que
+                    de source d'information. D'abord codé avec le framework frontend SolidJS, le site a été entièrement
+                    recodé en Go 1.23 pour améliorer sa réactivité, ses performances ainsi que son SEO.
+                </p>
+            </Project>
+            <Project image="/img/molehunt.jpg" title="Molehunt" white>
+                <h2>Mode de jeu</h2>
+                <p>
+                    Le <a href="https://modrinth.com/mod/molehunt-mod" target="_blank">Molehunt</a> est un mode de jeu
+                    Minecraft très récent. Chaque joueur est anonyme et appartient à un camp : les moles (taupes en
+                    français) ou les survivants. Les moles doivent tuer tous les autres joueurs avant la fin de la partie.
+                </p>
+                <h3>Mod</h3>
+                <p>
+                    J'ai créé ce mod car aucun mod n'était disponible sur Modrinth. Ce mod permet de simplifier
+                    l'expérience de jeu. En effet, il s'occupe de la gestion du temps, des bordures, du nombre de taupes
+                    et de l'anonymisation des joueurs.
+                </p>
+                <p>
+                    Ce mod est totalement personnalisable à l'aide d'un fichier de config et des gamerules présentes en
+                    jeu. Pour garantir une cohérence entre les différentes configurations, le mod envoie des packets
+                    personnalisés aux joueurs pour synchroniser l'affichage des skins et des nametags par exemple.
+                </p>
+                <p>
+                    Le mod a été codé en Java 21 avec Gradle pour Fabric, un mod loader.
+                </p>
+                <h3>Wiki</h3>
+                <p>
+                    Comme ce mod est très personnalisable, j'ai créé un wiki pour faciliter son utilisation. Il
+                    fonctionne à l'aide de Writerside (de Jetbrains) et est hébergé sur GitHub Pages.
+                </p>
+            </Project>
+            <Project image="/img/arnaudvalentin.com.jpg" title="Arnaud Valentin" white>
+                <h2>Site web</h2>
+                <p>
+                    <a href="https://arnaudvalentin.com/" target="_blank">arnaudvalentin.com</a> est le site vitrine
+                    d'une voix-off. Le site a été réalisé en moins de 6 heures avec du TS vanilla, du SCSS et Bulma.
+                </p>
+            </Project>
+            <Project image="/img/la-fabrick.eu.jpg" title="La FaBrick" white>
+                <h2>Organisation</h2>
+                <p>
+                    La FaBrick est une organisation créant des événements sur Minecraft. Ils travaillent avec de nombreux
+                    influenceurs comme <a href="https://www.youtube.com/@RoiLouisMC" target="_blank">Roi-Louis</a>,
+                    <a href="https://www.youtube.com/@Goldawn" target="_blank">Goldawn</a> ou
+                    <a href="https://www.twitch.tv/martinponk" target="_blank">MartinPonk</a>.
+                </p>
+                <h3>Mon rôle</h3>
+                <p>
+                    Je travaillais chez eux en tant que Lead developer Java et web. J'ai notamment mis à jour leur site
+                    web et rajouté le responsive. J'ai aussi géré l'équipe responsable du plugin derrière leur événement
+                    "Ball Of Steals - Star Wars".
+                </p>
+            </Project>
+            <Project image="/img/les-copaings-bot.jpg" title="Les Copaings Bot" white>
+                <h2>Bot Discord</h2>
+                <p>
+                    <a href="https://github.com/anhgelus/les-copaings-bot">Les Copaings Bot</a> est un bot Discord conçu
+                    pour mon serveur Discord privé. Il rajoute un système d'XP unique ainsi que de nombreuses
+                    fonctionnalités présentes dans d'autres bot Discord.
+                </p>
+                <h3>Système d'XP</h3>
+                <p>
+                    Le système d'XP est totalement unique. Pour gagner de l'XP, les membres doivent envoyer des messages
+                    ou être connecté dans un salon vocal. Plus les messages sont long et plus ils comportent de caractère
+                    différent, plus le message génère beaucoup d'XP.
+                </p>
+                <p>
+                    Si un membre est inactif, c'est-à-dire qu'il ne parle pas ou qu'il n'utilise pas de commande, il perd
+                    automatiquement de l'XP. Cela permet de garder un classement des membres actifs.
+                </p>
+                <h3>Fonctionnement</h3>
+                <p>
+                    Le bot est codé en Go 1.23 et repose sur
+                    <a href="https://github.com/anhgelus/gokord" target="_blank">Gokord</a>, ma library. Le code derrière
+                    est complexe puisqu'il a été conçu pour gérer des très gros bots. Il permet entre autre de mettre à
+                    jour automatiquement les slashs commands d'un bot après une mise-à-jour.
+                </p>
+                <p>
+                    J'ai publié une <a href="https://youtu.be/cRcLyhhcab8" target="_blank">vidéo</a> parlant de la
+                    création de ce bot.
+                </p>
+            </Project>
         </div>
         <div class="skills">
             <div class="skills__image"></div>

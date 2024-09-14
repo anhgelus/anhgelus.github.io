@@ -46,6 +46,10 @@ a {
   }
 }
 
+img {
+  border-radius: $border-radius;
+}
+
 footer {
   background-color: $crust;
   padding: calc(2*$default);
