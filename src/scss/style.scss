@@ -1,10 +1,7 @@
 @import "reset";
 @import "@catppuccin/palette/scss/frappe";
-
-$default : 2rem;
-
-$border-radius : $default;
-$border-radius--hover : 0.5rem;
+@import "vars";
+@import "project";
 
 body {
   color: $text;
@@ -52,11 +49,11 @@ a {
 
 footer {
   background-color: $crust;
-  padding: 4rem;
+  padding: calc(2*$default);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: $default-gap;
   flex-direction: column;
 }
 
@@ -72,95 +69,8 @@ footer {
 }
 
 .hole {
-  @extend .cool-transition;
   border-radius: $border-radius;
   cursor: pointer;
-  &:hover {
-    border-radius: $border-radius--hover;
-  }
-}
-
-.project {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 25vh;
-  $default-padding : $default;
-  &--active {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-
-    & .project__data {
-      width: calc(100vw - 2*4rem);
-      height: calc(100vh - 2*4rem);
-      border-radius: $border-radius--hover;
-      background-size: 150%;
-      overflow: scroll;
-      & .project__title {
-        opacity: 1;
-        cursor: auto;
-      }
-      & .project__content__detail {
-        display: block;
-      }
-    }
-  }
-
-  &__item {
-    background: $crust;
-    border-radius: $border-radius;
-  }
-
-  &__data {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 50vh;
-    background: $red center no-repeat;
-    background-size: 200%;
-    @extend .hole;
-    &:hover {
-      background-size: 150%;
-      & .project__title {
-        opacity: 1;
-        transition-delay: .1s;
-      }
-    }
-  }
-  &__content {
-    box-sizing: border-box;
-    height: 100%;
-    &__detail {
-      padding: $default-padding;
-      display: none;
-      background: $crust;
-    }
-  }
-  &__container__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    height: 100%;
-  }
-  &__title {
-    opacity: 0;
-    transition-duration: .2s;
-    color: $crust;
-    padding: $default-padding;
-    text-align: center;
-    width: 100%;
-    text-transform: uppercase;
-    border-radius: 2rem;
-  }
 }
 
 .skills {
@@ -169,7 +79,6 @@ footer {
   width: calc(100vw - 2*4rem);
   height: calc(100vh - 2*4rem);
   margin-bottom: 25vh;
-  //@extend .hole;
   &:hover {
     & .skills__image {
       border-radius: $border-radius--hover 0 0 $border-radius--hover;
@@ -186,7 +95,7 @@ footer {
   }
   &__text {
     display: flex;
-    gap: 1rem;
+    gap: $default-gap;
     flex-direction: column;
     justify-content: center;
     background: $lavender;
@@ -199,7 +108,7 @@ footer {
 
 .schools {
   display: flex;
-  gap: 8rem;
+  gap: calc(8*$default-gap);
   flex-direction: column;
   margin-bottom: 25vh;
   justify-items: center;

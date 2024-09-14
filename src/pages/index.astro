@@ -107,13 +107,15 @@ import Project from "../components/Project.astro";
             const element = e.target as HTMLElement;
             if (element.classList.contains("project--active")) {
                 element.classList.remove("project--active");
+                element.classList.add("project--deactivate");
                 scrollDisabled = false;
             }
         });
     });
     projects.forEach(el => {
         el.addEventListener("click", (e) => {
-            el.classList.add("project--active")
+            el.classList.add("project--active");
+            el.classList.remove("project--deactivate");
             scrollDisabled = true;
             x = window.scrollX;
             y = window.scrollY;
