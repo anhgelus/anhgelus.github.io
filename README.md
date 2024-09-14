@@ -1,16 +1,18 @@
 # www.anhgelus.world
 
-My personal portfolio.
-
-I am rewriting this website with Hugo but the deployment is not working.
+My portfolio.
 
 ## Technologies
 
-- TS
+- Astro
+- JS/TS
 - SASS
-- NodeJS
-- HTML (yeah, of course, it's the hardest part of this project)
+- Bun
 
 ## License
 
 This project is licensed under the AGPLv3.0 license.
+
+The content is licensed under the CC BY-SA-NC 4.0 license.
+
+The `public` folder does not follow these licenses.
