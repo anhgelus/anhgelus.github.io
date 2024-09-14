@@ -38,7 +38,12 @@ h6 {
 }
 
 a {
-  color: $teal;
+  color: $green;
+  text-decoration: none;
+  &:hover {
+    color: $teal;
+    text-decoration: underline;
+  }
 }
 
 .bg-base {
@@ -140,5 +145,21 @@ a {
     @extend .cool-transition;
     padding: $default;
     color: $crust;
+  }
+}
+
+.schools {
+  display: flex;
+  gap: 8rem;
+  flex-direction: column;
+  margin-bottom: 25vh;
+  justify-items: center;
+  align-items: center;
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
   }
 }
