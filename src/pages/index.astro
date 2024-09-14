@@ -1,43 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Button from "../components/Button.astro";
 import Project from "../components/Project.astro";
 ---
 
 <Layout title="Anhgelus Morhtuuzh">
-    <header class="mx-2 relative h-screen" data-scroll-section>
-        <h1 class="text-6xl xl:text-8xl absolute bottom-4 font-serif" data-scroll>Créateur<br>producteur<br>développeur.</h1>
-        <div class="text-center pt-16">
-            <h2 class="text-8xl font-bold font-serif" data-scroll data-scroll-speed="-2">Anhgelus Morhtuuzh</h2>
-            <!--<h4 class="text-4xl mt-4">créateur de contenu unique</h4>-->
-        </div>
-        <div class="absolute bottom-4 right-0 flex gap-4" data-scroll>
-            <Card target="a" title="Projets" secondary/>
-            <Card target="https://blog.anhgelus.world" title="Blog" primary/>
-        </div>
+    <header class="header__title" data-scroll-section>
+        <h1 data-scroll data-scroll-speed="-2">Anhgelus Morhtuuzh</h1>
+        <h3 data-scroll>Créateur producteur développeur</h3>
     </header>
     <main class="" data-scroll-section>
-        <div class="w-screen h-screen bg-slate-900 text-stone-200 flex justify-center flex-col" data-scroll>
-            <h3 data-scroll data-scroll-speed="2" class="text-stone-100 text-center text-2xl xl:text-3xl font-serif">Créateur</h3>
-            <div class="text-center text-lg xl:text-xl flex flex-col justify-center gap-4" data-scroll data-scroll-speed="2">
-                <p>
-                    je m'efforce d'imaginer, de concevoir et de créer <br>
-                    de nouveaux concepts novateurs.
-                </p>
-                <Button href="" content="Projets" />
-            </div>
-        </div>
-        <div class="mx-2 flex justify-center items-center content-center projects flex-wrap">
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
-            <Project title="Sample" image="https://loremflickr.com/900/400" imageAlt="" />
+        <div class="project">
+            <Project image="https://architects-land.anhgelus.world/static/terre-des-civilisations/background.webp" title="Architects Land" />
+            <Project image="https://loremflickr.com/1280/720" title="Projet 2" />
+            <Project image="https://loremflickr.com/1920/1080" title="Projet 3" />
+            <Project image="https://loremflickr.com/900/800" title="Projet 4" />
         </div>
     </main>
 </Layout>

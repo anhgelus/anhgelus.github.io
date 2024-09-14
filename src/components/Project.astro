@@ -2,31 +2,15 @@
 interface Props {
     title: string
     image: string
-    imageAlt: string
-    active: boolean
 }
 
-const {title, image, imageAlt, active} = Astro.props
+const {title, image} = Astro.props
 ---
-<div class=`project flex justify-center h-96 bg-cover bg-center backdrop-blur-lg items-center ${active ? 'active' : ''}` data-project>
-    <h3 class="project__title text-4xl text-center">{title}</h3>
-    <!--<img class="project__image blur" src={image} alt={imageAlt} />-->
+<div class=`project__item` data-project style=`background-image: url(${image}); backdrop-filter: blur(40px) brightness(80%);`>
+    <div class="project__content">
+        <h2 class="project__title">{title}</h2>
+    </div>
 </div>
 <style lang="scss">
-    .project {
-      &__title {
-        writing-mode: vertical-rl;
-      }
-      &.active {
-        & .project__title {
-          writing-mode: horizontal-tb;
-        }
-        width: 15%;
-      }
-      &:last-child {
-        border: none;
-      }
-      border-right: black solid 1px;
-      width: 10%;
-    }
+
 </style>
