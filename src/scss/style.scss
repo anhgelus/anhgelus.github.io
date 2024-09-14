@@ -52,7 +52,7 @@ a {
 
 footer {
   background-color: $crust;
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,8 +86,40 @@ footer {
   gap: 2rem;
   margin-bottom: 25vh;
   $default-padding : $default;
+  &--active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+    & .project__data {
+      width: calc(100vw - 2*4rem);
+      height: calc(100vh - 2*4rem);
+      border-radius: $border-radius--hover;
+      background-size: 150%;
+      overflow: scroll;
+      & .project__title {
+        opacity: 1;
+        cursor: auto;
+      }
+      & .project__content__detail {
+        display: block;
+      }
+    }
+  }
 
   &__item {
+    background: $crust;
+    border-radius: $border-radius;
+  }
+
+  &__data {
     position: relative;
     display: block;
     width: 100%;
@@ -104,13 +136,20 @@ footer {
     }
   }
   &__content {
-    padding: $default-padding;
     box-sizing: border-box;
     height: 100%;
+    &__detail {
+      padding: $default-padding;
+      display: none;
+      background: $crust;
+    }
+  }
+  &__container__title {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-items: center;
+    height: 100%;
   }
   &__title {
     opacity: 0;

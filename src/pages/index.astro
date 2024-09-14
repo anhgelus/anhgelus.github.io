@@ -11,7 +11,9 @@ import Project from "../components/Project.astro";
     </header>
     <main class="" data-scroll-section>
         <div class="project">
-            <Project image="https://architects-land.anhgelus.world/static/terre-des-civilisations/background.webp" title="Architects Land" />
+            <Project image="https://architects-land.anhgelus.world/static/terre-des-civilisations/background.webp" title="Architects Land">
+                <h2>Bonsoir</h2>
+            </Project>
             <Project image="https://loremflickr.com/1280/720" title="Projet 2" />
             <Project image="https://loremflickr.com/1920/1080" title="Projet 3" />
             <Project image="https://loremflickr.com/900/800" title="Projet 4" />
@@ -55,7 +57,7 @@ import Project from "../components/Project.astro";
                 <Image src="https://loremflickr.com/256/256" alt="" width="256" height="256" />
             </div>
             <div class="schools__item">
-                <Image src="https://loremflickr.com/256/256" alt="" width="256" height="256"/>
+                <Image src="https://static.psl.eu/sites/default/files/2017-07/logo-lycee-henri4-500.jpg" alt="" width="256" height="256"/>
                 <p>
                     J'ai passé ma première année dans l'enseignement supérieur dans le
                     <a href="https://psl.eu/formation/cpes-psl-henri-IV" target="_blank">CPES Sciences</a>
@@ -74,7 +76,7 @@ import Project from "../components/Project.astro";
                     >
                         double licence Sciences-Philosophie</a> de <a href="https://sciences.sorbonne-universite.fr/" target="_blank">Sorbonne-Université</a>.
                 </p>
-                <Image src="https://loremflickr.com/256/256" alt="" width="256" height="256"/>
+                <Image src="https://sciences.sorbonne-universite.fr/sites/default/files/media/2019-10/logo_4.svg" alt="" width="256" height="256"/>
             </div>
         </div>
     </main>
@@ -89,19 +91,35 @@ import Project from "../components/Project.astro";
         </p>
         <p>
             Code source sous licence AGPL-3.0-only &copy; 2024 William Hergès. <br>
-            Contenu sous licence CC BY-SA-NC 4.0. &copy; 2024 William Hergès.
+            Contenu sous licence CC BY-SA-NC 4.0 &copy; 2024 William Hergès.
         </p>
     </footer>
 </Layout>
 
 <script>
-    document.querySelectorAll("[data-project]").forEach(el => {
-        console.log(el)
-        el.addEventListener("mouseenter", (e) => {
-            el.classList.add("active")
-        })
-        el.addEventListener("mouseleave", (e) => {
-            el.classList.remove("active")
+    const projects = document.querySelectorAll("[data-project]");
+    let scrollDisabled = false;
+    let x = 0;
+    let y = 0;
+    document.addEventListener("click", e => {
+        projects.forEach(el => {
+            if (!el.classList.contains("project--active")) return;
+            const element = e.target as HTMLElement;
+            if (element.classList.contains("project--active")) {
+                element.classList.remove("project--active");
+                scrollDisabled = false;
+            }
+        });
+    });
+    projects.forEach(el => {
+        el.addEventListener("click", (e) => {
+            el.classList.add("project--active")
+            scrollDisabled = true;
+            x = window.scrollX;
+            y = window.scrollY;
         })
     })
+    document.addEventListener("scroll", e => {
+        if (scrollDisabled) window.scrollTo(x, y);
+    });
 </script>

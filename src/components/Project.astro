@@ -6,9 +6,18 @@ interface Props {
 
 const {title, image} = Astro.props
 ---
-<div class=`project__item` data-project style=`background-image: url(${image}); backdrop-filter: blur(40px) brightness(80%);`>
-    <div class="project__content">
-        <h2 class="project__title">{title}</h2>
+<div class="project__item">
+    <div class="project__container" data-project>
+        <div class=`project__data` style=`background-image: url(${image});`>
+            <div class="project__content">
+                <div class="project__container__title">
+                    <h2 class="project__title">{title}</h2>
+                </div>
+                <div class="project__content__detail">
+                    <slot />
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <style lang="scss">
