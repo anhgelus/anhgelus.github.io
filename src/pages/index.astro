@@ -294,7 +294,7 @@ import Project from "../components/Project.astro";
   </footer>
 </Layout>
 
-<script>
+<script defer>
   const projects = document.querySelectorAll("[data-project]");
   let scrollDisabled = false;
   let x = 0;
@@ -302,7 +302,8 @@ import Project from "../components/Project.astro";
   document.addEventListener("click", (e) => {
     projects.forEach((el) => {
       if (!el.classList.contains("project--active")) return;
-      const element = e.target as HTMLElement;
+      if (!(e.target instanceof HTMLElement)) return;
+      const element = e.target;
       if (element.classList.contains("project--active")) {
         element.classList.remove("project--active");
         element.classList.add("project--deactivate");

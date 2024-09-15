@@ -78,8 +78,14 @@ img {
 footer {
   background-color: $crust;
   padding: calc(2 * $default);
+  @media only screen and (max-width: $bp-mid) {
+    padding: $default;
+  }
   display: flex;
   align-items: center;
+  @media only screen and (max-width: $bp-mid) {
+    align-items: unset;
+  }
   justify-content: center;
   gap: $default-gap;
   flex-direction: column;
@@ -162,6 +168,9 @@ footer {
   &__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: $bp-mid) {
+      grid-template-columns: 1fr;
+    }
     align-items: center;
     justify-items: center;
     gap: $default-gap;
@@ -171,6 +180,15 @@ footer {
     }
     @media only screen and (max-width: $bp-mid) {
       width: 100%;
+    }
+    & img {
+      @media only screen and (max-width: $bp-mid) {
+        height: 196px;
+        width: 196px;
+      }
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
     }
   }
 }

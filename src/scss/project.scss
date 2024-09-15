@@ -20,15 +20,29 @@
   &__data {
     position: relative;
     display: block;
-    width: 100%;
     height: 50vh;
     background: $red center no-repeat;
     background-size: 175%;
     @extend .hole;
     animation: projectUnhover 0.5s ease-in-out;
+    @media only screen and (max-width: $bp-small) {
+      animation: projectUnhoverSmall 0.5s ease-in-out;
+    }
+    @media only screen and (max-width: $bp-tiny) {
+      background-size: cover;
+      animation: projectUnhoverTiny 0.5s ease-in-out;
+    }
     &:hover {
       animation: projectHover 0.3s ease-in-out;
       background-size: 125%;
+      @media only screen and (max-width: $bp-small) {
+        background-size: 150%;
+        animation: projectHoverSmall 0.3s ease-in-out;
+      }
+      @media only screen and (max-width: $bp-tiny) {
+        background-size: cover;
+        animation: projectHoverTiny 0.3s ease-in-out;
+      }
       border-radius: $border-radius--hover;
       & .project__title {
         opacity: 1;
@@ -91,8 +105,15 @@
       width: calc(100vw - 2 * $default);
       height: calc(100vh - 2 * $default);
     }
+    @media only screen and (max-width: $bp-tiny) {
+      width: calc(100vw - $default);
+      height: calc(100vh - $default);
+    }
     border-radius: $border-radius--hover;
     background-size: 125%;
+    @media only screen and (max-width: $bp-small) {
+      background-size: cover;
+    }
     overflow: scroll;
     cursor: auto;
     animation: none;
@@ -116,6 +137,26 @@
   }
 }
 
+@keyframes projectHoverSmall {
+  from {
+    background-size: 175%;
+    border-radius: $border-radius;
+  }
+  to {
+    background-size: 150%;
+    border-radius: $border-radius--hover;
+  }
+}
+
+@keyframes projectHoverTiny {
+  from {
+    border-radius: $border-radius;
+  }
+  to {
+    border-radius: $border-radius--hover;
+  }
+}
+
 @keyframes projectUnhover {
   from {
     background-size: 125%;
@@ -123,6 +164,26 @@
   }
   to {
     background-size: 175%;
+    border-radius: $border-radius;
+  }
+}
+
+@keyframes projectUnhoverSmall {
+  from {
+    background-size: 150%;
+    border-radius: $border-radius--hover;
+  }
+  to {
+    background-size: 175%;
+    border-radius: $border-radius;
+  }
+}
+
+@keyframes projectUnhoverTiny {
+  from {
+    border-radius: $border-radius--hover;
+  }
+  to {
     border-radius: $border-radius;
   }
 }
