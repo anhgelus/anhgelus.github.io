@@ -104,8 +104,7 @@ footer {
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: calc(100vw - 2 * 4rem);
-  min-height: calc(100vh - 2 * 4rem);
+  min-height: calc(100vh - 2 * 2*$default);
   margin-bottom: 25vh;
   &:hover {
     & .skills__image {
