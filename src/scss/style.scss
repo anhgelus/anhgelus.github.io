@@ -75,6 +75,11 @@ img {
   border-radius: $border-radius;
 }
 
+li {
+  padding-left: $default;
+  list-style: disc inside;
+}
+
 footer {
   background-color: $crust;
   padding: calc(2 * $default);
@@ -207,4 +212,11 @@ footer {
   @media only screen and (max-width: $bp-mid) {
     width: 100%;
   }
+}
+
+.legal {
+  display: flex;
+  gap: calc(2*$default-gap);
+  flex-direction: column;
+  margin: 25vh 0;
 }
