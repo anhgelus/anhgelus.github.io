@@ -4,7 +4,10 @@
 .project {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  @media only screen and (max-width: $bp-wide) {
+    grid-template-columns: 1fr;
+  }
+  gap: calc(2*$default-gap);
   margin-bottom: 25vh;
   $default-padding: $default;
 
