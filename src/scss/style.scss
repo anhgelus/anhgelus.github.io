@@ -9,7 +9,8 @@ body {
   background: $base;
 }
 
-main, header {
+main,
+header {
   padding: 0 4rem;
 }
 
@@ -52,7 +53,7 @@ img {
 
 footer {
   background-color: $crust;
-  padding: calc(2*$default);
+  padding: calc(2 * $default);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,9 +66,9 @@ footer {
 }
 
 .cool-transition {
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   &:hover {
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
   }
 }
 
@@ -79,8 +80,8 @@ footer {
 .skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: calc(100vw - 2*4rem);
-  height: calc(100vh - 2*4rem);
+  width: calc(100vw - 2 * 4rem);
+  height: calc(100vh - 2 * 4rem);
   margin-bottom: 25vh;
   &:hover {
     & .skills__image {
@@ -111,7 +112,7 @@ footer {
 
 .schools {
   display: flex;
-  gap: calc(8*$default-gap);
+  gap: calc(8 * $default-gap);
   flex-direction: column;
   margin-bottom: 25vh;
   justify-items: center;

@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 25vh;
-  $default-padding : $default;
+  $default-padding: $default;
 
   &__item {
     background: $crust;
@@ -21,14 +21,14 @@
     background: $red center no-repeat;
     background-size: 175%;
     @extend .hole;
-    animation: projectUnhover .5s ease-in-out;
+    animation: projectUnhover 0.5s ease-in-out;
     &:hover {
-      animation: projectHover .3s ease-in-out;
+      animation: projectHover 0.3s ease-in-out;
       background-size: 125%;
       border-radius: $border-radius--hover;
       & .project__title {
         opacity: 1;
-        transition-delay: .1s;
+        transition-delay: 0.1s;
       }
     }
   }
@@ -36,7 +36,7 @@
     box-sizing: border-box;
     height: 100%;
     &__detail {
-      padding: $default-padding calc(8*$default-padding);
+      padding: $default-padding calc(8 * $default-padding);
       display: none;
       background: $crust;
       flex-direction: column;
@@ -52,7 +52,7 @@
   }
   &__title {
     opacity: 0;
-    transition-duration: .2s;
+    transition-duration: 0.2s;
     color: $crust;
     padding: $default-padding;
     text-align: center;
@@ -78,8 +78,8 @@
   height: 100%;
 
   & .project__data {
-    width: calc(100vw - 2*4rem);
-    height: calc(100vh - 2*4rem);
+    width: calc(100vw - 2 * 4rem);
+    height: calc(100vh - 2 * 4rem);
     border-radius: $border-radius--hover;
     background-size: 125%;
     overflow: scroll;
