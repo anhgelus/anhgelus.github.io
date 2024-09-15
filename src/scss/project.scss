@@ -14,6 +14,7 @@
   &__item {
     background: $crust;
     border-radius: $border-radius;
+    height: 50vh;
   }
 
   &__data {
@@ -40,6 +41,9 @@
     height: 100%;
     &__detail {
       padding: $default-padding calc(8 * $default-padding);
+      @media only screen and (max-width: $bp-mid) {
+        padding: $default-padding;
+      }
       display: none;
       background: $crust;
       flex-direction: column;
@@ -81,8 +85,12 @@
   height: 100%;
 
   & .project__data {
-    width: calc(100vw - 2 * 4rem);
-    height: calc(100vh - 2 * 4rem);
+    width: calc(100vw - 2 * 2 * $default);
+    height: calc(100vh - 2 * 2 * $default);
+    @media only screen and (max-width: $bp-mid) {
+      width: calc(100vw - 2 * $default);
+      height: calc(100vh - 2 * $default);
+    }
     border-radius: $border-radius--hover;
     background-size: 125%;
     overflow: scroll;
