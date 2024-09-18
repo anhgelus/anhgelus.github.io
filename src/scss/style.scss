@@ -14,7 +14,7 @@ body {
 
 main,
 header {
-  padding: 0 calc(2*$default);
+  padding: 0 calc(2 * $default);
   @media only screen and (max-width: $bp-wide) {
     padding: 0 $default;
   }
@@ -119,7 +119,7 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
   }
-  min-height: calc(100vh - 2 * 2*$default);
+  min-height: calc(100vh - 2 * 2 * $default);
   margin-bottom: 25vh;
   &:hover {
     & .skills__image {
@@ -216,7 +216,7 @@ footer {
 
 .legal {
   display: flex;
-  gap: calc(2*$default-gap);
+  gap: calc(2 * $default-gap);
   flex-direction: column;
   margin: 25vh 0;
 }
