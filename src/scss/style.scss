@@ -136,7 +136,7 @@ footer {
     }
   }
   &__image {
-    background: $red no-repeat fixed url("https://loremflickr.com/1920/1080");
+    background: $red no-repeat fixed url("/img/skills.webp");
     background-size: cover;
     border-radius: $border-radius 0 0 $border-radius;
     @media only screen and (max-width: $bp-mid) {
