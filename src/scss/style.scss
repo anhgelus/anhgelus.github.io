@@ -1,0 +1,222 @@
+@import "reset";
+@import "@catppuccin/palette/scss/frappe";
+@import "vars";
+@import "project";
+
+body {
+  color: $text;
+  font-size: 24px;
+  @media only screen and (max-width: $bp-wide) {
+    font-size: 20px;
+  }
+  background: $base;
+}
+
+main,
+header {
+  padding: 0 calc(2 * $default);
+  @media only screen and (max-width: $bp-wide) {
+    padding: 0 $default;
+  }
+}
+
+h1 {
+  font-size: 5rem;
+  @media only screen and (max-width: $bp-wide) {
+    font-size: 3rem;
+  }
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 3rem;
+  @media only screen and (max-width: $bp-wide) {
+    font-size: 2rem;
+  }
+  &.big {
+    font-size: 4rem;
+    @media only screen and (max-width: $bp-wide) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+h3 {
+  font-size: 2.5rem;
+  @media only screen and (max-width: $bp-wide) {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+  @media only screen and (max-width: $bp-wide) {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  font-size: 1.5rem;
+  @media only screen and (max-width: $bp-wide) {
+    font-size: 1rem;
+  }
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+  &:hover {
+    color: $teal;
+    text-decoration: underline;
+  }
+}
+
+img {
+  border-radius: $border-radius;
+}
+
+li {
+  padding-left: $default;
+  list-style: disc inside;
+}
+
+footer {
+  background-color: $crust;
+  padding: calc(2 * $default);
+  @media only screen and (max-width: $bp-mid) {
+    padding: $default;
+  }
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: $bp-mid) {
+    align-items: unset;
+  }
+  justify-content: center;
+  gap: $default-gap;
+  flex-direction: column;
+}
+
+.header__title {
+  margin: 25vh 0;
+}
+
+.cool-transition {
+  transition: 0.5s ease-in-out;
+  &:hover {
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.hole {
+  border-radius: $border-radius;
+  cursor: pointer;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: $bp-mid) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  min-height: calc(100vh - 2 * 2 * $default);
+  margin-bottom: 25vh;
+  &:hover {
+    & .skills__image {
+      border-radius: $border-radius--hover 0 0 $border-radius--hover;
+      @media only screen and (max-width: $bp-mid) {
+        border-radius: $border-radius--hover $border-radius--hover 0 0;
+      }
+    }
+    & .skills__text {
+      border-radius: 0 $border-radius--hover $border-radius--hover 0;
+      @media only screen and (max-width: $bp-mid) {
+        border-radius: 0 0 $border-radius--hover $border-radius--hover;
+      }
+    }
+  }
+  &__image {
+    background: $red no-repeat fixed url("/img/skills.webp");
+    background-size: cover;
+    border-radius: $border-radius 0 0 $border-radius;
+    @media only screen and (max-width: $bp-mid) {
+      border-radius: $border-radius $border-radius 0 0;
+    }
+    @extend .cool-transition;
+  }
+  &__text {
+    display: flex;
+    gap: $default-gap;
+    flex-direction: column;
+    justify-content: center;
+    background: $lavender;
+    border-radius: 0 $border-radius $border-radius 0;
+    @media only screen and (max-width: $bp-mid) {
+      border-radius: 0 0 $border-radius $border-radius;
+    }
+    @extend .cool-transition;
+    padding: $default;
+    color: $crust;
+  }
+}
+
+.schools {
+  display: flex;
+  gap: calc(8 * $default-gap);
+  @media only screen and (max-width: $bp-mid) {
+    gap: calc(4 * $default-gap);
+  }
+  flex-direction: column;
+  margin-bottom: 25vh;
+  justify-items: center;
+  align-items: center;
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width: $bp-mid) {
+      grid-template-columns: 1fr;
+    }
+    align-items: center;
+    justify-items: center;
+    gap: $default-gap;
+    width: 50%;
+    @media only screen and (max-width: $bp-wide) {
+      width: 75%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      width: 100%;
+    }
+    & img {
+      @media only screen and (max-width: $bp-mid) {
+        height: 196px;
+        width: 196px;
+      }
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  gap: $default-gap;
+  flex-direction: column;
+  margin-bottom: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  @media only screen and (max-width: $bp-wide) {
+    width: 75%;
+  }
+  @media only screen and (max-width: $bp-mid) {
+    width: 100%;
+  }
+}
+
+.legal {
+  display: flex;
+  gap: calc(2 * $default-gap);
+  flex-direction: column;
+  margin: 25vh 0;
+}

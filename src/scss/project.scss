@@ -1,0 +1,189 @@
+@import "@catppuccin/palette/scss/frappe";
+@import "vars";
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @media only screen and (max-width: $bp-wide) {
+    grid-template-columns: 1fr;
+  }
+  gap: calc(2 * $default-gap);
+  margin-bottom: 25vh;
+  $default-padding: $default;
+
+  &__item {
+    background: $crust;
+    border-radius: $border-radius;
+    height: 50vh;
+  }
+
+  &__data {
+    position: relative;
+    display: block;
+    height: 50vh;
+    background: $red center no-repeat;
+    background-size: 175%;
+    @extend .hole;
+    animation: projectUnhover 0.5s ease-in-out;
+    @media only screen and (max-width: $bp-small) {
+      animation: projectUnhoverSmall 0.5s ease-in-out;
+    }
+    @media only screen and (max-width: $bp-tiny) {
+      background-size: cover;
+      animation: projectUnhoverTiny 0.5s ease-in-out;
+    }
+    &:hover {
+      animation: projectHover 0.3s ease-in-out;
+      background-size: 125%;
+      @media only screen and (max-width: $bp-small) {
+        background-size: 150%;
+        animation: projectHoverSmall 0.3s ease-in-out;
+      }
+      @media only screen and (max-width: $bp-tiny) {
+        background-size: cover;
+        animation: projectHoverTiny 0.3s ease-in-out;
+      }
+      border-radius: $border-radius--hover;
+      & .project__title {
+        opacity: 1;
+        transition-delay: 0.1s;
+      }
+    }
+  }
+  &__content {
+    box-sizing: border-box;
+    height: 100%;
+    &__detail {
+      padding: $default-padding calc(8 * $default-padding);
+      @media only screen and (max-width: $bp-mid) {
+        padding: $default-padding;
+      }
+      display: none;
+      background: $crust;
+      flex-direction: column;
+      gap: $default-gap;
+    }
+  }
+  &__container__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    height: 100%;
+  }
+  &__title {
+    opacity: 0;
+    transition-duration: 0.2s;
+    color: $crust;
+    padding: $default-padding;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: $border-radius;
+
+    &.white {
+      color: #fff;
+    }
+  }
+}
+
+.project--active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  & .project__data {
+    width: calc(100vw - 2 * 2 * $default);
+    height: calc(100vh - 2 * 2 * $default);
+    @media only screen and (max-width: $bp-mid) {
+      width: calc(100vw - 2 * $default);
+      height: calc(100vh - 2 * $default);
+    }
+    @media only screen and (max-width: $bp-tiny) {
+      width: calc(100vw - $default);
+      height: calc(100vh - $default);
+    }
+    border-radius: $border-radius--hover;
+    background-size: 125%;
+    @media only screen and (max-width: $bp-small) {
+      background-size: cover;
+    }
+    overflow: scroll;
+    cursor: auto;
+    animation: none;
+    & .project__title {
+      opacity: 1;
+    }
+    & .project__content__detail {
+      display: flex;
+    }
+  }
+}
+
+@keyframes projectHover {
+  from {
+    background-size: 175%;
+    border-radius: $border-radius;
+  }
+  to {
+    background-size: 125%;
+    border-radius: $border-radius--hover;
+  }
+}
+
+@keyframes projectHoverSmall {
+  from {
+    background-size: 175%;
+    border-radius: $border-radius;
+  }
+  to {
+    background-size: 150%;
+    border-radius: $border-radius--hover;
+  }
+}
+
+@keyframes projectHoverTiny {
+  from {
+    border-radius: $border-radius;
+  }
+  to {
+    border-radius: $border-radius--hover;
+  }
+}
+
+@keyframes projectUnhover {
+  from {
+    background-size: 125%;
+    border-radius: $border-radius--hover;
+  }
+  to {
+    background-size: 175%;
+    border-radius: $border-radius;
+  }
+}
+
+@keyframes projectUnhoverSmall {
+  from {
+    background-size: 150%;
+    border-radius: $border-radius--hover;
+  }
+  to {
+    background-size: 175%;
+    border-radius: $border-radius;
+  }
+}
+
+@keyframes projectUnhoverTiny {
+  from {
+    border-radius: $border-radius--hover;
+  }
+  to {
+    border-radius: $border-radius;
+  }
+}

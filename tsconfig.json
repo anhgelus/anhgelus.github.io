@@ -1,16 +1,3 @@
 {
-  "compilerOptions": {
-    "target": "es2016",
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": false,
-    "lib": [
-      "es2015",
-      "dom"
-    ],
-    "strict": true
-  }
+  "extends": "astro/tsconfigs/strict"
 }
