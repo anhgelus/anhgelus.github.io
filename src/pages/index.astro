@@ -4,7 +4,12 @@ import Layout from "../layouts/Layout.astro";
 import Project from "../components/Project.astro";
 ---
 
-<Layout title="Anhgelus Morhtuuzh">
+<Layout
+  title="Anhgelus Morhtuuzh"
+  description="Portfolio de Anhgelus Morhtuuzh, créateur, producteur et développeur"
+  image="img/skills.webp"
+  url=""
+>
   <header class="header__title" data-scroll-section>
     <h1 data-scroll data-scroll-speed="-2">Anhgelus Morhtuuzh</h1>
     <h4 data-scroll>Créateur producteur développeur</h4>
@@ -284,7 +289,7 @@ import Project from "../components/Project.astro";
     </p>
     <p>
       <a href="https://github.com/anhgelus" target="_blank">GitHub</a> et <a
-        href="/legal">Mentions légales</a
+        href="/legal/">Mentions légales</a
       >
     </p>
     <p>
@@ -299,6 +304,17 @@ import Project from "../components/Project.astro";
   let scrollDisabled = false;
   let x = 0;
   let y = 0;
+  window.addEventListener("popstate", (e) => {
+    if (
+      !window.location.href.endsWith("#") &&
+      !window.location.href.endsWith("#")
+    )
+      return;
+    projects.forEach((el) => {
+      el.classList.remove("project--active");
+      scrollDisabled = false;
+    });
+  });
   document.addEventListener("click", (e) => {
     projects.forEach((el) => {
       if (!el.classList.contains("project--active")) return;
@@ -308,6 +324,7 @@ import Project from "../components/Project.astro";
         element.classList.remove("project--active");
         element.classList.add("project--deactivate");
         scrollDisabled = false;
+        history.pushState({}, "", "#");
       }
     });
   });
@@ -318,6 +335,7 @@ import Project from "../components/Project.astro";
       scrollDisabled = true;
       x = window.scrollX;
       y = window.scrollY;
+      history.pushState({}, "", "#" + el.getAttribute("data-project"));
     });
   });
   document.addEventListener("scroll", (e) => {
