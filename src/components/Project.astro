@@ -9,7 +9,10 @@ const { title, image, white = false } = Astro.props;
 ---
 
 <div class="project__item">
-  <div class="project__container" data-project>
+  <div
+    class="project__container"
+    data-project=`${title.toLowerCase().replace(" ", "-")}`
+  >
     <div class=`project__data` style=`background-image: url(${image});`>
       <div class="project__content">
         <div class="project__container__title">

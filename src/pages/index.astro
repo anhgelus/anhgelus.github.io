@@ -299,6 +299,17 @@ import Project from "../components/Project.astro";
   let scrollDisabled = false;
   let x = 0;
   let y = 0;
+  window.addEventListener("popstate", (e) => {
+    if (
+      !window.location.href.endsWith("#") &&
+      !window.location.href.endsWith("#")
+    )
+      return;
+    projects.forEach((el) => {
+      el.classList.remove("project--active");
+      scrollDisabled = false;
+    });
+  });
   document.addEventListener("click", (e) => {
     projects.forEach((el) => {
       if (!el.classList.contains("project--active")) return;
@@ -308,6 +319,7 @@ import Project from "../components/Project.astro";
         element.classList.remove("project--active");
         element.classList.add("project--deactivate");
         scrollDisabled = false;
+        history.pushState({}, "", "#");
       }
     });
   });
@@ -318,6 +330,7 @@ import Project from "../components/Project.astro";
       scrollDisabled = true;
       x = window.scrollX;
       y = window.scrollY;
+      history.pushState({}, "", "#" + el.getAttribute("data-project"));
     });
   });
   document.addEventListener("scroll", (e) => {
