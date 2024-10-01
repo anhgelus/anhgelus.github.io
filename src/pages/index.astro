@@ -9,7 +9,6 @@ import Project from "../components/Project.astro";
   description="Portfolio de Anhgelus Morhtuuzh, créateur, producteur et développeur"
   image="img/skills.webp"
   url=""
-  raw=`${false}`
 >
   <header class="header__title" data-scroll-section>
     <h1 data-scroll data-scroll-speed="-2">Anhgelus Morhtuuzh</h1>
@@ -281,12 +280,12 @@ import Project from "../components/Project.astro";
   </main>
 </Layout>
 
-<script defer>
+<script defer is:inline>
   const projects = document.querySelectorAll("[data-project]");
   let scrollDisabled = false;
   let x = 0;
   let y = 0;
-  window.addEventListener("popstate", (e) => {
+  window.addEventListener("popstate", (_) => {
     if (
       !window.location.href.endsWith("#") &&
       !window.location.href.endsWith("#")
@@ -311,7 +310,7 @@ import Project from "../components/Project.astro";
     });
   });
   projects.forEach((el) => {
-    el.addEventListener("click", (e) => {
+    el.addEventListener("click", (_) => {
       el.classList.add("project--active");
       el.classList.remove("project--deactivate");
       scrollDisabled = true;
@@ -320,7 +319,7 @@ import Project from "../components/Project.astro";
       history.pushState({}, "", "#" + el.getAttribute("data-project"));
     });
   });
-  document.addEventListener("scroll", (e) => {
+  document.addEventListener("scroll", (_) => {
     if (scrollDisabled) window.scrollTo(x, y);
   });
 </script>
