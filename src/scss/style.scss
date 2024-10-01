@@ -80,6 +80,10 @@ li {
   list-style: disc inside;
 }
 
+em {
+  font-style: italic;
+}
+
 footer {
   background-color: $crust;
   padding: calc(2 * $default);
@@ -214,7 +218,7 @@ footer {
   }
 }
 
-.legal {
+.raw main {
   display: flex;
   gap: calc(2 * $default-gap);
   flex-direction: column;
