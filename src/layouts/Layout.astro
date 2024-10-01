@@ -6,9 +6,10 @@ interface Props {
   description: string;
   url: string;
   image: string;
+  raw: boolean;
 }
 
-const { title, description, url, image } = Astro.props;
+const { title, description, url, image, raw } = Astro.props;
 ---
 
 <!doctype html>
@@ -37,7 +38,7 @@ const { title, description, url, image } = Astro.props;
     <meta name="twitter:description" content=`${description}` />
     <meta name="twitter:image" content=`https://www.anhgelus.world/${image}` />
   </head>
-  <body data-scroll-container>
+  <body data-scroll-container class=`${raw ? "raw": ""}`>
     <slot />
   </body>
 </html>
