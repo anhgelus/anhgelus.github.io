@@ -104,13 +104,13 @@ footer {
   background: $darker;
 }
 
-.study__logos {
+.list-images {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   align-items: center;
 
-  & img {
+  &--small img {
     width: 50%;
 
     @media only screen and (max-width: $bp-wide) {
