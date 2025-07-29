@@ -80,6 +80,11 @@ main {
     width: 100%;
   }
 
+  & img {
+    max-width: 75%;
+    border-radius: 1rem;
+  }
+
   @media only screen and (max-width: $bp-wide) {
     grid-template-columns: 2fr 1fr;
   }
@@ -100,6 +105,5 @@ footer {
 
   & img {
     width: 50%;
-    border-radius: 1rem;
   }
 }
