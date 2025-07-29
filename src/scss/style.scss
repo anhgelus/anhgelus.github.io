@@ -83,6 +83,13 @@ main {
   & img {
     max-width: 75%;
     border-radius: 1rem;
+
+    @media only screen and (max-width: $bp-wide) {
+      max-width: 100%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      max-width: 75%;
+    }
   }
 
   @media only screen and (max-width: $bp-wide) {
@@ -105,5 +112,12 @@ footer {
 
   & img {
     width: 50%;
+
+    @media only screen and (max-width: $bp-wide) {
+      width: 100%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      width: 50%;
+    }
   }
 }
