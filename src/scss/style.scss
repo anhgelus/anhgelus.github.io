@@ -55,6 +55,12 @@ a {
   }
 }
 
+ul {
+  list-style: disc inside;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
 em {
   font-style: italic;
 }
@@ -73,11 +79,7 @@ main {
   justify-items: center;
   align-items: center;
 
-  & p {
-    width: 100%;
-  }
-
-  & div {
+  & p, & div {
     width: 100%;
   }
 }
