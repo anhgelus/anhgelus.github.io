@@ -3,32 +3,59 @@
 
 body {
   font-size: 20px;
-  font-family: 'Raveo', Inter, Roboto, sans-serif;
+  font-family: "Raveo", Inter, Roboto, sans-serif;
   line-height: 1.4em;
   @media only screen and (max-width: $bp-wide) {
     font-size: 20px;
   }
-  padding: 5%;
+  background: $dark;
+  color: $text;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.25em;
   line-height: 1.4em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   line-height: 1.4em;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   line-height: 1.4em;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.no-mb {
+  margin-bottom: 0;
+}
+
+a {
+  color: $accent;
 }
 
 em {
   font-style: italic;
+}
+
+header,
+footer {
+  padding: 4rem 10%;
+  margin-top: 4rem;
+}
+
+main {
+  padding: 0 10%;
+}
+
+footer {
+  background: $darker;
 }
