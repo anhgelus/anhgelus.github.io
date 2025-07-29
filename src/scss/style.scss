@@ -76,7 +76,7 @@ main {
   justify-items: center;
   align-items: center;
 
-  & p, & div {
+  & p, & .text {
     width: 100%;
   }
 
@@ -90,4 +90,16 @@ main {
 
 footer {
   background: $darker;
+}
+
+.study__logos {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+
+  & img {
+    width: 50%;
+    border-radius: 1rem;
+  }
 }
