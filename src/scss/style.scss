@@ -111,13 +111,13 @@ footer {
   align-items: center;
 
   &--small img {
-    width: 50%;
+    width: 35%;
 
     @media only screen and (max-width: $bp-wide) {
-      width: 100%;
+      width: 70%;
     }
     @media only screen and (max-width: $bp-mid) {
-      width: 50%;
+      width: 40%;
     }
   }
 }
