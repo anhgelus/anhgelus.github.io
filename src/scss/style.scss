@@ -87,6 +87,17 @@ main {
     @media only screen and (max-width: $bp-wide) {
       max-width: 100%;
     }
+
+    &.small {
+      width: 50%;
+
+      @media only screen and (max-width: $bp-wide) {
+        width: 100%;
+      }
+      @media only screen and (max-width: $bp-mid) {
+        width: 75%;
+      }
+    }
   }
 
   @media only screen and (max-width: $bp-wide) {
