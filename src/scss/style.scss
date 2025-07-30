@@ -1,226 +1,131 @@
 @import "reset";
-@import "@catppuccin/palette/scss/frappe";
 @import "vars";
-@import "project";
 
 body {
+  font-size: 20px;
+  font-family: "Raveo", Inter, Roboto, sans-serif;
+  line-height: 1.4em;
+  background: $dark;
   color: $text;
-  font-size: 24px;
-  @media only screen and (max-width: $bp-wide) {
-    font-size: 20px;
-  }
-  background: $base;
 }
 
-main,
-header {
-  padding: 0 calc(2 * $default);
-  @media only screen and (max-width: $bp-wide) {
-    padding: 0 $default;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
 }
 
 h1 {
-  font-size: 5rem;
-  @media only screen and (max-width: $bp-wide) {
-    font-size: 3rem;
-  }
-  font-weight: bold;
+  font-size: 2.25em;
+  line-height: 1.4em;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 3rem;
-  @media only screen and (max-width: $bp-wide) {
-    font-size: 2rem;
-  }
-  &.big {
-    font-size: 4rem;
-    @media only screen and (max-width: $bp-wide) {
-      font-size: 2.5rem;
-    }
-  }
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 2.5rem;
-  @media only screen and (max-width: $bp-wide) {
-    font-size: 1.5rem;
-  }
+  font-size: 1.25em;
+  line-height: 1.4em;
+  font-weight: 500;
 }
 
-h4 {
-  font-size: 2rem;
-  @media only screen and (max-width: $bp-wide) {
-    font-size: 1.5rem;
-  }
+p {
+  margin-bottom: 1em;
 }
 
-h5 {
-  font-size: 1.5rem;
-  @media only screen and (max-width: $bp-wide) {
-    font-size: 1rem;
-  }
+.no-mb {
+  margin-bottom: 0;
 }
 
 a {
-  color: $green;
-  text-decoration: none;
+  color: $accent;
+
   &:hover {
-    color: $teal;
-    text-decoration: underline;
+    color: $third;
   }
 }
 
-img {
-  border-radius: $border-radius;
-}
-
-li {
-  padding-left: $default;
+ul {
   list-style: disc inside;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
 }
 
 em {
   font-style: italic;
 }
 
+header,
 footer {
-  background-color: $crust;
-  padding: calc(2 * $default);
-  @media only screen and (max-width: $bp-mid) {
-    padding: $default;
-  }
-  display: flex;
-  align-items: center;
-  @media only screen and (max-width: $bp-mid) {
-    align-items: unset;
-  }
-  justify-content: center;
-  gap: $default-gap;
-  flex-direction: column;
+  padding: 4rem 10%;
+  margin-top: 4rem;
 }
 
-.header__title {
-  margin: 25vh 0;
-}
-
-.cool-transition {
-  transition: 0.5s ease-in-out;
-  &:hover {
-    transition: 0.2s ease-in-out;
-  }
-}
-
-.hole {
-  border-radius: $border-radius;
-  cursor: pointer;
-}
-
-.skills {
+main {
+  padding: 0 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  @media only screen and (max-width: $bp-mid) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-  }
-  min-height: calc(100vh - 2 * 2 * $default);
-  margin-bottom: 25vh;
-  &:hover {
-    & .skills__image {
-      border-radius: $border-radius--hover 0 0 $border-radius--hover;
-      @media only screen and (max-width: $bp-mid) {
-        border-radius: $border-radius--hover $border-radius--hover 0 0;
-      }
-    }
-    & .skills__text {
-      border-radius: 0 $border-radius--hover $border-radius--hover 0;
-      @media only screen and (max-width: $bp-mid) {
-        border-radius: 0 0 $border-radius--hover $border-radius--hover;
-      }
-    }
-  }
-  &__image {
-    background: $red no-repeat fixed url("/img/skills.webp");
-    background-size: cover;
-    border-radius: $border-radius 0 0 $border-radius;
-    @media only screen and (max-width: $bp-mid) {
-      border-radius: $border-radius $border-radius 0 0;
-    }
-    @extend .cool-transition;
-  }
-  &__text {
-    display: flex;
-    gap: $default-gap;
-    flex-direction: column;
-    justify-content: center;
-    background: $lavender;
-    border-radius: 0 $border-radius $border-radius 0;
-    @media only screen and (max-width: $bp-mid) {
-      border-radius: 0 0 $border-radius $border-radius;
-    }
-    @extend .cool-transition;
-    padding: $default;
-    color: $crust;
-  }
-}
-
-.schools {
-  display: flex;
-  gap: calc(8 * $default-gap);
-  @media only screen and (max-width: $bp-mid) {
-    gap: calc(4 * $default-gap);
-  }
-  flex-direction: column;
-  margin-bottom: 25vh;
+  gap: 4rem;
   justify-items: center;
   align-items: center;
-  &__item {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media only screen and (max-width: $bp-mid) {
-      grid-template-columns: 1fr;
-    }
-    align-items: center;
-    justify-items: center;
-    gap: $default-gap;
-    width: 50%;
-    @media only screen and (max-width: $bp-wide) {
-      width: 75%;
-    }
-    @media only screen and (max-width: $bp-mid) {
-      width: 100%;
-    }
-    & img {
-      @media only screen and (max-width: $bp-mid) {
-        height: 196px;
-        width: 196px;
-      }
-      @media only screen and (max-width: $bp-small) {
-        display: none;
-      }
-    }
-  }
-}
 
-.contact {
-  display: flex;
-  gap: $default-gap;
-  flex-direction: column;
-  margin-bottom: 25vh;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  @media only screen and (max-width: $bp-wide) {
-    width: 75%;
-  }
-  @media only screen and (max-width: $bp-mid) {
+  & p, & .text {
     width: 100%;
   }
+
+  & img {
+    max-width: 75%;
+    border-radius: 1rem;
+
+    @media only screen and (max-width: $bp-wide) {
+      max-width: 100%;
+    }
+
+    &.small {
+      width: 50%;
+
+      @media only screen and (max-width: $bp-wide) {
+        width: 100%;
+      }
+      @media only screen and (max-width: $bp-mid) {
+        width: 75%;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-wide) {
+    grid-template-columns: 2fr 1fr;
+  }
+  @media only screen and (max-width: $bp-mid) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.raw main {
+footer {
+  background: $darker;
+}
+
+.list-images {
   display: flex;
-  gap: calc(2 * $default-gap);
   flex-direction: column;
-  margin: 25vh 0;
+  gap: 4rem;
+  align-items: center;
+
+  &--small img {
+    width: 35%;
+
+    @media only screen and (max-width: $bp-wide) {
+      width: 70%;
+    }
+    @media only screen and (max-width: $bp-mid) {
+      width: 50%;
+    }
+  }
 }

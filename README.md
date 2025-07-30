@@ -1,6 +1,6 @@
-# www.anhgelus.world
+# william.herges.fr
 
-My portfolio.
+My academic portfolio.
 
 ## Technologies
 

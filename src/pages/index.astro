@@ -1,325 +1,290 @@
 ---
-import { Image } from "astro:assets";
+import {Image} from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import Project from "../components/Project.astro";
 ---
 
 <Layout
-  title="Anhgelus Morhtuuzh"
-  description="Portfolio de Anhgelus Morhtuuzh, créateur, producteur et développeur"
-  image="img/skills.webp"
+  title="William Hergès"
+  description="Dans ce monde changeant frénétiquement, j'ai décidé de réfléchir avant d'agir. Je ne suis pas un tech bro, je préfère questionner la technologie avant de l'adopter."
+  image="img/sysadmin.webp"
   url=""
 >
-  <header class="header__title" data-scroll-section>
-    <h1 data-scroll data-scroll-speed="-2">Anhgelus Morhtuuzh</h1>
-    <h4 data-scroll>Créateur producteur développeur</h4>
+  <header>
+    <h1 class="no-mb">William Hergès</h1>
+    <p class="no-mb">Étudiant en informatique, en philosophie et en mathématiques.</p>
   </header>
-  <main class="" data-scroll-section>
-    <div class="project">
-      <Project
-        image="/img/license-generator.jpg"
-        title="License Generator"
-        white
-      >
-        <h2>Application CLI</h2>
-        <p>
-          <a
-            href="https://github.com/anhgelus/license-generator"
-            target="_blank">License Generator</a
-          > est une application CLI s'occupant de créer les fichiers licences pour
-          des projets open source. Cette application a été développée en Go 1.21.
-        </p>
-        <h3>Configuration</h3>
-        <p>
-          Cette application est configurable à l'aide de fichier TOML spécifié
-          dynamiquement ou dans un dossier spécifique. Le TOML est un format
-          facilement lisible pour les humains et facilement utilisable en Go à
-          l'aide des nombreuses library déjà présentes.
-        </p>
-      </Project>
-      <Project image="/img/architects-land.webp" title="Architects Land" white>
-        <h2>Serveur Minecraft</h2>
-        <p>
-          <a href="https://architects-land.anhgelus.world/" target="_blank"
-            >Architects Land</a
-          > est un serveur Minecraft privé réunissant plus d'une dizaine de joueurs.
-          Ce serveur a pour particularité d'utiliser des mods uniques créés pour
-          l'occasion comme
-          <a
-            href="https://modrinth.com/mod/difficulty-death-scaler"
-            target="_blank">Difficulty Death Scaler</a
-          >
-          ou <a
-            href="https://modrinth.com/mod/sneaky-player-names"
-            target="_blank">Sneaky Player Names</a
-          >.
-        </p>
-        <h3>Mods</h3>
-        <p>
-          Les mods créés pour Architects Land sont tous open-source et
-          disponible sur Modrinth, une plateforme respectueuse et open-source
-          dédiée à Minecraft. Ils ont tous été développés en Java 21 avec Gradle
-          pour Fabric, un mod loader.
-        </p>
-        <h3>Site web</h3>
-        <p>
-          Le site web d'Architects Land sert de vitrine au serveur pour recruter
-          des nouveaux joueurs ainsi que de source d'information. D'abord codé
-          avec le framework frontend SolidJS, le site a été entièrement recodé
-          en Go 1.23 pour améliorer sa réactivité, ses performances ainsi que
-          son SEO.
-        </p>
-      </Project>
-      <Project image="/img/molehunt.jpg" title="Molehunt" white>
-        <h2>Mode de jeu</h2>
-        <p>
-          Le <a href="https://modrinth.com/mod/molehunt-mod" target="_blank"
-            >Molehunt</a
-          > est un mode de jeu Minecraft très récent. Chaque joueur est anonyme et
-          appartient à un camp : les moles (taupes en français) ou les survivants.
-          Les moles doivent tuer tous les autres joueurs avant la fin de la partie.
-        </p>
-        <h3>Mod</h3>
-        <p>
-          J'ai créé ce mod car aucun mod n'était disponible sur Modrinth. Ce mod
-          permet de simplifier l'expérience de jeu. En effet, il s'occupe de la
-          gestion du temps, des bordures, du nombre de taupes et de
-          l'anonymisation des joueurs.
-        </p>
-        <p>
-          Ce mod est totalement personnalisable à l'aide d'un fichier de config
-          et des gamerules présentes en jeu. Pour garantir une cohérence entre
-          les différentes configurations, le mod envoie des packets
-          personnalisés aux joueurs pour synchroniser l'affichage des skins et
-          des nametags par exemple.
-        </p>
-        <p>
-          Le mod a été codé en Java 21 avec Gradle pour Fabric, un mod loader.
-        </p>
-        <h3>Wiki</h3>
-        <p>
-          Comme ce mod est très personnalisable, j'ai créé un wiki pour
-          faciliter son utilisation. Il fonctionne à l'aide de Writerside (de
-          Jetbrains) et est hébergé sur GitHub Pages.
-        </p>
-      </Project>
-      <Project
-        image="/img/arnaudvalentin.com.jpg"
-        title="Arnaud Valentin"
-        white
-      >
-        <h2>Site web</h2>
-        <p>
-          <a href="https://arnaudvalentin.com/" target="_blank"
-            >arnaudvalentin.com</a
-          > est le site vitrine d'une voix-off. Le site a été réalisé en moins de
-          6 heures avec du TS vanilla, du SCSS et Bulma.
-        </p>
-      </Project>
-      <Project image="/img/la-fabrick.eu.jpg" title="La FaBrick" white>
-        <h2>Organisation</h2>
-        <p>
-          La FaBrick est une organisation créant des événements sur Minecraft.
-          Ils travaillent avec de nombreux influenceurs comme <a
-            href="https://www.youtube.com/@RoiLouisMC"
-            target="_blank">Roi-Louis</a
-          >,
-          <a href="https://www.youtube.com/@Goldawn" target="_blank">Goldawn</a>
-          ou
-          <a href="https://www.twitch.tv/martinponk" target="_blank"
-            >MartinPonk</a
-          >.
-        </p>
-        <h3>Mon rôle</h3>
-        <p>
-          Je travaillais chez eux en tant que Lead developer Java et web. J'ai
-          notamment mis à jour leur site web et rajouté le responsive. J'ai
-          aussi géré l'équipe responsable du plugin derrière leur événement
-          "Ball Of Steals - Star Wars".
-        </p>
-      </Project>
-      <Project image="/img/les-copaings-bot.jpg" title="Les Copaings Bot" white>
-        <h2>Bot Discord</h2>
-        <p>
-          <a href="https://github.com/anhgelus/les-copaings-bot"
-            >Les Copaings Bot</a
-          > est un bot Discord conçu pour mon serveur Discord privé. Il rajoute un
-          système d'XP unique ainsi que de nombreuses fonctionnalités présentes dans
-          d'autres bot Discord.
-        </p>
-        <h3>Système d'XP</h3>
-        <p>
-          Le système d'XP est totalement unique. Pour gagner de l'XP, les
-          membres doivent envoyer des messages ou être connecté dans un salon
-          vocal. Plus les messages sont long et plus ils comportent de caractère
-          différent, plus le message génère beaucoup d'XP.
-        </p>
-        <p>
-          Si un membre est inactif, c'est-à-dire qu'il ne parle pas ou qu'il
-          n'utilise pas de commande, il perd automatiquement de l'XP. Cela
-          permet de garder un classement des membres actifs.
-        </p>
-        <h3>Fonctionnement</h3>
-        <p>
-          Le bot est codé en Go 1.23 et repose sur
-          <a href="https://github.com/anhgelus/gokord" target="_blank">Gokord</a
-          >, ma library. Le code derrière est complexe puisqu'il a été conçu
-          pour gérer des très gros bots. Il permet entre autre de mettre à jour
-          automatiquement les slashs commands d'un bot après une mise-à-jour.
-        </p>
-        <p>
-          J'ai publié une <a href="https://youtu.be/cRcLyhhcab8" target="_blank"
-            >vidéo</a
-          > parlant de la création de ce bot.
-        </p>
-      </Project>
-    </div>
-    <div class="skills">
-      <div class="skills__image"></div>
-      <div class="skills__text">
-        <h3>Compétences</h3>
-        <p>J'ai débuté la création de sites webs à 13 ans.</p>
-        <p>
-          Sauf que sans backend, on ne fait pas grand chose. Le PHP s'est
-          rapidement imposé à moi pour mes premiers sites dynamiques.
-        </p>
-        <p>
-          En 2020, j'ai appris le Java et le Go pour construire de nouvelles
-          applications toujours plus réactives et complexes.
-        </p>
-        <p>
-          L'année d'après, j'ai testé Kotlin qui m'a convaincu par son
-          sucre-syntaxique et son intégration à la JVM.
-        </p>
-        <p>
-          Écrire de l'HTML et du CSS devint rapidement un travail rébarbatif. Je
-          me suis donc plongé dans les différents framework JS/TS comme Svelte,
-          SolidJS ou VueJS pour construire des frontend plus rapidement.
-        </p>
-        <p>
-          Je parle aussi anglais, je sais gérer des équipes d'une dizaine de
-          personne ainsi que des projets de toutes tailles.
-        </p>
-      </div>
-    </div>
-    <div class="schools">
-      <h2>Formations</h2>
-      <div class="schools__item">
-        <p>
-          J'ai obtenu mon baccalauréat mention très bien euro anglais avec les
-          spécialités mathématiques et physique ainsi que l'option mathématiques
-          expertes.
-        </p>
-        <Image
-          src="/img/study.webp"
-          alt="Image d'un sac à dossur une table avec un ordinateur et un cahier. Photo par Aaron Burden pour Unsplash."
-          width="256"
-          height="256"
-        />
-      </div>
-      <div class="schools__item">
-        <Image
-          src="/img/logo/henri-iv.jpg"
-          alt="Logo du Lycée Henri-IV. Tous droits réservés au Lycée Henri-IV."
-          width="256"
-          height="256"
-        />
-        <p>
-          J'ai passé ma première année dans l'enseignement supérieur dans le
-          <a href="https://psl.eu/formation/cpes-psl-henri-IV" target="_blank"
-            >CPES Sciences</a
-          >
-          d'<a href="https://lycee-henri4.com/" target="_blank">Henri IV</a> et de
-          <a href="https://psl.eu/" target="_blank">PSL</a>. J'y ai suivi des
-          cours scientifiques (mathématiques, physique et, chimie) exigeants et
-          des cours de philosophie, de lettres et d'anglais de haut niveau.
-        </p>
-      </div>
-      <div class="schools__item">
-        <p>
-          A la fin de cette année, j'ai décidé de me réorienter pour me
-          concentrer sur mes deux passions : l'informatique et la philosophie.
-          J'ai ainsi intégré la
-          <a
-            href="https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/licences/doubles-cursus-et-doubles-licences-sciences-et-1"
-            target="_blank"
-          >
-            double licence Sciences-Philosophie</a
-          > de <a href="https://www.sorbonne-universite.fr/" target="_blank"
-            >Sorbonne-Université</a
-          >.
-        </p>
-        <Image
-          src="/img/logo/sorbonne-universite.svg"
-          alt="Logo de Sorbonne Université. Tous droits réservés à Sorbonne Université."
-          width="256"
-          height="256"
-        />
-      </div>
-    </div>
-    <div class="contact">
-      <h2>Contact</h2>
+  <main>
+    <div class="text">
+      <h2>Mon parcours universitaire</h2>
       <p>
-        N'hésitez pas à me contacter via mon adresse mail : <a
-          href="mailto:me@anhgelus.world">me@anhgelus.world</a
-        >.
+        Je suis actuellement en <a
+        href="https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/licences/doubles-cursus-et-doubles-licences-sciences-et-1"
+      >double licence Sciences-Philosophie</a> à <a href="https://www.sorbonne-universite.fr/"
+      >Sorbonne Université</a>, avec l'informatique comme discipline scientifique. Ce double cursus
+        se déroule à la faculté des Sciences (ex Paris-VI, UPMC) et à la faculté des Lettres (ex
+        Paris-IV, Paris-Sorbonne). Je prévois de passer ma troisième année à <a
+        href="https://www.uio.no/english/">UiO</a>, en Norvège.
       </p>
       <p>
-        Vous pouvez aussi regarder <a
-          href="https://github.com/anhgelus"
-          target="_blank">ma page GitHub</a
-        > pour contribuer à mes différents projets open-source !
+        J'ai passé ma première année dans l'enseignement supérieur dans le <a
+        href="https://psl.eu/formation/cpes-psl-henri-IV">CPES Sciences</a> de <a
+        href="https://psl.eu/">PSL</a> et du <a href="https://lycee-henri4.com/">lycée Henri-IV</a>.
+        Cette formation pluridisciplinaire intensive mélangeant cursus universitaire et cycle
+        préparatoire m'a permis d'obtenir des fondements solides en sciences (mathématiques,
+        physique, chimie et biologie) et en lettres (philosophie, lettres, anglais littéraires et
+        appliqués).
       </p>
       <p>
-        Si vous souhaitez participer à un de mes évènements, rejoignez mon
-        serveur Discord <a href="https://discord.gg/EBHRv8Wcqc" target="_blank"
-          >anhgelus.world</a
-        >.
+        J'ai obtenu mon baccalauréat avec la mention Très Bien, Euro Anglais. J'ai suivi les
+        spécialités mathématiques et physique-chimie et l'option mathématiques expertes.
       </p>
     </div>
+    <div class="list-images list-images--small">
+      <img src="/img/logo/sorbonne-universite.svg" alt="Logo de Sorbonne Université">
+      <img src="/img/logo/henri-iv.jpg" alt="Logo du Lycée Henri-IV">
+      <img src="/img/logo/psl.svg" alt="Logo de PSL" style="background: #fff; padding: 5%;">
+    </div>
+    <div class="text">
+      <h2>Mes projets</h2>
+      <p>
+        J'ai appris le développement en autodidact à 13 ans pour modifier Minecraft. 7 ans plus
+        tard, je crée des langages de programmation et des interpréteurs d'expressions
+        mathématiques.
+      </p>
+      <p>
+        Je travaille majoritairement avec des langages compilés, comme Go, Java ou Kotlin. Je
+        maîtrise les technologies du web (je préfère les sites statics et le SSR), je sais écrire en
+        LaTeX et j'ai des bases en C et en Python.
+      </p>
+    </div>
+    <div></div>
+    <div class="text">
+      <h3>Plank</h3>
+      <p>
+        <a href="https://github.com/planklang">Plank</a> est un langage de programmation décrivant
+        des plots comme ceux générés par <a href="https://matplotlib.org/">Matplotlib</a>. Il vise à
+        être simple, clair, direct, intuitif et modulaire.
+      </p>
+      <p>
+        Ce projet nous demande d'être rigoureux dans la conception formelle du langage pour éviter
+        les erreurs d'interprétation et les incohérences.
+      </p>
+      <p>
+        <a href="https://github.com/planklang/goplank">goplank</a> est la première implémentation de
+        Plank. Elle est écrite en Go. Cela nous permet d'appréhender la structure d'une
+        implémentation classique de Plank avant de réécrire la base commune en C pour pouvoir
+        l'interfacer partout.
+      </p>
+    </div>
+    <img src="/img/planklang.webp" alt="Grammaire de Plank présente sur GitHub">
+    <div class="text">
+      <h3>GoMath</h3>
+      <p>
+        <a href="https://github.com/nyttikord/gomath">GoMath</a> est une library Go interprétant des
+        expressions mathématiques. Elle a été créée pour <a href="https://github.com/nyttikord"
+      >Nyttikord</a>.
+      </p>
+      <p>
+        GoMath est une calculatrice avec une précision presque infinie (la seule limite étant la RAM
+        disponible). Elle n'utilise pas les floatants, évitant ainsi les erreurs de précision, et
+        peut convertir n'importe quelle expression en LaTeX.
+      </p>
+      <p>
+        Pour l'instant, GoMath ne supporte pas les expressions formelles. Notre objectif est de les
+        supporter à terme.
+      </p>
+    </div>
+    <img src="/img/gomath.webp" alt="Exemple d'utilisation de GoMath en CLI">
+    <div class="text">
+      <h3>Nyttikord</h3>
+      <p>
+        <a href="https://github.com/nyttikord">Nyttikord</a> est un groupe de développeur créant des
+        bots <a href="https://discord.com/">Discord</a>. Notre objectif est de concevoir des
+        applications open-sources, performantes et innovantes pour répondre à différents besoins.
+      </p>
+      <p>
+        <a href="https://github.com/nyttikord/nerdkord">nerdkord</a> est un bot permettant de faire
+        des mathématiques sur Discord. Il intègre <a href="https://github.com/nyttikord/gomath"
+      >GoMath</a> et permet de faire des rendus LaTeX directement depuis Discord.
+      </p>
+      <p>
+        Nous avons d'autres idées en tête, mais le temps nous manque pour les concrétiser.
+      </p>
+    </div>
+    <div></div>
+    <div class="text">
+      <h3>Architects Land</h3>
+      <p>
+        <a href="https://architects-land.anhgelus.world">Architects Land</a> est une famille de
+        serveur Minecraft cherchant à recréer l'émerveillement des premiers jours. Nous devons donc
+        créer des mods innovant pour renouveler l'expérience.
+      </p>
+      <p>
+        <a href="https://modrinth.com/mod/difficulty-death-scaler">Difficulty Death Scaler</a> est
+        un mod Fabric modifiant totalement la difficulté du jeu. Plus les joueurs meurent, plus le
+        jeu devient difficile, les enfermant ainsi dans une boucle de rétroaction. Il modifie l'IA
+        des mobs, les gamerules et les attributes des entités pour gérer finement la difficulté.
+      </p>
+      <p>
+        <a href="https://architects-land.github.io/minecraft-scaleway-frontend/">Minecraft Scaleway
+          Frontend</a> est un serveur Minecraft custom servant de proxy entre le joueur et un
+        serveur Minecraft hébergé sur une instance Scaleway. Cela permet d'avoir des serveurs très
+        puissants tout en évitant de les payer cher.
+      </p>
+      <p>
+        <a href="https://github.com/architects-land/day-counter-enhanced">Day Counter Enhanced</a>
+        est un mod Fabric affichant le nombre de jours passés en jeu. Il se différencie des autres
+        puisqu'il est exclusivement client-side et fonctionne sur serveur.
+      </p>
+    </div>
+    <div class="list-images">
+      <img src="/img/architects-land.webp" alt="Site web d'Architects Land">
+      <img src="/img/architects-land-modrinth.webp" alt="Modrinth d'Architects Land">
+    </div>
+    <div class="text">
+      <h3>arnaudvalentin.com</h3>
+      <p>
+        <a href="https://arnaudvalentin.com/">arnaudvalentin.com</a> est le site vitrine d'un
+        comédien voix-off. Le site a été réalisé rapidement avec du TS vanilla et Bulma.
+      </p>
+    </div>
+    <img src="/img/arnaudvalentin.com.jpg" alt="Site web d'arnaudvalentin.com">
+    <div class="text">
+      <h3>entreesortie.net</h3>
+      <p>
+        <a href="https://entreesortie.net/">entreesortie.net</a> est le site vitrine du studio et du
+        label Entrée Sortie Production. Il s'agit d'un site static propulsé par Astro.
+      </p>
+    </div>
+    <img src="/img/entreesortie.net.webp" alt="Site web d'Entrée Sortie Production">
+    <div class="text">
+      <h3>La FaBrick</h3>
+      <p>
+        La FaBrick organise des événements Minecraft pour des influenceurs. Ils ont notamment
+        travaillé avec <a href="https://www.youtube.com/@RoiLouisMC">Roi-Louis</a>, <a
+        href="https://www.youtube.com/@Goldawn">Goldawn</a> et <a
+        href="https://www.twitch.tv/martinponk">MartinPonk</a>.
+      </p>
+      <p>
+        J'étais lead developer Java pour l'événement «&thinsp;Ball Of Steals - Star Wars&thinsp;».
+        Un point de vu joueur de l'événement est disponible <a
+        href="https://www.youtube.com/watch?v=AmZ9vzpqmfE">sur la chaîne de Wotan</a>.
+      </p>
+      <p>
+        J'ai aussi mis à jour leur site pour l'événement tout en le rendant responsive.
+      </p>
+    </div>
+    <img src="/img/la-fabrick.eu.jpg" alt="Site web de La FaBrick">
+    <div class="text">
+      <h3>Now</h3>
+      <p>
+        <a href="https://github.com/anhgelus/now">Now</a> est un site web SSR servant de biographie,
+        comme Carrd ou guns.lol. Codé en Go, il fonctionne partout et est complètement
+        customisable&thinsp;: des couleurs au contenu.
+      </p>
+      <p>
+        L'utilisateur le configure à l'aide d'un fichier TOML (ou JSON). Le contenu est présent dans
+        des fichiers HTML pour garder de la flexibilité.
+      </p>
+      <p>
+        L'objectif de ce projet est d'avoir une application facilement self-hostable, très
+        personnalisable et très légère pour le visiteur.
+      </p>
+    </div>
+    <img src="/img/now.webp" alt="Ma now page">
+    <div class="text">
+      <h3>anhgelus' blog</h3>
+      <p>
+        Il s'agit de <a href="https://blog.anhgelus.world/">mon blog</a>. Il utilise Ghost pour
+        l'affichage utilisateur et est protégé des AI par Anubis.
+      </p>
+      <p>
+        Je l'utilise pour partager mes réflexions politiques, philosophiques ou celles portant sur
+        l'informatique et la décentralisation.
+      </p>
+    </div>
+    <img src="/img/anhgelus-blog.webp" alt="Page d'accueil de mon blog">
+    <div class="text">
+      <h3>Sysadmin</h3>
+      <p>
+        Même si ce n'est pas vraiment un projet, je gère mes serveurs et j'ai deux ordinateurs sous
+        Linux.
+      </p>
+      <p>
+        Mon serveur principal est un VPS sous AlmaLinux 10 utilisant Podman et Quadlet pour les
+        containers. Certaines applications essentielles sont installés directement sur la machine
+        comme Caddy ou PostgreSQL. Voir
+        <a href="https://blog.anhgelus.world/reorganisation-infrastructure-vps/">mon article de
+          blog</a> sur le sujet.
+      </p>
+      <p>
+        Mon ordinateur principal est en dual-boot Windows 11 et Void Linux. Cela me permet de jouer
+        et d'avoir un environnement de développeur complètement adapté à mes besoins. Mon laptop (un
+        Framework 13 pouces) est sous Arch Linux avec Gnome.
+      </p>
+    </div>
+    <img src="/img/sysadmin.webp" alt="Configuration de ma machine sous Void Linux">
+    <div class="text">
+      <p>
+        Mon <a href="https://github.com/anhgelus">GitHub</a> contient une liste complète de mes
+        anciens projets.
+      </p>
+    </div>
+    <div></div>
+    <div class="text">
+      <h2>Qui suis-je&thinsp;?</h2>
+      <p>
+        Dans ce monde changeant frénétiquement, j'ai décidé de réfléchir avant d'agir. Je ne suis
+        pas un <em>tech bro</em>, je préfère questionner la technologie avant de l'adopter.
+      </p>
+      <p>
+        Je critique énormément les dérives du monde numérique, que ça soit <a
+        href="https://youtu.be/iW0LiIMYqrU">la manipulation des masses</a
+      >, <a href="https://blog.anhgelus.world/notre-monde-est-mort-et-cest-chatgpt-qui-la-tue/"
+      >la déshumanisation des relations</a
+      > ou <a
+        href="https://theconversation.com/lia-open-source-et-frugale-la-cle-de-lautonomie-strategique-europeenne-259748"
+      >l'aggravation du désastre écologique en cours</a>. Je défends des solutions durables et
+        fiables fondamentalement opposées au modèle des GAFAM&thinsp;: je promeus les
+        <em>low-tech</em>, la philosophie du libre et l'indépendance technologique. Tous mes
+        projets sont conçus avec cet objectif en tête&thinsp;: ils sont <a
+        href="https://github.com/anhgelus">open-source</a> et réutilisables par tous.
+      </p>
+      <p>
+        La philosophie me sert à questionner notre relation aux choses pour montrer qu'elles ne sont
+        pas si évidentes et si immuables que ça. Prendre conscience de cette relativité possibilise
+        la création d'un nouveau future redonnant espoir.
+      </p>
+      <p>
+        L'informatique, et plus généralement mon éducation scientifique, me permet de comprendre les
+        enjeux techniques liés à mon idéal. Construire un numérique sain est un défi extrêmement
+        complexe m'intéressant particulièrement.
+      </p>
+    </div>
+    <div></div>
+    <div class="text">
+      <h2>Me contacter</h2>
+      <p>
+        Je vous invite à m'envoyer un email à <a
+        href="mailto:william@herges.fr">william@herges.fr</a>.
+      </p>
+      <p>
+        Si vous souhaitez collaborer avec moi pour un projet Minecraft, rejoignez <a
+        href="https://discord.gg/EBHRv8Wcqc">mon serveur Discord</a>.
+      </p>
+      <p>
+        Je suis aussi sur <a href="https://bsky.app/profile/anhgelus.world">Bluesky</a>, sur <a
+        href="https://piaille.fr/@anhgelus">Mastodon</a> et sur Matrix.
+      </p>
+    </div>
+    <div></div>
   </main>
 </Layout>
 
-<script defer is:inline>
-  const projects = document.querySelectorAll("[data-project]");
-  let scrollDisabled = false;
-  let x = 0;
-  let y = 0;
-  window.addEventListener("popstate", (_) => {
-    if (
-      !window.location.href.endsWith("#") &&
-      !window.location.href.endsWith("#")
-    )
-      return;
-    projects.forEach((el) => {
-      el.classList.remove("project--active");
-      scrollDisabled = false;
-    });
-  });
-  document.addEventListener("click", (e) => {
-    projects.forEach((el) => {
-      if (!el.classList.contains("project--active")) return;
-      if (!(e.target instanceof HTMLElement)) return;
-      const element = e.target;
-      if (element.classList.contains("project--active")) {
-        element.classList.remove("project--active");
-        element.classList.add("project--deactivate");
-        scrollDisabled = false;
-        history.pushState({}, "", "#");
-      }
-    });
-  });
-  projects.forEach((el) => {
-    el.addEventListener("click", (_) => {
-      el.classList.add("project--active");
-      el.classList.remove("project--deactivate");
-      scrollDisabled = true;
-      x = window.scrollX;
-      y = window.scrollY;
-      history.pushState({}, "", "#" + el.getAttribute("data-project"));
-    });
-  });
-  document.addEventListener("scroll", (_) => {
-    if (scrollDisabled) window.scrollTo(x, y);
+<script defer>
+  document.querySelectorAll("a").forEach((e) => {
+    if (!e.href.startsWith(window.location.origin)) {
+      e.target = "_blank";
+    }
   });
 </script>
