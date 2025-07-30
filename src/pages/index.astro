@@ -1,5 +1,4 @@
 ---
-import {Image} from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -281,7 +280,7 @@ import Layout from "../layouts/Layout.astro";
   </main>
 </Layout>
 
-<script defer>
+<script defer is:inline>
   document.querySelectorAll("a").forEach((e) => {
     if (!e.href.startsWith(window.location.origin)) {
       e.target = "_blank";
