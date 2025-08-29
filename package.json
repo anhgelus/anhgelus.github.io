@@ -11,10 +11,10 @@
     "format": "prettier . --write"
   },
   "dependencies": {
-    "@astrojs/check": "0.9.3",
+    "@astrojs/check": "0.9.4",
     "@catppuccin/palette": "^1.3.0",
     "@jop-software/astro-matomo": "^1.1.1",
-    "astro": "4.15.6",
+    "astro": "5.13.5",
     "sass": "^1.77.8",
     "scss": "^0.2.4",
     "typescript": "^5.5.4"
